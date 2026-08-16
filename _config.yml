@@ -1,0 +1,40 @@
+title: Juniper Kiss
+description: Personal website of Juniper Kiss — Designer & Developer.
+url: "https://juniperkiss.com"
+baseurl: ""
+
+author:
+  name: Juniper Kiss
+  email: hello@juniperkiss.com
+
+# Analytics — replace with your GA4 measurement ID when ready
+google_analytics: ""   # e.g. G-XXXXXXXXXX
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+permalink: /blog/:year/:month/:day/:title/
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "*.sh"
