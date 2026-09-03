@@ -13,7 +13,7 @@ layout: default
 
   {%- if page.image %}
   <figure class="post-hero">
-    <img src="{{ page.image }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async" />
+    <img src="{{ page.image | relative_url }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async" />
   </figure>
   {%- endif %}
 
@@ -25,12 +25,12 @@ layout: default
     {%- include cane-rule.html -%}
     <nav class="pager" aria-label="More posts">
       {%- if page.previous %}
-      <a href="{{ page.previous.url }}" rel="prev">← {{ page.previous.title }}</a>
+      <a href="{{ page.previous.url | relative_url }}" rel="prev">← {{ page.previous.title }}</a>
       {%- endif %}
       {%- if page.next %}
-      <a href="{{ page.next.url }}" rel="next">{{ page.next.title }} →</a>
+      <a href="{{ page.next.url | relative_url }}" rel="next">{{ page.next.title }} →</a>
       {%- endif %}
     </nav>
-    <p><a href="/blog/">All posts</a></p>
+    <p><a href="{{ '/blog/' | relative_url }}">All posts</a></p>
   </footer>
 </article>

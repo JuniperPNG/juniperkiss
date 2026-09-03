@@ -20,9 +20,9 @@ description: >-
           people.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="/cv/">Read the CV</a>
-          <a class="btn btn--secondary" href="/blog/">Read the blog</a>
-          <a class="btn btn--secondary" href="/assignments/">University assignments</a>
+          <a class="btn btn--primary" href="{{ '/cv/' | relative_url }}">Read the CV</a>
+          <a class="btn btn--secondary" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+          <a class="btn btn--secondary" href="{{ '/assignments/' | relative_url }}">University assignments</a>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ description: >-
             peaked early, and a lot of countries. I write it all down, because a
             tidy CV is a dishonest one.
           </p>
-          <p><a href="/cv/">See the CV, photographs and all</a></p>
+          <p><a href="{{ '/cv/' | relative_url }}">See the CV, photographs and all</a></p>
         </div>
       </div>
     </div>
@@ -48,21 +48,21 @@ description: >-
 
     <ul class="card-grid" style="margin-top: var(--space-xl)">
       <li class="card">
-        <h3 class="card__title"><a href="/cv/">The CV, with the stories</a></h3>
+        <h3 class="card__title"><a href="{{ '/cv/' | relative_url }}">The CV, with the stories</a></h3>
         <p class="card__body">
           The full work history, education, awards and presentations — annotated
           with what actually happened. Including the parts that did not go to plan.
         </p>
       </li>
       <li class="card">
-        <h3 class="card__title"><a href="/blog/">The blog</a></h3>
+        <h3 class="card__title"><a href="{{ '/blog/' | relative_url }}">The blog</a></h3>
         <p class="card__body">
           How I raised £40,000 from grants and awards, living with farmers in
           Nepal, and how I developed a passion for invasive brambles.
         </p>
       </li>
       <li class="card">
-        <h3 class="card__title"><a href="/assignments/">University assignments</a></h3>
+        <h3 class="card__title"><a href="{{ '/assignments/' | relative_url }}">University assignments</a></h3>
         <p class="card__body">
           Real undergraduate essays with their marks and the marker's feedback, so
           international students and lecturers can see what a UK grade looks like.
@@ -105,12 +105,12 @@ description: >-
         <p class="card__meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
         </p>
-        <h3 class="card__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 class="card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p class="card__body">{{ post.description | truncate: 160 }}</p>
       </li>
       {%- endfor %}
     </ul>
-    <p style="margin-top: var(--space-xl)"><a href="/blog/">All posts</a></p>
+    <p style="margin-top: var(--space-xl)"><a href="{{ '/blog/' | relative_url }}">All posts</a></p>
   </div>
 </section>
 {%- endif %}

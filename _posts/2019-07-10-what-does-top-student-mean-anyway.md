@@ -148,7 +148,7 @@ migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anywa
 <p>[If I have lost anyone just for starting a sentence with 'Wikipedia says' - I am sorry. But this is how a 'Top Student' does things, you know]</p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/what-does-top-student-mean-anyway/01-812149_46e9b7f1b948490da388db85be3e78f6-mv2.png" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/what-does-top-student-mean-anyway/01-812149_46e9b7f1b948490da388db85be3e78f6-mv2.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p><strong>So. </strong>What I do - I find lectures rooms in a hidden part of the uni, somewhat close to each other. I ‘assign’ each room to each question. Oh yes. This gets better. </p>
@@ -198,7 +198,7 @@ migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anywa
 <p>Minutes after posting this blog onto FB - I got the kindest reply 🙈</p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/what-does-top-student-mean-anyway/02-812149_d63bf8c15d2b40f2b960643a3ff3a2b3-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/what-does-top-student-mean-anyway/02-812149_d63bf8c15d2b40f2b960643a3ff3a2b3-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p>So while I am waiting on my bus after being in the library for 13 hours, I might as well add.... </p>

@@ -30,7 +30,7 @@ migrated_from: https://www.juniperkiss.com/post/first-job-and-taking-days-off
 <p>I planned to go down to Eastbourne from Egham for one day, go for a walk on the coast and in the evening go to a Tchaikovsky concert on the beach and I would catch the last train back. Eastbourne was stunning and the concert was just lovely. I was sitting next to a group of older ladies armed with blankets and wine. At the end of the 1812 Overture, the fireworks' colours were reflected in the sea - perfect ending. Or. Maybe. Not. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/first-job-and-taking-days-off/01-812149_28523c6e4546452fb8ec81ba47638b23-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/first-job-and-taking-days-off/01-812149_28523c6e4546452fb8ec81ba47638b23-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p>Somehow the concert finished an hour late and catching my breath at the trainstation the last train was leaving to Brighton which I thought would still get me slightly closer to Egham. In Brighton I showed up at a Travelodge in very short shorts, a camera and 3% charge remaining on my mobile phone. I had a great chat with the receptionist who told me that I was extremely lucky as they only have one more room left at 2 am. We started putting in my details and then he frowned. Someone booked that room online. </p>
@@ -40,9 +40,9 @@ migrated_from: https://www.juniperkiss.com/post/first-job-and-taking-days-off
 <p>He waved at me and said to be quiet and come with him. He led me to a what looked like a storage room, with lots of shoes and he prepared a foldable bed for me. I had to leave by 4 am so the cleaners wouldn't see me. As my mobile was almost dead, I set an alarm for every 5 minutes, just to make sure I don't properly fall asleep. Just before 4 am, I signed an post card from Eastbourne and left a box of Kipling's bakewells as a thank you. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/first-job-and-taking-days-off/02-812149_f4c6244bbda34f4690991b6552e9199a-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/first-job-and-taking-days-off/02-812149_f4c6244bbda34f4690991b6552e9199a-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p>The first train towards London left around 5.30 am and it was strange that no one would sit in my proximity. But there was this smell. Like you get a whiff off after the garbage truck goes by. And yepp - that was coming from me, having soaked up the storage room scent. After a big shower and 1 liter of coffee I went to work strengthening my argument against taking days off. </p>
 
-<p><strong>Following year: </strong><a href="/blog/taking-a-day-off-and-a-murder-mystery"><strong>Stayed with a stranger who has been threatened with murder on my day off</strong></a></p>
+<p><strong>Following year: </strong><a href="{{ '/blog/taking-a-day-off-and-a-murder-mystery' | relative_url }}"><strong>Stayed with a stranger who has been threatened with murder on my day off</strong></a></p>

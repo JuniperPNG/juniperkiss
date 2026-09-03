@@ -12,8 +12,8 @@ description: >-
     <h1>Stories behind the CV</h1>
     <p class="lede">
       Personal writing. Professional writing examples are listed on
-      <a href="/cv/#writing">my CV</a>. New posts are rare —
-      <a href="/feed.xml">subscribe by RSS</a> if you want them.
+      <a href="{{ '/cv/#writing' | relative_url }}">my CV</a>. New posts are rare —
+      <a href="{{ '/feed.xml' | relative_url }}">subscribe by RSS</a> if you want them.
     </p>
   </header>
 
@@ -22,14 +22,14 @@ description: >-
     <li class="post-card">
       <div class="post-card__thumb">
         {%- if post.image %}
-        <img src="{{ post.image }}" alt="" width="480" height="360" loading="lazy" decoding="async" />
+        <img src="{{ post.image | relative_url }}" alt="" width="480" height="360" loading="lazy" decoding="async" />
         {%- endif %}
       </div>
       <div>
         <p class="post-card__meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
         </p>
-        <h2 class="post-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="post-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="post-card__excerpt">{{ post.description | truncate: 220 }}</p>
       </div>
     </li>

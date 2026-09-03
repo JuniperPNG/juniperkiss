@@ -11,7 +11,7 @@ migrated_from: https://www.juniperkiss.com/post/interview-with-exec-producer-of-
 
 <p>The island of Shishmaref has been home to the lnupiaq people for thousands of years. As sea ice retreats and coastal storms increase the people of Shishmaref are faced with a disappearing island and a 200 million dollar price tag to move their people with an untold cost on their culture and history.</p>
 
-<p>I met <a href="https://www.depts.ttu.edu/pss/faculty_pages/dweindorf.php" rel="noopener">Prof David Weindorf, </a>the Executive Producer of Between Earth and Sky in 2016 at the <a href="/blog/conferences-and-pot-noodles">American Society Agronomy conference</a> in Pheonix. Prof Weindorf is the Associate Vice President of Office of Research and Innovation at Texas Tech University and BL Allen Endowed Chair of Pedology.</p>
+<p>I met <a href="https://www.depts.ttu.edu/pss/faculty_pages/dweindorf.php" rel="noopener">Prof David Weindorf, </a>the Executive Producer of Between Earth and Sky in 2016 at the <a href="{{ '/blog/conferences-and-pot-noodles' | relative_url }}">American Society Agronomy conference</a> in Pheonix. Prof Weindorf is the Associate Vice President of Office of Research and Innovation at Texas Tech University and BL Allen Endowed Chair of Pedology.</p>
 
 <p>In 2017, I had the opportunity to interview Prof Weindorf while organising movie premiers in Cambridge, UK. </p>
 
@@ -30,7 +30,7 @@ migrated_from: https://www.juniperkiss.com/post/interview-with-exec-producer-of-
 <p>It was on that trip that I really began to see the impacts of climate change first-hand. We measured erosion rates cutting back into the tundra at a rate of 5 meters per year, for hundreds of kilometres. In the years following, we found less and less ice in areas previously frozen solid. Those observations served to solidify my understanding of the impacts of climate change on arctic soils and ecosystems. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017/01-812149_157f63a9fca845d297c56af6a79223d3-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017/01-812149_157f63a9fca845d297c56af6a79223d3-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p><strong>What was the main motivation that made up your mind about making this movie? </strong></p>

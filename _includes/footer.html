@@ -5,7 +5,7 @@
         <h2 class="site-footer__heading">This site</h2>
         <ul class="site-footer__list">
           {%- for item in site.data.nav -%}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {%- endfor -%}
         </ul>
       </div>
@@ -24,15 +24,15 @@
       <div>
         <h2 class="site-footer__heading">Keep in touch</h2>
         <p>New posts are rare. Subscribe with any reader using the
-          <a href="/feed.xml">RSS feed</a>, or email
+          <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>, or email
           <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
       </div>
 
       <div>
         <h2 class="site-footer__heading">Accessibility</h2>
         <ul class="site-footer__list">
-          <li><a href="/accessibility/">Accessibility statement</a></li>
-          <li><a href="/colophon/">Colophon &amp; design system</a></li>
+          <li><a href="{{ '/accessibility/' | relative_url }}">Accessibility statement</a></li>
+          <li><a href="{{ '/colophon/' | relative_url }}">Colophon &amp; design system</a></li>
         </ul>
       </div>
     </div>

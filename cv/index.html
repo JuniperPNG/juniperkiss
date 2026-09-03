@@ -22,11 +22,11 @@ description: >-
         <dt>Residency</dt><dd>{{ cv.residency }}</dd>
       </dl>
       <p class="cv-header__actions">
-        <a class="btn btn--primary" href="{{ cv.pdf }}" download>Download the CV (PDF)</a>
+        <a class="btn btn--primary" href="{{ cv.pdf | relative_url }}" download>Download the CV (PDF)</a>
       </p>
     </div>
     {%- if cv.portrait %}
-    <img class="cv-header__portrait" src="{{ cv.portrait }}"
+    <img class="cv-header__portrait" src="{{ cv.portrait | relative_url }}"
          alt="An illustrated portrait of Juniper Kiss." width="220" height="220"
          decoding="async" />
     {%- endif %}
@@ -165,7 +165,7 @@ description: >-
     {% include cane-rule.html %}
 
     <p>
-      <a class="btn btn--secondary" href="{{ cv.pdf }}" download>Download the CV (PDF)</a>
+      <a class="btn btn--secondary" href="{{ cv.pdf | relative_url }}" download>Download the CV (PDF)</a>
     </p>
   </div>
 </section>

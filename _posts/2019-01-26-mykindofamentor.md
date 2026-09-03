@@ -28,7 +28,7 @@ migrated_from: https://www.juniperkiss.com/post/mykindofamentor
 <p>On the last day of work, I was given a mug saying 'Keep Calm and Carry On' but the handle was broken off as my colleagues tried to hurry up the packaging. We thought that the broken handle was actually perfect - describing our summer. After 5 years, I have this mug on my bedside table which makes me remember when experiments or life does not seem to be working out to just '<strong>Keep Calm and Carry On'</strong>.</p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/mykindofamentor/01-812149_5b33499d43a641caba2de23049bf9d64-mv2.jpg" alt="Blow up crocodile waiting at my desk" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/mykindofamentor/01-812149_5b33499d43a641caba2de23049bf9d64-mv2.jpg' | relative_url }}" alt="Blow up crocodile waiting at my desk" loading="lazy" decoding="async" />
   <figcaption>Blow up crocodile waiting at my desk</figcaption>
 </figure>
 

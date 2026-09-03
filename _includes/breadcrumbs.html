@@ -1,9 +1,9 @@
 {%- if page.url != "/" -%}
 <nav class="breadcrumbs shell" aria-label="Breadcrumb">
   <ol class="breadcrumbs__list">
-    <li><a href="/">Home</a></li>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
     {%- if page.layout == "post" -%}
-    <li><a href="/blog/">Blog</a></li>
+    <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
     <li><span aria-current="page">{{ page.title }}</span></li>
     {%- else -%}
     <li><span aria-current="page">{{ page.title }}</span></li>

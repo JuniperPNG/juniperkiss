@@ -1,6 +1,6 @@
 <header class="masthead">
   <div class="shell masthead__inner">
-    <a class="brand" href="/">
+    <a class="brand" href="{{ '/' | relative_url }}">
       <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
         <path d="M16 30 C 16 20, 6 18, 8 10 C 9 5, 15 4, 17 9
                  c 2 5, -4 8, -7 5
@@ -33,7 +33,7 @@
           {%- assign is_current = true -%}
         {%- endif -%}
         <li>
-          <a class="nav__link" href="{{ item.url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          <a class="nav__link" href="{{ item.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.title }}</a>
         </li>
         {%- endfor -%}
       </ul>

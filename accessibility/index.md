@@ -47,7 +47,7 @@ regulations. It is built to the same bar anyway.
 - Body text meets a contrast ratio of at least 4.5:1, and interface components
   and graphics at least 3:1, against their background. The viridis palette is
   split explicitly into text-safe and decorative-only ranges in the
-  [design tokens](/assets/css/tokens.css).
+  [design tokens]({{ '/assets/css/tokens.css' | relative_url }}).
 - The layout reflows to a 320 CSS pixel viewport without two-dimensional
   scrolling, and text can be resized to 200% without loss of content.
 

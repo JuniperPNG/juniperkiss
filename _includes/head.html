@@ -24,10 +24,10 @@
 <meta name="twitter:card" content="summary_large_image" />
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} — blog" href="{{ '/feed.xml' | absolute_url }}" />
-<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="{{ '/assets/brand/favicon.svg' | relative_url }}" type="image/svg+xml" />
 
-<link rel="stylesheet" href="/assets/css/tokens.css" />
-<link rel="stylesheet" href="/assets/css/site.css" />
+<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
 
 {%- if site.google_analytics and site.google_analytics != "" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>

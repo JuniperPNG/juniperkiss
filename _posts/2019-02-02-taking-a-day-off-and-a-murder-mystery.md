@@ -7,7 +7,7 @@ description: "After my first story of ending up in a Travelodge storage room on 
 image: /assets/blog/taking-a-day-off-and-a-murder-mystery/00-hero-812149_b5df0f3f6aa24625a3ddda4d0685d9ea-mv2.jpg
 migrated_from: https://www.juniperkiss.com/post/taking-a-day-off-and-a-murder-mystery
 ---
-<p><strong>After </strong><a href="/blog/first-job-and-taking-days-off"><strong>my first story</strong></a><strong> of ending up in a Travelodge storage room on my day off in 2013, I had the opportunity to work at CABI again in 2015. This time, I made sure my day off would go smoothly and be educational. And educational it was! </strong></p>
+<p><strong>After </strong><a href="{{ '/blog/first-job-and-taking-days-off' | relative_url }}"><strong>my first story</strong></a><strong> of ending up in a Travelodge storage room on my day off in 2013, I had the opportunity to work at CABI again in 2015. This time, I made sure my day off would go smoothly and be educational. And educational it was! </strong></p>
 
 <p>During my first time at CABI, I looked after two greenhouses, one 'normal' on and one where we followed quarantine procedures (e.g. putting on lab coats, shoe covers, entering chambers in a specific order and bleaching items we brought out). There was however, a third quarantine lab in another building. In 2013, we made up stories what happens there as people tended to disappear for hours at the end of the day and my imagination grew wild. The possibility of poker games and a pool table were gossiped. </p>
 
@@ -15,7 +15,7 @@ migrated_from: https://www.juniperkiss.com/post/taking-a-day-off-and-a-murder-my
 
 <p>This year, I finished my first semester at Anglia Ruskin University which equals to half a semester as I was studying part-time while working full-time at a National Trust restaurant near Cambridge. I received the Anglia Trust Foundation Scholarship (£750) to go to Namibia, for a Field Skills in Biology course and do some volunteering afterwards.</p>
 
-<p>Going to Africa has always been a dream of mine but my bank account was on zero by the end of every month. In order to get all the vaccinations, we held a cake sale at CABI titled 'Save Juniper' and I <a href="/blog/first-scholarship-off-to-namibia-2015">got to jab myself with expensive rabies vaccine</a> and lived in a tent throughout the summer. But that is another story... </p>
+<p>Going to Africa has always been a dream of mine but my bank account was on zero by the end of every month. In order to get all the vaccinations, we held a cake sale at CABI titled 'Save Juniper' and I <a href="{{ '/blog/first-scholarship-off-to-namibia-2015' | relative_url }}">got to jab myself with expensive rabies vaccine</a> and lived in a tent throughout the summer. But that is another story... </p>
 
 <ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_b5df0f3f6aa24625a3ddda4d0685d9ea~mv2.jpg/v1/fill/w_640,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_b5df0f3f6aa24625a3ddda4d0685d9ea~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_f8971f1a0c2b48abb162a608dbb6de01~mv2.jpg/v1/fill/w_640,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_f8971f1a0c2b48abb162a608dbb6de01~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_1aa0e9c8b14b47d4a6f619db5e09b0df~mv2_d_2048_1447_s_2.jpg/v1/fill/w_1920,h_1357,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_1aa0e9c8b14b47d4a6f619db5e09b0df~mv2_d_2048_1447_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_37b60a06be164c119b142421043f43dc~mv2.jpg/v1/fill/w_320,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_37b60a06be164c119b142421043f43dc~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_d50b352dd7764ecba2c7dbd1b5daab9d~mv2.jpg/v1/fill/w_960,h_651,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_d50b352dd7764ecba2c7dbd1b5daab9d~mv2.jpg"/></figure></li></ul>
 
@@ -30,7 +30,7 @@ migrated_from: https://www.juniperkiss.com/post/taking-a-day-off-and-a-murder-my
 <p>I packed up and spent the night on a bench. I planned that I would have £30 to spend during my stay and the cheapest last minute rooms started at £70 in the summer. I showed up to the course being rather tired and told my experience to the group. Everyone was very kind and a lady on the Marine Biology MSc course told me that I could spend the night at her house. Very kind. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/taking-a-day-off-and-a-murder-mystery/01-812149_db980fdbf5754f2c987cfa12f3909cd4-mv2_d_2070_3029_s_2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/taking-a-day-off-and-a-murder-mystery/01-812149_db980fdbf5754f2c987cfa12f3909cd4-mv2_d_2070_3029_s_2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p>The course itself was brilliant, on the picture above we had a group exercise where everyone had 1 minute to draw the sample before them and then move onto the next specimen - leaving behind their drawing so the next person would continue drawing on those. We also used charcoal to learn not to smudge and how a simple drawing could be easily scanned and with a bit of Photoshop make it look professional. </p>
@@ -50,5 +50,5 @@ migrated_from: https://www.juniperkiss.com/post/taking-a-day-off-and-a-murder-my
 <p>On my way home, naturally, the trains were late and I missed a connection, leaving me sitting on the floor at Reading station with a frozen fish in my backpack for hours. The following morning, I went to work and I was sent home to get a proper sleep and no one told me to take another day off for the rest of the summer. I do have to add, that I left that fish behind after house sitting for a colleague- it is a good thing that biologists think of such a house-sitter as 'perfectly normal'! </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/taking-a-day-off-and-a-murder-mystery/02-812149_52ba593c085748a881622cea553b0ae4-mv2_d_3456_5184_s_4_.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/taking-a-day-off-and-a-murder-mystery/02-812149_52ba593c085748a881622cea553b0ae4-mv2_d_3456_5184_s_4_.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>

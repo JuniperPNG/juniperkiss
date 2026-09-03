@@ -24,7 +24,7 @@ red stains on my clothes.
 
 Behind the fun and unusual stories, I do confess the sacrifices, and how world
 events affect a future scientist's motivation. I share my
-[university assignments with marks](/assignments/) so that international students,
+[university assignments with marks]({{ '/assignments/' | relative_url }}) so that international students,
 UK students and educators can see what an essay receiving over 90% in the UK
 system looks like.
 
@@ -51,4 +51,4 @@ system looks like.
 ## Get in touch
 
 Email <hello@juniperkiss.com>. New blog posts are rare; the
-[RSS feed](/feed.xml) is the reliable way to hear about them.
+[RSS feed]({{ '/feed.xml' | relative_url }}) is the reliable way to hear about them.

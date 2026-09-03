@@ -28,8 +28,8 @@ source of truth, and the stylesheet consumes it. Nothing is hard-coded.
 
 | File | Role |
 | --- | --- |
-| [`assets/css/tokens.css`](/assets/css/tokens.css) | Colour, type scale, spacing, motion, target sizes |
-| [`assets/css/site.css`](/assets/css/site.css) | Reset, base, layout, components, utilities |
+| [`assets/css/tokens.css`]({{ '/assets/css/tokens.css' | relative_url }}) | Colour, type scale, spacing, motion, target sizes |
+| [`assets/css/site.css`]({{ '/assets/css/site.css' | relative_url }}) | Reset, base, layout, components, utilities |
 | `_data/cv.yml` | The CV, as structured data |
 | `_data/assignments.yml` | Assignments, marks and feedback |
 | `_includes/bramble.html` | The bramble cane motif |
@@ -107,4 +107,4 @@ and icon sits next to a text label that carries the actual meaning.
 
 Built to WCAG 2.2 level AA. The reasoning, the legal context for the UK, EU and
 Australia, and the known limitations are in the
-[accessibility statement](/accessibility/).
+[accessibility statement]({{ '/accessibility/' | relative_url }}).

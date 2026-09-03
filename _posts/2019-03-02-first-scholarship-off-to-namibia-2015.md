@@ -28,7 +28,7 @@ migrated_from: https://www.juniperkiss.com/post/first-scholarship-off-to-namibia
 <p>There were 23 transect lines in the superimposed grid over Kuzikus Wildlife Reserve (Figure 1.). A total of four transects ranging from 1,100 to 1,250 m in length were surveyed in savannah habitat and four in bush habitat. All transects align North to South with a minimum distance of 500 m apart. The start point of the survey was chosen according to the wind direction to walk against the wind to reduce animal disturbance. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/first-scholarship-off-to-namibia-2015/01-812149_7634da44b8a243dfbd55e0406a821418-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/first-scholarship-off-to-namibia-2015/01-812149_7634da44b8a243dfbd55e0406a821418-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p>The first group was responsible for animal detection, recording species, their number, herd structure, possibly age and sex of individuals and measuring the angle and distance from the transect line in order to obtain data for a distance sampling analysis. </p>
@@ -44,7 +44,7 @@ migrated_from: https://www.juniperkiss.com/post/first-scholarship-off-to-namibia
 <p>In DISTANCE only the springbok data were sufficient to carry out data analysis. Estimation for natural population (N) with 95% CI, varied from 642 to 1523 individual for the area of Kuzikus Reserve. After completing a t-test with SPSS to assess which habitat the springboks prefer was not significant (t74=0.1, P&gt;0.05). </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/first-scholarship-off-to-namibia-2015/02-812149_c29adf5482b04cb98d3fc039f585d6c0-mv2_d_2048_1280_s_2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/first-scholarship-off-to-namibia-2015/02-812149_c29adf5482b04cb98d3fc039f585d6c0-mv2_d_2048_1280_s_2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p><strong>2. Vegetation surveys</strong></p>

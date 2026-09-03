@@ -63,9 +63,9 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>That year, I was working five-six days while taking half days off to go to university. </p>
 
-<p>In the first year, I continued to work at Anglesey Abbey, and I received my first scholarship in January 2015 to <a href="/blog/first-scholarship-off-to-namibia-2015">go to Namibia</a>. </p>
+<p>In the first year, I continued to work at Anglesey Abbey, and I received my first scholarship in January 2015 to <a href="{{ '/blog/first-scholarship-off-to-namibia-2015' | relative_url }}">go to Namibia</a>. </p>
 
-<p>I had the chance to work at <a href="/blog/first-job-and-taking-days-off">CABI again </a>after finishing exams and lived in a tent to save up the money to go off to Africa. </p>
+<p>I had the chance to work at <a href="{{ '/blog/first-job-and-taking-days-off' | relative_url }}">CABI again </a>after finishing exams and lived in a tent to save up the money to go off to Africa. </p>
 
 <p>In the summer I applied for the Winston Churchill Future Leaders scholarship which I thought was a good idea. I remember that the night before the deadline, I had about 30% charge left on my laptop and little mobile data to send off my application. </p>
 
@@ -173,13 +173,13 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>While the scholarship included covering all the food and travels, I still only had £70 on my bank card. While other students and professors were going out to fancy restaurants, I walked 20 minutes to find a general store to get some sandwich lookalike for dinner. </p>
 
-<p>I invited a fantastic scientist over to Cambridge to screen his new documentary about soil science – little did I know that I would <a href="/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017">be hosting him</a> five months later! </p>
+<p>I invited a fantastic scientist over to Cambridge to screen his new documentary about soil science – little did I know that I would <a href="{{ '/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017' | relative_url }}">be hosting him</a> five months later! </p>
 
 <p>I also had [awkward face] lunch with the Executive Editor of National Geographic who gave me tips on how to re-design GOES (more, more, more big pictures!). </p>
 
 <p>The days went by and by the last night, both my bank accounts were in minus £1. </p>
 
-<p>Hm. As I mentioned in <a href="/blog/conferences-and-pot-noodles">another blog post</a>, I ended up sharing a bed that night with a PhD student. </p>
+<p>Hm. As I mentioned in <a href="{{ '/blog/conferences-and-pot-noodles' | relative_url }}">another blog post</a>, I ended up sharing a bed that night with a PhD student. </p>
 
 <p>So, I arrived back in London super overwhelmed, jetlagged, in a skirt and sandals – without my backpack (which was stuck in Minneapolis). A friend bought my coach tickets to get home to Cambridge and well. I remained hungry until my salary arrived. I cannot thank enough for all my former colleagues who started up food banks for me. </p>
 
@@ -237,7 +237,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>After all the dancing, I set off to Nepal via Turkey (there are some stories there too, but let’s not get lost in the details). </p>
 
-<p>I wrote about Nepal in <a href="/blog/agricultural-extension-internship-in-nepal-2017">another post</a>. </p>
+<p>I wrote about Nepal in <a href="{{ '/blog/agricultural-extension-internship-in-nepal-2017' | relative_url }}">another post</a>. </p>
 
 <p>I got back on the plane after Nepal. Flew back to Cambridge. </p>
 
@@ -360,7 +360,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 <p>I was still a full year ahead of graduating. I applied for the Northcote Trust Scholarship but looking back, even though scientists have proofread my application, I believe I wrote it in a way too technical language. I read the rejection email in October - so I started to look for UK PhDs. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/five-years-worth-of-rambling/01-812149_23afdac7e49a4dd7a3ad0d9c80767e8d-mv2.jpg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/five-years-worth-of-rambling/01-812149_23afdac7e49a4dd7a3ad0d9c80767e8d-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p><em>Facebook post when I got accepted to ANU.</em></p>
@@ -404,7 +404,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 <p>I would like to remind the dear reader that these are the ramblings of a half-asleep lady on a plane crossing the Atlantic, catching up with her thoughts and repressed feelings. </p>
 
 <figure class="post-figure">
-  <img src="/assets/blog/five-years-worth-of-rambling/02-812149_362b8362d1634c3b8b043691318ca306-mv2_d_1536_2048_s_2.jpeg" alt="" loading="lazy" decoding="async" />
+  <img src="{{ '/assets/blog/five-years-worth-of-rambling/02-812149_362b8362d1634c3b8b043691318ca306-mv2_d_1536_2048_s_2.jpeg' | relative_url }}" alt="" loading="lazy" decoding="async" />
 </figure>
 
 <p><em>Picture from Publix shop in Miami</em></p>
