@@ -52,5 +52,6 @@ exclude:
   - README.md
   - docs/
   - _migration/
+  - vendor/
   - "*.ps1"
   - "*.py"
