@@ -299,11 +299,7 @@ samp {
   stroke-width: 2;
 }
 
-.bramble__prickles path {
-  fill: url(#bramble-ramp);
-}
-
-.bramble__leaflets path {
+.bramble__blade {
   fill: url(#bramble-ramp);
   fill-opacity: 0.13;
   stroke: url(#bramble-ramp);
@@ -314,7 +310,7 @@ samp {
 
 .bramble__petiole,
 .bramble__veins path,
-.bramble__pedicel {
+.bramble__tendril {
   fill: none;
   stroke: url(#bramble-ramp);
   stroke-width: 1;
@@ -322,41 +318,12 @@ samp {
   vector-effect: non-scaling-stroke;
 }
 
+.bramble__tendril {
+  stroke-width: 1.4;
+}
+
 .bramble__veins path {
   stroke-opacity: 0.55;
-}
-
-.bramble__petal {
-  fill: var(--bramble-flower-fill);
-  stroke: var(--bramble-flower-stroke);
-  stroke-width: 0.6;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
-}
-
-.bramble__centre {
-  fill: var(--bramble-flower-centre);
-}
-
-.bramble__fruit circle {
-  fill: var(--bramble-fruit-unripe);
-  stroke: var(--bramble-fruit-unripe);
-  stroke-width: 1;
-  vector-effect: non-scaling-stroke;
-}
-
-.bramble__fruit--ripe circle {
-  fill: var(--bramble-fruit-ripe);
-  stroke: var(--bramble-fruit-ripe);
-}
-
-.bramble__root {
-  fill: none;
-  stroke: var(--bramble-4);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-opacity: 0.7;
-  vector-effect: non-scaling-stroke;
 }
 
 /* The cane draws itself in as you scroll, like a plant putting on growth.
@@ -394,12 +361,12 @@ samp {
   }
 }
 
-/* Section divider: a short length of cane with a prickle and a leaflet. */
+/* Section divider: a short length of stem with a leaf. */
 .cane-rule {
   display: block;
   width: min(240px, 60%);
   height: auto;
-  margin: var(--space-2xl) 0;
+  margin: var(--space-l) 0;
   color: var(--tone-soft);
 }
 
@@ -822,9 +789,9 @@ samp {
 .cv-header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: var(--space-2xl);
+  gap: var(--space-l);
   align-items: start;
-  padding: var(--space-2xl) 0 var(--space-xl);
+  padding: var(--space-l) 0 var(--space-m);
 }
 
 .cv-header__text {
@@ -832,16 +799,16 @@ samp {
 }
 
 .cv-header__tagline {
-  margin-top: var(--space-xs);
-  font-size: var(--step-1);
+  margin-top: var(--space-3xs);
+  font-size: var(--step-0);
   color: var(--tone-emph);
 }
 
 .cv-header__facts {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
-  gap: var(--space-3xs) var(--space-m);
-  margin-top: var(--space-l);
+  gap: var(--space-3xs) var(--space-s);
+  margin-top: var(--space-s);
   font-size: var(--step--1);
 }
 
@@ -855,7 +822,7 @@ samp {
 }
 
 .cv-header__actions {
-  margin-top: var(--space-l);
+  margin-top: var(--space-s);
 }
 
 .cv-header__portrait {
@@ -877,7 +844,10 @@ samp {
 }
 
 /* --- Flags and topic icons ------------------------------------------------ */
+/* Flags sit inside a line of text, so they must override the global
+   `svg { display: block }` reset or they force a line break. */
 .flag {
+  display: inline-block;
   flex: none;
   width: 1.5em;
   height: 1em;
@@ -887,6 +857,7 @@ samp {
 }
 
 .topic-icon {
+  display: inline-block;
   flex: none;
   width: 1.15em;
   height: 1.15em;
@@ -898,21 +869,21 @@ samp {
 .chip-row {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2xs);
+  gap: var(--space-3xs);
   list-style: none;
-  margin: var(--space-s) 0 0;
+  margin: var(--space-3xs) 0 0;
   padding: 0;
 }
 
 .chip {
   display: inline-flex;
   align-items: center;
-  padding: 0.2em 0.7em;
+  padding: 0.1em 0.6em;
   background: var(--surface-alt);
   border: var(--hairline) solid var(--border);
   border-radius: 999px;
   font-size: var(--step--1);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .chip--place {
@@ -924,19 +895,21 @@ samp {
 
 /* --- Entries -------------------------------------------------------------- */
 .entries {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-m);
 }
 
+/* Text left, photographs and story note right, so entries stay short and the
+   wide margin is used instead of stacking images under every section. */
 .entry {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-l);
-  padding: var(--space-xl) 0;
+  gap: var(--space-m);
+  padding: var(--space-m) 0;
   border-top: var(--hairline) solid var(--border);
 }
 
 .entries--compact .entry {
-  padding: var(--space-l) 0;
+  padding: var(--space-s) 0;
 }
 
 .entry__main {
@@ -944,17 +917,34 @@ samp {
   max-width: var(--measure);
 }
 
+.entry__aside {
+  min-width: 0;
+  display: grid;
+  gap: var(--space-s);
+  align-content: start;
+}
+
+@media (min-width: 1100px) {
+  .entry--noted,
+  .entry--photos {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+    align-items: start;
+    gap: var(--space-l);
+  }
+}
+
 .entry__title {
-  font-size: var(--step-2);
-  line-height: 1.25;
+  font-size: var(--step-0);
+  line-height: 1.3;
 }
 
 .entries--compact .entry__title {
-  font-size: var(--step-1);
+  font-size: var(--step-0);
 }
 
 .entry__org {
-  margin-top: var(--space-3xs);
+  margin-top: 0;
+  font-size: var(--step--1);
   color: var(--ink-muted);
 }
 
@@ -962,8 +952,8 @@ samp {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-xs);
-  margin-top: var(--space-2xs);
+  gap: var(--space-2xs);
+  margin-top: var(--space-3xs);
 }
 
 .entry__dates {
@@ -973,20 +963,25 @@ samp {
 }
 
 .entry__detail {
-  margin-top: var(--space-s);
+  margin-top: var(--space-2xs);
+  font-size: var(--step--1);
 }
 
-.entry__points {
-  margin-top: var(--space-s);
+/* Selector must out-specify the `ul[class] { list-style: none }` reset. */
+ul.entry__points {
+  margin-top: var(--space-2xs);
   padding-left: 1.2em;
+  font-size: var(--step--1);
+  list-style: disc;
 }
 
 .entry__points li + li {
-  margin-top: var(--space-2xs);
+  margin-top: var(--space-3xs);
 }
 
 .entry__link {
-  margin-top: var(--space-s);
+  margin-top: var(--space-2xs);
+  font-size: var(--step--1);
 }
 
 /* --- The story note ------------------------------------------------------- */
@@ -996,8 +991,7 @@ samp {
 .note {
   position: relative;
   align-self: start;
-  max-width: 260px;
-  padding: var(--space-xs) var(--space-s);
+  padding: var(--space-2xs) var(--space-xs);
   background: var(--highlight-bg);
   color: var(--highlight-fg);
   border-radius: 14px;
@@ -1032,14 +1026,6 @@ samp {
   filter: drop-shadow(-1px 0 0 rgb(0 0 0 / 0.08));
 }
 
-@media (min-width: 1100px) {
-  .entry--noted {
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
-    align-items: start;
-    gap: var(--space-l);
-  }
-}
-
 @media (max-width: 1099px) {
   .note {
     max-width: var(--measure-narrow);
@@ -1057,10 +1043,10 @@ samp {
 /* --- Photographs ---------------------------------------------------------- */
 .photo-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: var(--space-s);
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: var(--space-2xs);
   list-style: none;
-  margin: var(--space-l) 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -1071,22 +1057,24 @@ samp {
 .photo {
   position: relative;
   display: block;
-  overflow: hidden;
   border-radius: var(--radius-s);
   background: var(--surface-sunken);
   line-height: 0;
 }
 
+/* Previews show the whole photograph — nothing is cropped away, so a reader
+   never has to open the lightbox just to see the edges of an image. */
 .photo img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  transition: transform var(--dur-slow) var(--ease);
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-s);
+  transition: opacity var(--dur-fast) var(--ease);
 }
 
 .photo:hover img,
 .photo:focus-visible img {
-  transform: scale(1.04);
+  opacity: 0.88;
 }
 
 .photo__zoom {
@@ -1120,7 +1108,7 @@ samp {
   }
   .photo:hover img,
   .photo:focus-visible img {
-    transform: none;
+    opacity: 1;
   }
   .photo__zoom {
     opacity: 1;
@@ -1260,7 +1248,7 @@ samp {
 /* --- Compact lists (work history, volunteering, writing) ------------------- */
 .plain-list {
   list-style: none;
-  margin: var(--space-l) 0 0;
+  margin: var(--space-m) 0 0;
   padding: 0;
 }
 
@@ -1269,12 +1257,13 @@ samp {
   flex-wrap: wrap;
   align-items: baseline;
   gap: var(--space-3xs) var(--space-s);
-  padding: var(--space-s) 0;
+  padding: var(--space-2xs) 0;
   border-bottom: var(--hairline) solid var(--border);
 }
 
 .plain-list__title {
   flex: 1 1 20ch;
+  font-size: var(--step--1);
   font-weight: var(--weight-medium);
 }
 

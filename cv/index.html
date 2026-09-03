@@ -46,7 +46,7 @@ description: >-
   <div class="shell">
     <p class="section__eyebrow">Skills</p>
     <h2 id="skills">What I actually do</h2>
-    <div class="card-grid" style="margin-top: var(--space-xl)">
+    <div class="card-grid" style="margin-top: var(--space-m)">
       {%- for group in cv.skill_groups %}
       <div class="card">
         <h3 class="card__title">
@@ -90,7 +90,7 @@ description: >-
 
 {%- if cv.work_history %}
 <section class="section" aria-labelledby="work-history">
-  <div class="shell shell--reading">
+  <div class="shell">
     <h2 id="work-history">Everything else</h2>
     <ul class="plain-list">
       {%- for item in cv.work_history %}
@@ -109,7 +109,7 @@ description: >-
 {%- endif %}
 
 <section class="section section--alt" aria-labelledby="volunteering">
-  <div class="shell shell--reading">
+  <div class="shell">
     <h2 id="volunteering">Volunteering</h2>
     <ul class="plain-list">
       {%- for item in cv.volunteering %}
@@ -148,7 +148,7 @@ description: >-
 </section>
 
 <section class="section" aria-labelledby="writing">
-  <div class="shell shell--reading">
+  <div class="shell">
     <p class="section__eyebrow">Writing examples</p>
     <h2 id="writing">Things I have written</h2>
     <ul class="plain-list">

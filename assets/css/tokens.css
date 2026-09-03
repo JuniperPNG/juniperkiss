@@ -102,8 +102,8 @@
   --tracking-caps: 0.1em;
 
   /* ---- Space (Kew rhythm) ------------------------------------------------ */
-  --pad-h: 112px;
-  --pad-v: 88px;
+  --pad-h: 48px;
+  --pad-v: 40px;
   --space-3xs: 0.25rem;
   --space-2xs: 0.5rem;
   --space-xs: 0.75rem;
@@ -115,7 +115,7 @@
   --space-3xl: 6rem;
 
   /* ---- Measure & layout -------------------------------------------------- */
-  --page-max: 1600px;
+  --page-max: 1280px;
   --measure: 68ch;
   --measure-narrow: 58ch;
   --bramble-width: 220px;
@@ -157,15 +157,15 @@
 
 @media (max-width: 1024px) {
   :root {
-    --pad-h: 32px;
-    --pad-v: 56px;
+    --pad-h: 24px;
+    --pad-v: 32px;
   }
 }
 
 @media (max-width: 768px) {
   :root {
     --pad-h: 16px;
-    --pad-v: 40px;
+    --pad-v: 24px;
   }
 }
 
