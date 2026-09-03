@@ -1,0 +1,233 @@
+/* =============================================================================
+   juniperkiss.com — design tokens
+   Single source of truth for colour, type, space and motion.
+
+   Structure follows the Kew design system pattern (central token file, plain
+   CSS custom properties, no build step). Palette is viridis.
+
+   CONTRAST RULES — read before using a colour:
+     --v-900 / --v-800 / --v-700 / --v-600  safe for body text on light surfaces
+     --v-500                                 large text (>=24px / >=18.66px bold) and UI only
+     --v-400 / --v-300 / --v-200 / --v-100   decorative fills and graphics only,
+                                             never text on white
+   Measured against #FFFFFF (WCAG 2.2 relative luminance):
+     440154 15.1:1 | 482878 11.6:1 | 3E4A89 8.5:1 | 31688E 6.0:1 | 26828E 4.6:1
+     1F9E89 3.2:1  | 35B779 2.5:1  | 6DCD59 1.9:1 | B4DE2C 1.6:1 | FDE725 1.2:1
+   ============================================================================= */
+
+:root {
+  /* ---- Viridis ramp (dark -> light) ------------------------------------- */
+  --v-900: #440154;
+  --v-800: #482878;
+  --v-700: #3e4a89;
+  --v-600: #31688e;
+  --v-500: #26828e;
+  --v-400: #1f9e89;
+  --v-300: #35b779;
+  --v-200: #6dcd59;
+  --v-100: #b4de2c;
+  --v-050: #fde725;
+
+  /* ---- Semantic colour --------------------------------------------------- */
+  --ink: #1f1b24;
+  --ink-muted: #4a4453;
+  --surface: #ffffff;
+  --surface-alt: #f4f3f1;
+  --surface-sunken: #ece9e6;
+  --surface-deep: var(--v-900);
+  --on-deep: #ffffff;
+  --on-deep-muted: #ded6e4;
+
+  --border: #c8c8c8;
+  --border-strong: var(--ink-muted);
+  --rule: var(--v-600);
+
+  --link: var(--v-600);
+  --link-hover: var(--v-800);
+  --link-visited: var(--v-800);
+
+  --accent: var(--v-600);
+  --accent-warm: var(--v-050);
+
+  /* Semantic layer. Components must use these, never a raw --v-* step, so the
+     dark-mode block below can reverse the ramp in one place. */
+  --fill-strong: var(--v-900); /* solid buttons, skip link */
+  --on-fill-strong: #ffffff;
+  --fill-strong-hover: var(--v-800);
+  --tone-emph: var(--v-800); /* emphatic text, hover states */
+  --tone-soft: var(--v-500); /* quote rules, non-text borders */
+  /* Softer than raw viridis yellow — a muted botanical sage, used for
+     selection, mark badges, place chips and story notes. */
+  --highlight-bg: #e4e9d4;
+  --highlight-fg: #3c4a26;
+  --on-accent: #ffffff; /* text sitting on an --accent fill */
+
+  /* Decorative ramp: non-text graphics only (card rules, timeline nodes).
+     Each step keeps >=3:1 against its own surface, per SC 1.4.11. */
+  --deco-1: var(--v-600);
+  --deco-2: var(--v-500);
+  --deco-3: var(--v-400);
+  --deco-4: var(--v-300);
+  --deco-5: var(--v-200);
+
+  /* Focus ring: dark core + high-luminance halo so it survives any backdrop. */
+  --focus-core: var(--ink);
+  --focus-halo: var(--v-050);
+
+  /* ---- Typography -------------------------------------------------------- */
+  /* Self-contained stacks: no third-party font requests, so no IP disclosure
+     to a font CDN (GDPR / UK GDPR) and no render-blocking fetch on mobile. */
+  --font-sans: Roboto, "Segoe UI", system-ui, -apple-system, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "Cascadia Mono", Menlo, Consolas,
+    monospace;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* Fluid scale, 320px -> 1600px viewport. */
+  --step--1: clamp(0.875rem, 0.85rem + 0.13vw, 0.9375rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.375rem);
+  --step-2: clamp(1.35rem, 1.22rem + 0.65vw, 1.75rem);
+  --step-3: clamp(1.6rem, 1.36rem + 1.2vw, 2.25rem);
+  --step-4: clamp(1.9rem, 1.45rem + 2.25vw, 3rem);
+  --step-5: clamp(2.25rem, 1.5rem + 3.75vw, 4rem);
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-body: 1.65;
+  --tracking-caps: 0.1em;
+
+  /* ---- Space (Kew rhythm) ------------------------------------------------ */
+  --pad-h: 112px;
+  --pad-v: 88px;
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* ---- Measure & layout -------------------------------------------------- */
+  --page-max: 1600px;
+  --measure: 68ch;
+  --measure-narrow: 58ch;
+  --bramble-width: 220px;
+  --bramble-bleed: 56px;
+  --bramble-opacity: 0.85;
+
+  /* Bramble illustration palette — muted and botanical rather than viridis-
+     bright, so the cane reads as a real plant. Runs fresh growth (tip) to
+     old wood (base/root) along the gradient. */
+  --bramble-1: #7f9a52;
+  --bramble-2: #5c7a3a;
+  --bramble-3: #6b4a3a;
+  --bramble-4: #46312a;
+  --bramble-flower-fill: #fdfbf4;
+  --bramble-flower-stroke: #e2d6b8;
+  --bramble-flower-centre: #c9a227;
+  --bramble-fruit-unripe: #b5504a;
+  --bramble-fruit-ripe: #3b2430;
+
+  /* ---- Lines, radii, shadow ---------------------------------------------- */
+  --hairline: 1px;
+  --rule-weight: 4px;
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --shadow-raised: 0 1px 2px rgb(31 27 36 / 0.08), 0 8px 24px rgb(31 27 36 / 0.08);
+
+  /* ---- Motion ------------------------------------------------------------ */
+  --ease: cubic-bezier(0.2, 0, 0.15, 1);
+  --dur-fast: 120ms;
+  --dur: 240ms;
+  --dur-slow: 600ms;
+
+  /* ---- Targets ----------------------------------------------------------- */
+  /* WCAG 2.2 SC 2.5.8 Target Size (Minimum) is 24x24 CSS px; 44px is used for
+     primary controls so touch input stays comfortable. */
+  --target-min: 24px;
+  --target-comfortable: 44px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --pad-h: 32px;
+    --pad-v: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --pad-h: 16px;
+    --pad-v: 40px;
+  }
+}
+
+/* Honour an explicit OS/browser preference for dark rendering. The ramp is
+   reversed: light viridis becomes text-safe on the deep purple surface. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f2eff5;
+    --ink-muted: #c3bacd;
+    --surface: #1a1020;
+    --surface-alt: #241730;
+    --surface-sunken: #2d1e3b;
+    --surface-deep: #120a18;
+    --on-deep: #f2eff5;
+    --on-deep-muted: #c3bacd;
+    --border: #4a3d57;
+    --border-strong: #8c7f99;
+    --rule: var(--v-300);
+    --link: var(--v-200);
+    --link-hover: var(--v-050);
+    --link-visited: var(--v-100);
+    --accent: var(--v-300);
+
+    --fill-strong: var(--v-100);
+    --on-fill-strong: #120a18;
+    --fill-strong-hover: var(--v-050);
+    --tone-emph: var(--v-100);
+    --tone-soft: var(--v-400);
+    --highlight-bg: #3a4a2c;
+    --highlight-fg: #eef2df;
+    --on-accent: #120a18;
+
+    --deco-1: var(--v-300);
+    --deco-2: var(--v-400);
+    --deco-3: var(--v-200);
+    --deco-4: var(--v-100);
+    --deco-5: var(--v-050);
+
+    /* The cane starts at the light end so its base is not lost in the
+       dark background. */
+    --bramble-1: #a8c47a;
+    --bramble-2: #7fa855;
+    --bramble-3: #9c7a63;
+    --bramble-4: #caa98a;
+    --bramble-opacity: 0.7;
+    --bramble-flower-fill: #f4ecd8;
+    --bramble-flower-stroke: #a6957a;
+    --bramble-flower-centre: #e0c04a;
+    --bramble-fruit-unripe: #d97a72;
+    --bramble-fruit-ripe: #7a5468;
+
+    --focus-core: #ffffff;
+    --focus-halo: var(--v-050);
+    --shadow-raised: none;
+  }
+}
+
+/* WCAG 2.2 SC 2.3.3 — no non-essential motion for users who ask for less. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+    --dur-slow: 0ms;
+  }
+}

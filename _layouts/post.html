@@ -1,19 +1,36 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="hero">
-    <p class="breadcrumb-label">Blog</p>
+<article class="shell shell--reading">
+  <header class="post-header">
+    <p class="section__eyebrow">Blog</p>
     <h1>{{ page.title }}</h1>
-    <p class="subtitle post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {% if page.tags.size > 0 %}&nbsp;&middot;&nbsp;{{ page.tags | join: ", " }}{% endif %}
+    <p class="post-header__meta">
+      <span>By {{ site.author.short_name }}</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
     </p>
   </header>
-  <main class="post-content">
+
+  {%- if page.image %}
+  <figure class="post-hero">
+    <img src="{{ page.image }}" alt="" width="1600" height="900" fetchpriority="high" decoding="async" />
+  </figure>
+  {%- endif %}
+
+  <div class="prose rich-text">
     {{ content }}
-  </main>
-  <div class="post-footer">
-    <a href="/blog/">&larr; All posts</a>
   </div>
+
+  <footer class="post-footer">
+    {%- include cane-rule.html -%}
+    <nav class="pager" aria-label="More posts">
+      {%- if page.previous %}
+      <a href="{{ page.previous.url }}" rel="prev">← {{ page.previous.title }}</a>
+      {%- endif %}
+      {%- if page.next %}
+      <a href="{{ page.next.url }}" rel="next">{{ page.next.title }} →</a>
+      {%- endif %}
+    </nav>
+    <p><a href="/blog/">All posts</a></p>
+  </footer>
 </article>

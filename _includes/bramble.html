@@ -1,0 +1,131 @@
+{%- comment -%}
+  A bramble cane, drawn as a botanical illustration, running down the margin of
+  every page and behind the content.
+
+  Decorative only: aria-hidden + focusable="false" so assistive tech skips it
+  (WCAG 2.2 SC 1.1.1). It carries no information that is not also in the text,
+  and it is hidden entirely below 1200px so narrow screens stay uncluttered.
+{%- endcomment -%}
+<svg class="bramble" viewBox="0 0 200 1400" preserveAspectRatio="xMidYMin meet"
+     aria-hidden="true" focusable="false" role="presentation">
+  <defs>
+    <linearGradient id="bramble-ramp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="var(--bramble-1, #7f9a52)" />
+      <stop offset="35%"  stop-color="var(--bramble-2, #5c7a3a)" />
+      <stop offset="70%"  stop-color="var(--bramble-3, #6b4a3a)" />
+      <stop offset="100%" stop-color="var(--bramble-4, #46312a)" />
+    </linearGradient>
+
+    <!-- Palmate leaf, five serrated leaflets. Drawn once, placed several times. -->
+    <g id="bramble-leaf">
+      <path class="bramble__petiole" d="M0 0 C 10 -6, 20 -14, 28 -24" />
+      <g class="bramble__leaflets">
+        <path d="M28 -24 c 10 -16, 30 -22, 40 -14 c -4 16, -22 28, -40 14 z" />
+        <path d="M28 -24 c 2 -20, 18 -34, 30 -32 c 4 16, -8 34, -30 32 z" />
+        <path d="M28 -24 c -8 -18, -2 -38, 10 -44 c 10 12, 8 34, -10 44 z" />
+        <path d="M28 -24 c -18 -8, -28 -26, -22 -38 c 15 2, 26 18, 22 38 z" />
+        <path d="M28 -24 c -20 2, -36 -8, -37 -21 c 14 -6, 32 3, 37 21 z" />
+      </g>
+      <g class="bramble__veins">
+        <path d="M28 -24 l 36 -12" />
+        <path d="M28 -24 l 26 -30" />
+        <path d="M28 -24 l 8 -41" />
+        <path d="M28 -24 l -17 -34" />
+        <path d="M28 -24 l -33 -18" />
+      </g>
+    </g>
+
+    <!-- Flower: five rounded, separated petals on a narrow base — an open
+         dog-rose-style bramble bloom. Rounded (not pointed) petal tips read
+         as a simple wild flower rather than a lotus, which has pointed,
+         upright, overlapping petals. -->
+    <g id="bramble-flower">
+      <path class="bramble__petal" d="M-1 -2 Q -3.6 -5.6, -3.1 -9 Q -2.6 -11.6, 0 -11.6 Q 2.6 -11.6, 3.1 -9 Q 3.6 -5.6, 1 -2 Z" />
+      <path class="bramble__petal" d="M-1 -2 Q -3.6 -5.6, -3.1 -9 Q -2.6 -11.6, 0 -11.6 Q 2.6 -11.6, 3.1 -9 Q 3.6 -5.6, 1 -2 Z" transform="rotate(72)" />
+      <path class="bramble__petal" d="M-1 -2 Q -3.6 -5.6, -3.1 -9 Q -2.6 -11.6, 0 -11.6 Q 2.6 -11.6, 3.1 -9 Q 3.6 -5.6, 1 -2 Z" transform="rotate(144)" />
+      <path class="bramble__petal" d="M-1 -2 Q -3.6 -5.6, -3.1 -9 Q -2.6 -11.6, 0 -11.6 Q 2.6 -11.6, 3.1 -9 Q 3.6 -5.6, 1 -2 Z" transform="rotate(216)" />
+      <path class="bramble__petal" d="M-1 -2 Q -3.6 -5.6, -3.1 -9 Q -2.6 -11.6, 0 -11.6 Q 2.6 -11.6, 3.1 -9 Q 3.6 -5.6, 1 -2 Z" transform="rotate(288)" />
+      <circle class="bramble__centre" cx="0" cy="0" r="2.4" />
+    </g>
+  </defs>
+
+  <g class="bramble__ink">
+    <!-- Primary cane: the long arching first-year stem -->
+    <path class="bramble__cane"
+          d="M104 -10
+             C 74 90, 128 168, 96 258
+             C 66 344, 122 420, 92 512
+             C 64 598, 126 676, 98 770
+             C 72 858, 130 936, 100 1030
+             C 74 1114, 124 1196, 96 1290
+             L 92 1410" />
+
+    <!-- Second-year laterals, shorter and stiffer side-shoots -->
+    <path class="bramble__cane bramble__cane--minor"
+          d="M96 258 C 132 296, 150 346, 138 402" />
+    <path class="bramble__cane bramble__cane--minor"
+          d="M98 770 C 62 812, 46 866, 58 922" />
+    <path class="bramble__cane bramble__cane--minor"
+          d="M100 1030 C 66 1064, 40 1108, 52 1160" />
+
+    <!-- Roots: the cane grounds itself at the base of the page -->
+    <g class="bramble__root">
+      <path d="M92 1400 C 68 1404, 46 1414, 24 1428" />
+      <path d="M92 1400 C 100 1408, 100 1420, 88 1436" />
+      <path d="M92 1400 C 112 1402, 132 1414, 152 1424" />
+      <path d="M92 1400 C 78 1412, 72 1428, 78 1444" />
+    </g>
+
+    <!-- Prickles: the hooked, downward-facing thorns of Rubus fruticosus -->
+    <g class="bramble__prickles">
+      <path d="M100 60 l 13 4 l -12 5 z" />
+      <path d="M99 138 l -13 4 l 12 5 z" />
+      <path d="M117 210 l 13 5 l -12 5 z" />
+      <path d="M92 320 l -13 4 l 12 6 z" />
+      <path d="M110 392 l 13 5 l -12 5 z" />
+      <path d="M89 466 l -13 4 l 12 6 z" />
+      <path d="M113 590 l 13 5 l -12 5 z" />
+      <path d="M94 662 l -13 4 l 12 6 z" />
+      <path d="M112 846 l 13 5 l -12 5 z" />
+      <path d="M97 918 l -13 4 l 12 6 z" />
+      <path d="M115 1092 l 13 5 l -12 5 z" />
+      <path d="M95 1168 l -13 4 l 12 6 z" />
+      <path d="M108 1268 l 13 5 l -12 5 z" />
+    </g>
+
+    <use href="#bramble-leaf" x="112" y="150" />
+    <use href="#bramble-leaf" x="142" y="402" transform="rotate(22 142 402)" />
+    <use href="#bramble-leaf" x="66" y="560" transform="rotate(-25 66 560)" />
+    <use href="#bramble-leaf" x="58" y="920" transform="rotate(16 58 920)" />
+    <use href="#bramble-leaf" x="120" y="1060" transform="rotate(-12 120 1060)" />
+    <use href="#bramble-leaf" x="70" y="1330" transform="rotate(46 70 1330)" />
+
+    <!-- Flowers: single blooms, Rubus is a rose relative -->
+    <g class="bramble__flower">
+      <use href="#bramble-flower" transform="translate(150 372)" />
+    </g>
+    <g class="bramble__flower">
+      <use href="#bramble-flower" transform="translate(46 900) rotate(20)" />
+    </g>
+
+    <!-- Fruit: aggregates of drupelets — green-red while unripe, near-black when ripe -->
+    <g class="bramble__fruit" transform="translate(70 560)">
+      <circle cx="0" cy="0" r="4.2" />
+      <circle cx="7.4" cy="1.8" r="4" />
+      <circle cx="3.6" cy="8" r="4" />
+      <circle cx="-3.6" cy="7.2" r="3.8" />
+      <circle cx="-7.2" cy="0.8" r="3.8" />
+      <circle cx="0" cy="6.2" r="3.6" />
+      <path class="bramble__pedicel" d="M0 -4 C -2 -12, -6 -16, -11 -18" />
+    </g>
+    <g class="bramble__fruit bramble__fruit--ripe" transform="translate(110 1152)">
+      <circle cx="0" cy="0" r="4.2" />
+      <circle cx="7.4" cy="1.8" r="4" />
+      <circle cx="3.6" cy="8" r="4" />
+      <circle cx="-3.6" cy="7.2" r="3.8" />
+      <circle cx="-7.2" cy="0.8" r="3.8" />
+      <circle cx="0" cy="6.2" r="3.6" />
+      <path class="bramble__pedicel" d="M0 -4 C 2 -12, 6 -16, 11 -18" />
+    </g>
+  </g>
+</svg>

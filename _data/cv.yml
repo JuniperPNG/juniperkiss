@@ -1,0 +1,881 @@
+# CV content, migrated from the Wix "CV" page.
+# Single source of truth: /cv/ renders entirely from this file.
+#
+# Per entry:
+#   note    - the story behind the bullet points, shown as a margin note
+#   images  - photographs, shown as a strip and openable full size
+#   flag    - country code, see _includes/flag.html
+#   topics  - icon + label chips, see _includes/topic-icon.html
+
+name: Boroka Kiss
+known_as: Juniper Kiss
+nationality: Hungarian
+residency: United Kingdom (since 2014), Australia (since Aug 2022)
+pdf: /assets/documents/juniper-kiss-cv.pdf
+portrait: /assets/cv/juniper-portrait.jpg
+banner: /assets/cv/cv-banner.jpg
+
+tagline: Every now and again, I will be sharing stories behind my CV.
+photo_note: >-
+  I am also an avid photographer — the images are mine, and you can click any of
+  them to see them full size.
+
+profile: >-
+  Trained plant scientist with extensive experience in ecological research and
+  agricultural extension across Australia, the UK, Europe, the USA, Namibia,
+  Nepal, the Philippines, Costa Rica, Tanzania and Papua New Guinea. Passionate
+  about putting research into practice: data, stakeholder engagement, extension
+  and science communication.
+
+skill_groups:
+  - label: People and projects
+    icon: people
+    items:
+      - Stakeholder engagement
+      - Project planning and management
+      - Team leadership
+      - Multi-million dollar research proposal writing
+      - Budget management
+      - Training and workshop delivery
+      - Science communication
+      - Graphic design
+  - label: Science
+    icon: microscope
+    items:
+      - Botany
+      - Plant pathology
+      - Epidemiology
+      - Lab and greenhouse experiments
+      - Literature reviews
+  - label: Analysis
+    icon: map
+    items:
+      - Advanced statistics
+      - Spatial analysis
+      - Remote sensing
+      - GIS (QGIS, ArcGIS)
+      - Google Earth Engine
+      - RShiny app development
+      - AI chatbot building
+      - Data extraction (APIs, Python)
+      - AI and LLMs
+  - label: Engineering
+    icon: code
+    items:
+      - R
+      - Python
+      - SQL
+      - Bash
+      - C++
+      - Julia
+      - MATLAB
+      - Java
+      - JavaScript
+      - HTML
+      - VBA
+      - Git, GitHub and GitLab
+      - HPC
+      - AWS (EC2, AWS Batch)
+      - Google Cloud and BigQuery
+      - Azure
+      - Power BI
+
+education:
+  - dates: 2020–2022
+    title: PhD, University of Southampton
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: soil
+        label: Soil metagenomics
+      - icon: satellite
+        label: Remote sensing
+      - icon: globe
+        label: Papua New Guinea
+    detail: >-
+      NERC-funded INSPIRE Doctoral Training Programme. Running title: "Enhancing
+      ecosystem functioning to improve the resilience of subsistence farming in
+      Papua New Guinea." Suspended in June 2022 after contracting malaria in PNG.
+    points:
+      - Designed and self-funded a PhD project addressing practical challenges in
+        PNG — soil and land management — by combining Planet satellite imagery,
+        GBIF occurrence data, soil shotgun metagenomics, social surveys and
+        nutritional analyses.
+      - Estimated the effect of slash-and-burn agriculture on local biodiversity
+        using high-resolution remote sensing in Google Earth Engine (Java) and
+        Python, combined with a stacked species distribution model across five
+        algorithms.
+      - Designed sweet potato x soil management field trials combining
+        slash-and-burn soil inoculations, bokashi biofertiliser, intercropping and
+        fertiliser treatments to shift soil functioning.
+      - Applied mixed-effects GLMs in R to link functional gene shifts (N- and
+        P-cycling) to yield responses.
+    note: >-
+      I got severe malaria during my fieldwork in PNG — and then saw my own blood
+      smears and parasites!
+    images:
+      - src: /assets/cv/png-plant-id-workshop.jpg
+        alt: A plant identification workshop in Papua New Guinea.
+      - src: /assets/cv/plant-colouring-books-became-very-popular-during-my-phd-fiel.jpg
+        alt: Plant colouring books, which became very popular during my PhD fieldwork in PNG.
+      - src: /assets/cv/second-phd-outline.jpg
+        alt: The outline of my second PhD project.
+
+  - dates: 2019–2020
+    title: MRes (Distinction), University of Bristol, based at the University of Exeter
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: banana
+        label: Bananas
+      - icon: fungus
+        label: Panama disease
+      - icon: data
+        label: Bayesian modelling
+    detail: >-
+      BBSRC-funded SWBio Doctoral Training Programme. Running title: "Preparing
+      for Fusarium wilt of bananas in Latin America." Exited with an MRes with
+      Distinction in September 2020.
+    points:
+      - Enrolled in the SWBio Doctoral Training Programme but exited after one year
+        due to sexual harassment.
+      - Designed and carried out in vitro and greenhouse experiments on the
+        lifecycle of Panama disease (Fusarium oxysporum f. sp. cubense TR4) on
+        bananas, and the effect of banana root exudates on TR4 germination.
+      - Carried out spatial modelling and economic analysis of local banana price
+        shocks in the Philippines caused by extreme weather, using a TV-STAR
+        economic model and an Empirical Orthogonal Teleconnections approach.
+      - Developed a theoretical mathematical model (SIXA) to estimate the
+        reliability of microbial biological control agents against TR4 in the
+        Philippines, suggesting different species and strains at different times of
+        year and in different places.
+      - Ran a Bayesian multi-level meta-analysis in Stan of all biological control
+        agents against banana pests and diseases, showing that in vitro and in vivo
+        trials report much larger effect sizes than field trials.
+    note: >-
+      My supervisor got naked next to me, so I decided to leave my first PhD.
+    images:
+      - src: /assets/cv/first-phd-fusarium-tr4-trials-against-cavendish-bananas.jpg
+        alt: Fusarium TR4 trials against Cavendish bananas.
+      - src: /assets/cv/largest-banana-germplasm-collection-at-ku-lueven.jpg
+        alt: The largest banana germplasm collection, at KU Leuven.
+      - src: /assets/cv/modelling-projects.jpg
+        alt: Output from my modelling projects.
+      - src: /assets/cv/banana-sucker-replantation-in-costa-rica.jpg
+        alt: Banana sucker replantation in Costa Rica.
+
+  - dates: 2017–2019
+    title: BSc (Hons) Plant Biology, First Class — Aberystwyth University, Wales
+    flag: wales
+    country: Wales
+    topics:
+      - icon: bramble
+        label: Bramble taxonomy
+      - icon: leaf
+        label: Plant biology
+    detail: >-
+      Transferred into the second year. Graduated with First Class honours and as
+      Top Student within the university and amongst Royal Society of
+      Biology-accredited courses in the UK.
+    note: >-
+      Nepal changed everything. I was applying to universities to switch to Plant
+      Biology right after I flew back to Cambridge.
+    images:
+      - src: /assets/cv/my-bramble-project-detangled-150-year-old-classification-sys.jpg
+        alt: >-
+          My bramble project untangled a 150-year-old classification system by
+          combining geometric morphometrics with three-loci phylogenetic analysis.
+
+  - dates: 2014–2017
+    title: BSc (Hons) Marine Biology with Biodiversity and Conservation — Anglia Ruskin University, Cambridge
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: globe
+        label: Marine biology
+      - icon: people
+        label: Founded GOES magazine
+    detail: Studied part-time over three years.
+    note: >-
+      I moved to Southampton in 2014 to study Oceanography, but ran out of money
+      before university even started. Family friends put me up in their annexe in
+      Cambridge — which is how I ended up at ARU. I lived in a tent for three
+      summers to save on rent.
+    images:
+      - src: /assets/cv/my-home.jpg
+        alt: My home for three summers — a tent pitched in a field.
+      - src: /assets/cv/goes-magazine-was-my-baby.jpg
+        alt: GOES magazine, which was my "baby".
+      - src: /assets/cv/goes-magazine-page.png
+        alt: A spread from GOES magazine.
+    video: kj9600R_C8w
+    video_label: how GOES magazine started
+
+experience:
+  - role: Global Tree Seed Bank Data Officer
+    org: Royal Botanic Gardens, Kew (Wakehurst, UK)
+    dates: 2025–present
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: seed
+        label: Seed banking
+      - icon: data
+        label: Data warehousing
+      - icon: map
+        label: Species distribution modelling
+    points:
+      - Managing the Millennium Seed Bank Data Warehouse on BRAHMS — reviewing and
+        approving user requests, supporting curators and coordinators, and leading
+        the BRAHMS7 to BRAHMS8 migration.
+      - Optimising and maintaining ICMS/Earthcape to Data Warehouse pipelines in R,
+        Python and SQL, delivering a full plant taxonomy update (POWO backbone
+        matching, synonym resolution, IUCN status prediction, recalcitrance
+        prediction, useful-species categorisation).
+      - Producing clean, analysis-ready datasets and exploratory statistics for GTSB
+        reporting, including data completeness, plant trait coverage, seed viability
+        predictions, germination modelling and priority-species representation.
+      - Developing species distribution modelling workflows (for example in the
+        Dominican Republic) that integrate cleaned occurrence data, environmental
+        rasters and partner expertise to guide targeted in-country seed collecting.
+      - Supporting and training international GTSB partners, regional coordinators
+        and internal colleagues on data standards, templates, taxonomy and
+        reproducible workflows.
+      - Collaborating closely with curators, scientists, IT teams and global partners
+        to ensure plant conservation data are accurate, traceable and fit for
+        decision-making across ex situ and in situ programmes.
+    images:
+      - src: /assets/cv/dominican-republic-species-distribution-modelling.jpg
+        alt: Species distribution modelling output for the Dominican Republic.
+      - src: /assets/cv/brahms-migration.jpg
+        alt: Planning the BRAHMS7 to BRAHMS8 data migration.
+      - src: /assets/cv/example-workflow-that-i-have-developed.jpg
+        alt: An example of a data workflow I developed.
+
+  - role: Technical Advisor
+    org: >-
+      Malaria Atlas Project — Dar es Salaam and Perth nodes, based at Geospatial
+      Health and Development, The Kids Research Institute Australia (Perth, WA)
+    dates: 09/2024–2025
+    flag: tz
+    country: Tanzania and Australia
+    topics:
+      - icon: mosquito
+        label: Malaria
+      - icon: map
+        label: Bayesian geospatial modelling
+      - icon: people
+        label: ECR training
+    points:
+      - Streamlined and revamped scalable global and national Bayesian geospatial
+        workflows (INLA, HBHI) using Posit Workbench on AWS with GitLab CI/CD.
+      - Supported the Global Burden of Disease modelling group by migrating and
+        improving a 42-stage modelling pipeline to AWS — refactoring stages for AWS
+        Batch, optimising parallelisation, shapefile processing, and writing new R
+        packages and tools for data extraction and cleaning.
+      - Developed a new pipeline for geolocating health facilities and DHS/MIS survey
+        clusters using Google Maps APIs, fuzzy matching and machine learning in
+        RShiny apps — directly supporting CHAI, IDEM and NMCPs, and improving
+        programme efficiency in five countries.
+      - Built around 15 robust RShiny apps using asynchronous programming and EC2
+        deployment, both for internal data processing and as stand-alone secure apps
+        for external partners.
+      - Led and designed the first hybrid cohort of the MAP Dar ECR Training and
+        Mentorship Programme to increase research capacity in coding, spatial
+        modelling, communication and leadership in Tanzania and Zambia, with a 100%
+        satisfaction rate across the 10 participants.
+    link: https://juniperpng.github.io/MAP_training/
+    link_label: MAP ECR Training Programme
+    note: >-
+      I designed and led the first hybrid ECR development programme for Tanzanian
+      and Zambian researchers — coding, spatial modelling and leadership.
+    video: ixgiqMiL97Q
+    video_label: welcome to the MAP Dar ECR Programme, Cohort 1
+    images:
+      - src: /assets/cv/example-dhs-and-mis-survey-data-in-tanzania-and-zambia-visua.png
+        alt: A visualisation of DHS and MIS survey data in Tanzania and Zambia.
+      - src: /assets/cv/inla-model-diagnostics.jpg
+        alt: INLA model diagnostics.
+      - src: /assets/cv/lancet-malaria-mapping-paper.jpg
+        alt: The Lancet paper mapping global Plasmodium falciparum and vivax malaria.
+
+  - role: Extension Group Leader
+    org: Department of Industry, Trade and Tourism, Northern Territory Government (Darwin, NT)
+    dates: 09/2023–04/2024
+    flag: au
+    country: Australia
+    topics:
+      - icon: people
+        label: Extension and leadership
+      - icon: leaf
+        label: Horticulture
+      - icon: talk
+        label: Stakeholder engagement
+    points:
+      - Led a team of seven extension officers across Darwin, Katherine and Alice
+        Springs, developed extension capacity for all researchers and supported
+        approximately 38 projects.
+      - Aligned research and extension activities with the Agribusiness Strategy 2030
+        targets in NT plant and livestock industries — engaging producers directly,
+        running stakeholder mapping workshops and developing the NT Extension Strategy.
+      - Supported research staff with field trials (cotton, peanut, grassland
+        management, mango postharvest processing, watermelon soil management, cattle
+        nutrition), coordinating updates and feedback from growers and researchers.
+      - Managed, hired and motivated staff, and maintained professional development
+        pathways including fortnightly team mini-workshops on data, graphic design
+        and social surveys.
+      - Co-developed research proposals (GRDC, MLA, Hort Innovation) totalling
+        AU$2.1m, managed projects and delivered milestones, and presented at field
+        days and international conferences.
+      - Coordinated a CRM database across multiple departments and established a Code
+        of Conduct for stakeholder engagement and record keeping.
+    note: >-
+      Left because of knee surgery and Working Holiday Maker visa limits. My career
+      peaked early.
+    images:
+      - src: /assets/cv/watermelon-trials-had-their-perks.jpg
+        alt: Watermelon trials, which had their perks.
+      - src: /assets/cv/alice-springs-long-term-cattle-grazing-research-station.jpg
+        alt: The long-term cattle grazing research station at Alice Springs.
+      - src: /assets/cv/extension-group-brainstorming-session.jpg
+        alt: An extension group brainstorming session.
+
+  - role: Research Officer
+    org: Geospatial Health and Development, Telethon Kids Institute (Perth, WA)
+    dates: 01/2023–09/2023
+    flag: au
+    country: Australia
+    topics:
+      - icon: mosquito
+        label: Malaria
+      - icon: data
+        label: Spatial statistics
+      - icon: code
+        label: Pipeline engineering
+    points:
+      - Modernised global malaria mapping through database updates (extractions from
+        PDFs, APIs and SQL), led the platform shift from HPC to Posit Workbench, and
+        improved 8 stages of a 42-stage modelling pipeline including the PfPR cube
+        (1.5 TB RAM; improved sensitivity analysis and parallelisation).
+      - Led the spatial analysis of anti-malarial resistance SNPs with Swiss TPH and
+        Novartis, providing intervention targets for new anti-malarial vaccines.
+      - Supported three research projects — including the Gates Foundation
+        Goalkeepers project, treatment delay modelling, severe malaria modelling and
+        seasonality modelling — and contributed to manuscripts including Lancet
+        publications.
+      - Created data visualisations and RShiny apps in RStudio Pro for three
+        research projects, including the Gates Foundation Goalkeepers project.
+    note: >-
+      My application was basically "I had malaria, it was cool, I love data, can I
+      come?" — and they said yes!
+    images:
+      - src: /assets/cv/antimalarial-treatment-outcome-predictions-based-on-resistan.jpg
+        alt: Antimalarial treatment outcome predictions based on resistance genomic data.
+
+  - role: Agricultural Extension, Research and Development Officer
+    org: Liebe Group (Dalwallinu, WA)
+    dates: 08/2022–12/2022
+    flag: au
+    country: Australia
+    topics:
+      - icon: rice
+        label: Broadacre cropping
+      - icon: soil
+        label: Soil management
+      - icon: people
+        label: Working with growers
+    points:
+      - Coordinated and monitored 17 crop trials on farmers' land, funded by different
+        agencies and run with Curtin University, UWA, Murdoch and SoilWest —
+        designing field trials, collecting geolocated soil, plant, pest and weed
+        samples, and recording plant traits.
+      - Wrote progress reports, oversaw two consultants, developed data management
+        plans, and maintained weather stations and soil moisture probes.
+      - Led two successful GRDC tender applications and two GGA applications,
+        totalling up to AU$1.5m.
+      - Developed and executed an outreach plan for growers, policymakers and
+        researchers — three workshops, two field days, articles in Farm Weekly and
+        ten articles in Liebe's annual R&D book.
+      - Led 20 grower surveys on farm data collection and usage, and collected detailed
+        information from 18 paddocks with CSIRO.
+      - Led FullCAM modelling for ACCU/carbon estimation through plantation projects
+        and soil salinity management trials.
+    images:
+      - src: /assets/cv/field-walk-with-farmers-in-canola-trials-in-the-wheatbelt.jpg
+        alt: A field walk with farmers in canola trials in the Wheatbelt.
+      - src: /assets/cv/yuna-fieldtrip-with-growers.jpg
+        alt: A field trip to Yuna with growers.
+      - src: /assets/cv/predicta-b-root-health-samples.jpg
+        alt: Predicta B root health samples.
+
+  - role: Blogger
+    org: Botany One (UK)
+    dates: 04/2020–01/2022
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: pen
+        label: Science writing
+      - icon: bramble
+        label: Brambles
+    points:
+      - Wrote two research summaries per week for a general plant science audience.
+    link: https://www.botany.one/author/juniper/
+    link_label: Botany One archive
+    note: >-
+      I also recorded a video about brambles during lockdown, trying to cheer
+      people up.
+    images:
+      - src: /assets/cv/bramble-plant-day-infographic.jpg
+        alt: My bramble infographic for Fascination of Plants Day.
+      - src: /assets/cv/fusarium-wilt-plant-day-infographic.jpg
+        alt: My Fusarium wilt infographic for Fascination of Plants Day.
+    video: EBUj_BngOik
+    video_label: my lockdown video about brambles
+
+  - role: Social Media and Digital Communications Assistant
+    org: American Society of Plant Biologists (remote)
+    dates: 02/2018–09/2019
+    flag: us
+    country: United States
+    topics:
+      - icon: talk
+        label: Science communication
+      - icon: pen
+        label: Podcast and design
+    points:
+      - Managed multi-platform social media channels (Plantae, ASPB and The Taproot on
+        Twitter, Facebook and Instagram) using Buffer, reaching 2–4 million
+        impressions within six months.
+      - Edited and helped produce the award-winning Taproot podcast in Adobe.
+      - Developed in-house ASPB and Plantae graphic templates in Lucidpress.
+      - Built digital community engagement on the Plantae platform through blogs and
+        competitions (logo design, plant puns, Fascination of Plants Day
+        infographics), and workshops, webinars and podcasts.
+    images:
+      - src: /assets/cv/edited-the-taproot-podcast-and-promoted-it.png
+        alt: The Taproot podcast, which I edited and promoted.
+      - src: /assets/cv/established-the-plantae-brand-and-design.png
+        alt: The Plantae brand and design system I established.
+
+  - role: Field Trials Technician and Team Leader
+    org: NIAB (Cambridge, UK)
+    dates: 08/2015–12/2016
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: rice
+        label: Crop variety trials
+      - icon: people
+        label: Team leadership
+    points:
+      - Implemented crop variety Distinctness, Uniformity and Stability trials
+        (oilseed rape, cereals, pulses, grasses) to EU standards.
+      - Coordinated daily off-site data collection from 5,000 plots and image analysis
+        of oilseed rape petals, pods and cotyledons on a £1.2m project.
+      - Delivered the project three weeks ahead of the DEFRA deadline by optimising
+        the sample processing pipeline.
+      - Trained new staff, supervised 10 temporary technicians, and liaised with the
+        project, technical and farm managers.
+      - Maintained the Long Term Seed Storage facility of crop varieties, processed new
+        samples and prepared drilling plans.
+      - Visited farms as a certified Crop Inspector for oilseed rape, cereals,
+        grasses, legumes and potatoes.
+    images:
+      - src: /assets/cv/crop-veriaty-trials-included-recroding-approximately-20-seed.jpg
+        alt: >-
+          Crop variety trials, which included recording around 20 seed
+          characteristics of cereals.
+
+  - role: Summer Research Technician
+    org: CABI (Egham, UK)
+    dates: 06/2015–08/2015 and 06/2013–08/2013
+    flag: gb
+    country: United Kingdom
+    topics:
+      - icon: insect
+        label: Biological control
+      - icon: leaf
+        label: Invasive plants
+    points:
+      - Ran multiple-choice experiments testing arthropod biocontrol agents against
+        invasive plants (Fallopia japonica, Hydrocotyle ranunculoides, Azolla filiculoides).
+      - Maintained over 1,000 invasive and native plants plus arthropod populations
+        (psyllids, weevils) in greenhouse facilities.
+      - Maintained Level 2 and Level 3 quarantine facilities to standard operating procedures.
+    images:
+      - src: /assets/cv/trialling-psyllids-as-biocontrol-agents-against-the-invasive.jpg
+        alt: Trialling psyllids as biocontrol agents against invasive Japanese knotweed.
+
+  - role: Independent undergraduate research
+    org: Anglia Ruskin University and Aberystwyth University
+    dates: 2017–2019
+    flag: gb
+    country: United Kingdom and Hungary
+    topics:
+      - icon: bramble
+        label: Rubus taxonomy
+      - icon: microscope
+        label: Geometric morphometrics
+      - icon: flask
+        label: Phylogenetics
+    points:
+      - Designed and carried out an independent research project on British bramble taxonomy.
+      - Collected over 150 bramble leaves from contrasting UK ecosystems and used
+        image analysis (ImageJ) for geometric morphometrics (MorphoJ and R).
+      - Extracted leaf tissue DNA and ran three-loci PCR at Eötvös Loránd University,
+        Budapest, for phylogenetic analysis.
+      - Completed the Introduction to Geometric Morphometrics intensive course by
+        Transmitting Science.
+      - Developed a bramble cane propagation protocol using woody canes — a first in the UK.
+      - Won multiple awards including the Royal Society of Biology Top BSc Project Award.
+    note: >-
+      My supervisors told me NOT to work on brambles, so I HAD to work on
+      brambles...
+    images:
+      - src: /assets/cv/bramble-cane-propagation-protocol.jpg
+        alt: >-
+          Stages of the bramble cane propagation protocol I developed, from cut
+          canes to rooted plants.
+
+  - role: C. Roy Adair Scholar
+    org: University of Arkansas (Fayetteville, USA)
+    dates: 2018
+    flag: us
+    country: United States
+    topics:
+      - icon: pathogen
+        label: Downy mildew
+      - icon: flask
+        label: Molecular plant pathology
+    points:
+      - Ten-week internship in the Plant Pathology Department on downy mildew
+        resistance in baby spinach, including primer design, virus-induced gene
+        silencing and spinach tissue culture.
+      - Isolated and identified plant pathogens from California, carried out
+        pathogenicity testing, DNA extraction and PCR of downy mildew strains, and
+        VCG testing of Fusarium isolates from cilantro and celery.
+      - Carried out spore viability trials with different Peronospora strains and
+        viability stains.
+      - Created nitrogen non-utilising (nit) Fusarium mutants to explore population
+        diversity.
+      - Diagnosed spinach and cilantro fields in California and visited blackberry and
+        raspberry breeding stations.
+    note: >-
+      Summer of 2018: I flew AROUND THE GLOBE on two grants — London to Arkansas,
+      then Vancouver, then Manila, then Doha, then Ireland!
+    images:
+      - src: /assets/cv/working-on-spinach-farms-in-california.jpg
+        alt: Working on spinach farms in California.
+      - src: /assets/cv/plant-pathogen-isolations.jpg
+        alt: Plant pathogen isolations in the lab.
+      - src: /assets/cv/c-roy-adair-scholarship.jpg
+        alt: The C. Roy Adair Scholarship.
+
+work_history:
+  - role: Administration Assistant
+    org: Powdery Mildew Summer School, Eszterházy Károly University (Hungary)
+    dates: 08/2017–09/2017 and 06/2014–08/2014
+    flag: hu
+  - role: Catering Assistant
+    org: National Trust, Anglesey Abbey (UK)
+    dates: 09/2014–06/2015
+    flag: gb
+
+volunteering:
+  - dates: 06/2024–present
+    title: Friends of Kings Park Volunteer, Plant Development Team
+    flag: au
+  - dates: 09/2019–06/2021
+    title: Committee Member and Secretary, SCI Horticulture and Agrifood ECR groups
+    flag: gb
+  - dates: 08/2019–08/2020
+    title: ASAPbio Ambassador
+    flag: us
+  - dates: 04/2019–05/2020
+    title: eLife Community Ambassador
+    flag: gb
+  - dates: 02/2017–02/2018
+    title: ASPB Conviron Scholar
+    flag: us
+  - dates: 07/2017–08/2018
+    title: Steering Committee member, New Networks for Nature
+    flag: gb
+  - dates: 02/2017–08/2017
+    title: Executive Committee member, Cambridge Conservation Forum
+    flag: gb
+  - dates: 09/2016–06/2018
+    title: Executive Committee member, ARU Wildlife Society
+    flag: gb
+
+awards:
+  - year: 2025
+    title: AMMNet Small Event Award ($3,000)
+    flag: tz
+    detail: >-
+      Hosting "From Data to Decisions: Empowering Early Career Researchers in
+      Spatial Modelling and Malaria Control" in Dar es Salaam, Tanzania.
+  - year: 2022
+    title: Royal Geographical Society (with IBG) Postgraduate Research Grant (£500)
+    flag: pg
+    detail: Swidden agriculture meets new soil metagenomics approaches in Papua New Guinea.
+  - year: 2021
+    title: Judith Heath Explorer for Botany and Research, Scientific Exploration Society (£5,250)
+    flag: pg
+    detail: A "sweet potato hunt" along Mt Wilhelm, Papua New Guinea.
+    images:
+      - src: /assets/cv/ses-explorer-award.jpg
+        alt: Receiving the Scientific Exploration Society Explorer Award.
+  - year: 2021
+    title: NEOF Early Career Pilot Scheme (£10,000)
+    flag: pg
+    detail: >-
+      Soil shotgun metagenomic sequencing of the swidden agricultural cycle and
+      experimental sweet potato gardens.
+  - year: 2021
+    title: Heredity Fieldwork Grant, Genetics Society (£1,500)
+    flag: pg
+    detail: Soil functioning during the swidden agricultural cycle in Papua New Guinea.
+  - year: 2021
+    title: British Society for Plant Pathology Junior Fellowship (£3,000)
+    flag: pg
+    detail: >-
+      PhD fieldwork on the relationship between community plant pathogen load and
+      crop species richness in Papua New Guinea.
+  - year: 2021
+    title: Tropical Agriculture Association Standard Award (£2,000)
+    flag: pg
+    detail: PhD fieldwork establishing experimental gardens in Papua New Guinea.
+  - year: 2020
+    title: Nelson Yield-Limiting Factors Graduate Student Scholarship ($3,000)
+    flag: us
+    detail: American Society of Agronomy, Crop Science Society and Soil Science Society.
+  - year: 2020
+    title: Featured in the "Top 20 Under 30" list, Seed World Magazine
+    flag: us
+    images:
+      - src: /assets/cv/featured-in-the-top-20-under-30-feautre-by-seed-world-magazi.jpg
+        alt: Featured in the "Top 20 Under 30" list by Seed World Magazine.
+  - year: 2019
+    title: Royal Society of Biology Top Student Award
+    flag: gb
+  - year: 2019
+    title: Royal Society of Biology Top Project Award for a BSc Student on an RSB-accredited scheme
+    flag: gb
+  - year: 2019
+    title: Stapledon Society Prize
+    flag: wales
+    detail: For the highest mark of any IBERS Bachelor of Science degree.
+  - year: 2019
+    title: David Miller Award, Society of Chemical Industry (£500)
+    flag: us
+    detail: Attended the CORBANA International Banana Congress in Miami.
+  - year: 2019
+    title: Travel Award, sponsored by Corteva ($500)
+    flag: us
+    detail: To present at the Plant Sciences Symposium, University of Minnesota.
+  - year: 2018
+    title: "'Best Presenter' Award, Young Systematists Forum, Natural History Museum, London"
+    flag: gb
+    detail: >-
+      For "Phylogenetic signal in subgenus Rubus (brambles, blackberries) leaflet
+      shape using geometric morphometrics".
+  - year: 2018
+    title: Agronomic Travel Study Undergraduate Scholarship ($5,000)
+    flag: ph
+    detail: >-
+      American Society of Agronomy — a three-week intensive "Rice: Research to
+      Production" course at IRRI, Los Baños, Philippines.
+    images:
+      - src: /assets/cv/planting-rice-at-irri-in-the-philippines.jpg
+        alt: Planting rice at IRRI in the Philippines.
+  - year: 2018
+    title: C. Roy Adair Scholar, University of Arkansas ($5,600)
+    flag: us
+    detail: >-
+      A ten-week internship with Prof Jim Correll on downy mildew resistance in
+      spinach and plant-pathogen diagnosis.
+  - year: 2018
+    title: Phenome Travel Grant ($2,000)
+    flag: us
+    detail: >-
+      Poster and lightning talk on "Revisiting subgenus Rubus (blackberries)
+      taxonomy with the combination of geometric morphometrics and molecular
+      methods" at the Phenome Conference, Tucson.
+  - year: 2017
+    title: Conviron Scholarship, ASPB
+    flag: us
+    detail: >-
+      A hands-on virtual learning programme of career seminars, round tables and
+      workshops, mentored by Prof Sarah Wyatt. Built whystudyplants.com as part of it.
+  - year: 2017
+    title: Anglia Trust Foundation Scholarship (£750)
+    flag: np
+    detail: >-
+      Four weeks visiting the Plant Protection Directorate (Ministry of
+      Agricultural Development) and CABI in Nepal to learn about agricultural extension.
+    note: >-
+      Nepal changed everything. I was applying to universities to switch to Plant
+      Biology right after I flew back to Cambridge.
+    images:
+      - src: /assets/cv/living-with-farmers-in-nepal-and-then-working-with-the-minis.jpg
+        alt: >-
+          Living with farmers in Nepal, and then working with the Ministry of
+          Agriculture and Plantwise.
+      - src: /assets/cv/plantwise-plant-clinic-at-a-church-in-costa-rica.jpg
+        alt: A Plantwise plant clinic held at a church in Costa Rica.
+      - src: /assets/cv/rhizoctonia-investigation-at-a-plantwise-plant-clinic-in-nep.jpg
+        alt: A Rhizoctonia investigation at a Plantwise plant clinic in Nepal.
+      - src: /assets/cv/travelled-around-indonesia-looking-at-farms.jpg
+        alt: Travelling around Indonesia, looking at farms.
+  - year: 2017
+    title: The Big Pitch, Anglia Ruskin University (£1,000)
+    flag: gb
+    detail: A start-up competition with a year of mentorship, leadership coaching and a business planning boot camp.
+  - year: 2017
+    title: "'Be the Change' grant, Global Sustainability Institute (£1,000)"
+    flag: gb
+    detail: Incorporating GOES magazine's structure into the curriculum.
+    note: >-
+      I ran a mini-module where every student got cake or chocolate for asking a
+      question, and everyone got to design their own website and business cards.
+  - year: 2017
+    title: Andy Wilson Bursary, Anglia Ruskin University (£1,000)
+    flag: gb
+    detail: Start-up costs for GOES magazine.
+  - year: 2017
+    title: John Ray Summer Research Grant (£500)
+    flag: gb
+    detail: >-
+      Independent research on blackberry taxonomy combining image analysis with
+      molecular methods.
+  - year: 2016
+    title: Golden Opportunities Scholar ($2,200)
+    flag: us
+    detail: American Society of Agronomy — travel to the ASA, CSSA and SSSA annual meeting in Phoenix, Arizona.
+  - year: 2016
+    title: Anglia Trust Foundation Scholarship (£560)
+    flag: fi
+    detail: >-
+      Two weeks at Konnevesi Research Station, University of Jyväskylä, Finland,
+      completing the Boreal Winter Methods in Community Ecology course.
+    note: I fell in love with statistics here.
+    images:
+      - src: /assets/cv/winter-ecology-school-at-jyvaskyla-university.jpg
+        alt: The Winter Ecology School at Jyväskylä University.
+  - year: 2015
+    title: Anglia Trust Foundation Scholarship (£750)
+    flag: na
+    detail: >-
+      Ten weeks in the Namib Desert at Kuzikus Nature Reserve — vegetation surveys,
+      animal population counts and small mammal trapping.
+    images:
+      - src: /assets/cv/moth-sample-preparation-in-namibia.jpg
+        alt: Preparing moth samples in Namibia.
+      - src: /assets/cv/springbok-midair-in-namibia.jpg
+        alt: A springbok caught mid-air in Namibia.
+
+presentations:
+  - year: 2020
+    title: "Biocontrols against banana pests and diseases: a Bayesian meta-analysis"
+    flag: us
+    country: ASA-CSSA-SSSA Annual Meeting
+    topics:
+      - icon: banana
+        label: Bananas
+      - icon: data
+        label: Meta-analysis
+    detail: >-
+      Second place, student poster and five-minute rapid-fire presentation.
+  - year: 2020
+    title: "Biocontrols against banana pests and diseases: a Bayesian meta-analysis"
+    flag: au
+    country: Sustainable Agronomy Conference
+    topics:
+      - icon: talk
+        label: Conference talk
+    detail: Second place, student presentation.
+    note: I recorded this one for the Sustainable Agronomy Conference in 2020.
+    images:
+      - src: /assets/cv/presentation-about-biocontrols.jpg
+        alt: Presenting about biological controls.
+    video: 7l-g6VP-16k
+    video_label: the recorded conference talk
+  - year: 2018
+    title: Phylogenetic signal in subgenus Rubus leaflet shape using geometric morphometrics
+    flag: gb
+    country: Young Systematists Forum, Natural History Museum, London
+    topics:
+      - icon: bramble
+        label: Rubus
+      - icon: microscope
+        label: Morphometrics
+    detail: "'Best Presenter' award (£100)."
+  - year: 2018
+    title: >-
+      Revisiting subgenus Rubus (blackberries) taxonomy with the combination of
+      geometric morphometrics and molecular methods
+    flag: us
+    country: Phenome Conference, Tucson, AZ
+    topics:
+      - icon: bramble
+        label: Rubus
+      - icon: microscope
+        label: Morphometrics
+    detail: Poster and lightning talk. Phenome Travel Grant ($2,000).
+  - year: 2017
+    title: Can bramble taxonomy rely on leaf morphology?
+    flag: hu
+    country: XIV Hungarian Plant Anatomy Symposium, Eötvös Loránd University, Budapest
+    topics:
+      - icon: bramble
+        label: Bramble taxonomy
+    detail: Poster presentation.
+  - year: 2016
+    title: Three-way systems and their application in biological control agent testing at CABI
+    flag: fi
+    country: Konnevesi Research Station, University of Jyväskylä
+    topics:
+      - icon: insect
+        label: Biological control
+    detail: >-
+      Invited speaker at "Megadiverse communities — from patterns to explanations".
+
+writing:
+  - label: Botany One — two blogs per week
+    url: https://www.botany.one/author/juniper/
+  - label: Ethnobiologists consider their impact during and after the COVID-19 pandemic
+    url: https://www.botany.one/2020/06/ethnobiologists-consider-their-impact-during-and-after-the-covid-19-pandemic/
+  - label: >-
+      Volatiles as inducers and suppressors of plant defense and immunity —
+      origins, specificity, perception, and signaling (Current Opinion in Plant
+      Biology)
+    url: https://plantae.org/research/what-were-reading-this-week/volatiles-as-inducers-and-suppressors-of-plant-defense-and-immunity-origins-specificity-perception-and-signaling-current-opinion-in-plant-biology/
+  - label: Large-scale phylogenomic analysis resolves a backbone phylogeny in ferns (GigaScience)
+    url: https://plantae.org/research/what-were-reading-this-week/large-scale-phylogenomic-analysis-resolves-a-backbone-phylogeny-in-ferns-gigascience/
+  - label: New study sheds more light on the mycoparasitic interaction between powdery mildew and Ampelomyces (BSPP)
+    url: https://www.bspp.org.uk/new-study-sheds-more-light-on-mycoparasitic-interaction-between-powdery-mildew-and-ampelomyces/
+  - label: "Fascination of Plants Day: a collection of planty infographics"
+    url: https://community.plantae.org/article/5252095412172490516/fascination-of-plants-day
+  - label: "Taproot S4E1: Identifying the principal components"
+    url: https://plantae.org/blog/taproot-s4e1-identifying-the-principle-components-gender-dimorphism-in-flowers-and-consciously-building-a-happy-and-rewarding-career-in-science/
+  - label: GOES magazine, issue 5 (October 2017)
+    url: https://www.goesmagazine.org/issue-5-oct-17
+  - label: "Science journalism career path: the story of a features editor at Nature"
+    url: https://community.plantae.org/article/4829068054681880542/science-journalism-career-path
+  - label: "Flies can be pollen thieves but plants deal with them (Botany One, 2021)"
+    url: https://www.botany.one/flies-can-be-pollen-thieves-but-plants-deal-with-them/
+  - label: "Fascination of Fruits and Vegetables (Botany One, 2021)"
+    url: https://www.botany.one/fascination-of-fruits-and-vegetables/
+  - label: >-
+      The bright side of Facebook: users catalogue rare plant species in Italy
+      (Botany One, 2021)
+    url: https://www.botany.one/the-bright-side-of-facebook-users-catalogue-rare-plant-species-in-italy/
+  - label: >-
+      No need for orchids: mycorrhizal fungi do not depend on their hosts in
+      Australia (Botany One, 2021)
+    url: https://www.botany.one/no-need-for-orchids-mycorrhizal-fungi-do-not-depend-on-their-hosts-in-australia/
+  - label: >-
+      Most Australian shrubs have "sleepy seeds" and seed dormancy types might be
+      driven by rainfall seasonality (Botany One, 2021)
+    url: https://www.botany.one/most-australian-shrubs-have-sleepy-seeds-and-seed-dormancy-types-might-be-driven-by-rainfall-seasonality/

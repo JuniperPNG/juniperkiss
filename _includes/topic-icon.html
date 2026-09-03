@@ -1,0 +1,84 @@
+{%- comment -%}
+  Line icons for the subject of a role: plants, diseases, data, people.
+  Decorative — the topic label is always printed beside the icon (SC 1.1.1).
+
+  Usage: {% include topic-icon.html name="bramble" %}
+{%- endcomment -%}
+{%- assign n = include.name -%}
+<svg class="topic-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor"
+     stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+     aria-hidden="true" focusable="false" role="presentation">
+  {%- case n -%}
+
+  {%- when "bramble" -%}
+    <path d="M3 17c4-1 6-4 7-8"/><path d="M10 9c2-3 5-4 7-3-1 3-4 5-7 3z"/>
+    <path d="M6 13l2-1M5.5 15.5l-2 0.5"/><circle cx="6" cy="6" r="1.6"/><circle cx="8.6" cy="4.6" r="1.6"/><circle cx="7.4" cy="3" r="1.4"/>
+
+  {%- when "leaf" -%}
+    <path d="M4 16c0-7 4-11 12-12 1 8-3 13-12 12z"/><path d="M4 16C7 12 10 9 15 6"/>
+
+  {%- when "seed" -%}
+    <path d="M10 3c4 2 5 7 3 10-3 4-8 3-9-1-1-4 2-8 6-9z"/><path d="M10 16V8"/><path d="M10 11l3-2"/>
+
+  {%- when "tree" -%}
+    <path d="M10 17v-5"/><path d="M10 12c-4 0-6-2-6-5s3-5 6-5 6 2 6 5-2 5-6 5z"/><path d="M7 17h6"/>
+
+  {%- when "banana" -%}
+    <path d="M4 6c0 6 4 10 10 10 2 0 3-1 3-2-5 0-9-4-9-9 0-1-1-2-2-2S4 4 4 6z"/>
+
+  {%- when "rice" -%}
+    <path d="M10 17V6"/><path d="M10 8c-3 0-5-2-5-4 3 0 5 1 5 4z"/><path d="M10 8c3 0 5-2 5-4-3 0-5 1-5 4z"/><path d="M10 12c-3 0-4-2-4-3 2 0 4 1 4 3z"/>
+
+  {%- when "fungus" -%}
+    <path d="M3 9c0-3.5 3-6 7-6s7 2.5 7 6z"/><path d="M8 9v4c0 2 1 4 2 4s2-2 2-4V9"/><circle cx="7" cy="6.5" r="0.9"/><circle cx="12.5" cy="6" r="0.9"/>
+
+  {%- when "pathogen" -%}
+    <circle cx="10" cy="10" r="4.2"/><path d="M10 3.5v2M10 14.5v2M3.5 10h2M14.5 10h2M5.4 5.4l1.4 1.4M13.2 13.2l1.4 1.4M14.6 5.4l-1.4 1.4M6.8 13.2l-1.4 1.4"/>
+
+  {%- when "mosquito" -%}
+    <path d="M10 8v7"/><path d="M10 15l-2 2M10 15l2 2"/><path d="M10 9C7 5 4 4 2 5c1 3 4 4 8 4z"/><path d="M10 9c3-4 6-5 8-4-1 3-4 4-8 4z"/><circle cx="10" cy="7" r="1.4"/>
+
+  {%- when "insect" -%}
+    <ellipse cx="10" cy="11" rx="2.6" ry="4.5"/><path d="M7.4 8C5 6 4 4 4.5 3c2 0 4 2 4.6 4.4M12.6 8C15 6 16 4 15.5 3c-2 0-4 2-4.6 4.4"/><path d="M10 4.5V6"/><path d="M8.8 3.4L10 4.5l1.2-1.1"/>
+
+  {%- when "data" -%}
+    <path d="M3 16h14"/><rect x="4" y="9" width="3" height="6"/><rect x="9" y="5" width="3" height="10"/><rect x="14" y="11" width="3" height="4"/>
+
+  {%- when "map" -%}
+    <path d="M3 5l4.5-2 5 2L17 3v12l-4.5 2-5-2L3 17z"/><path d="M7.5 3v12M12.5 5v12"/>
+
+  {%- when "satellite" -%}
+    <circle cx="10" cy="10" r="3"/><path d="M10 3v1.6M10 15.4V17M3 10h1.6M15.4 10H17"/><ellipse cx="10" cy="10" rx="7.5" ry="3.2" transform="rotate(-30 10 10)"/>
+
+  {%- when "code" -%}
+    <path d="M7 6l-4 4 4 4M13 6l4 4-4 4"/>
+
+  {%- when "microscope" -%}
+    <path d="M5 17h11"/><path d="M8 17c-2-1-3-3-3-5 0-3 2-5 5-5"/><path d="M10 4l4 4-2 2-4-4z"/><path d="M12 12l2 2"/><path d="M11 17h5"/>
+
+  {%- when "people" -%}
+    <circle cx="7.5" cy="7" r="2.4"/><path d="M3 16c0-2.6 2-4.2 4.5-4.2S12 13.4 12 16"/><circle cx="14" cy="8" r="2"/><path d="M13 12c2.4 0 4 1.5 4 4"/>
+
+  {%- when "talk" -%}
+    <path d="M3 4h14v9H9l-4 3v-3H3z"/><path d="M6.5 8.5h7"/><path d="M6.5 5.8h4"/>
+
+  {%- when "pen" -%}
+    <path d="M4 16l1-3.5L13.5 4a1.8 1.8 0 012.5 2.5L7.5 15z"/><path d="M12 5.5L14.5 8"/>
+
+  {%- when "camera" -%}
+    <rect x="2.5" y="5.5" width="15" height="10" rx="1.6"/><circle cx="10" cy="10.5" r="3"/><path d="M7 5.5l1.2-2h3.6l1.2 2"/>
+
+  {%- when "soil" -%}
+    <path d="M3 8h14"/><path d="M3 8v7c0 1 1 2 2 2h10c1 0 2-1 2-2V8"/><path d="M10 8V3"/><path d="M10 5c-2 0-3-1-3-2 2 0 3 1 3 2z"/><path d="M6 12h1M9.5 13h1M13 11.5h1"/>
+
+  {%- when "flask" -%}
+    <path d="M8 3v5L4 15c-.6 1 .1 2 1.2 2h9.6c1.1 0 1.8-1 1.2-2L12 8V3"/><path d="M7 3h6"/><path d="M6 12h8"/>
+
+  {%- when "globe" -%}
+    <circle cx="10" cy="10" r="7"/><path d="M3 10h14"/><ellipse cx="10" cy="10" rx="3" ry="7"/>
+
+  {%- else -%}
+    <circle cx="10" cy="10" r="6.5"/>
+
+  {%- endcase -%}
+</svg>

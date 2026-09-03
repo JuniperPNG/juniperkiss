@@ -1,97 +1,185 @@
 ---
 layout: default
 title: CV
-description: Curriculum Vitae of Juniper Kiss — Designer & Developer.
+description: >-
+  The stories behind the CV of Juniper Kiss — plant scientist, geospatial data
+  specialist and agricultural extension officer, with work across the UK,
+  Australia, Europe, the USA, Namibia, Nepal, the Philippines, Costa Rica,
+  Tanzania and Papua New Guinea.
 ---
-<header class="hero">
-  <h1>Curriculum Vitae</h1>
-  <p class="subtitle">Juniper Kiss &mdash; Designer &amp; Developer</p>
-</header>
+{%- assign cv = site.data.cv -%}
 
-<main>
+<div class="shell">
+  <header class="cv-header">
+    <div class="cv-header__text">
+      <p class="section__eyebrow">Curriculum vitae</p>
+      <h1>{{ cv.known_as }}</h1>
+      <p class="cv-header__tagline">{{ cv.tagline }}</p>
+      <p class="lede">{{ cv.profile }}</p>
+      <dl class="cv-header__facts">
+        <dt>Legal name</dt><dd>{{ cv.name }}</dd>
+        <dt>Nationality</dt><dd>{% include flag.html code="hu" %}{{ cv.nationality }}</dd>
+        <dt>Residency</dt><dd>{{ cv.residency }}</dd>
+      </dl>
+      <p class="cv-header__actions">
+        <a class="btn btn--primary" href="{{ cv.pdf }}" download>Download the CV (PDF)</a>
+      </p>
+    </div>
+    {%- if cv.portrait %}
+    <img class="cv-header__portrait" src="{{ cv.portrait }}"
+         alt="An illustrated portrait of Juniper Kiss." width="220" height="220"
+         decoding="async" />
+    {%- endif %}
+  </header>
 
-  <section>
-    <h2>Experience</h2>
+  <p class="callout callout--photo">
+    <span class="callout__icon" aria-hidden="true">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2.5 6.5h3l1.5-2h6l1.5 2h3v9h-15z"/><circle cx="10" cy="11" r="3"/>
+      </svg>
+    </span>
+    {{ cv.photo_note }}
+  </p>
+</div>
 
-    <div class="cv-entry">
-      <div class="role">Senior Product Designer</div>
-      <div class="org-date">
-        <span>Acme Corp &mdash; Remote</span>
-        <span>2022 &ndash; Present</span>
-      </div>
-      <div class="desc">
-        <ul>
-          <li>Led end-to-end design for core SaaS product used by 50k+ customers.</li>
-          <li>Established a company-wide design system, reducing development time by 30%.</li>
-          <li>Collaborated closely with engineering and product teams in an agile environment.</li>
+<section class="section section--alt" aria-labelledby="skills">
+  <div class="shell">
+    <p class="section__eyebrow">Skills</p>
+    <h2 id="skills">What I actually do</h2>
+    <div class="card-grid" style="margin-top: var(--space-xl)">
+      {%- for group in cv.skill_groups %}
+      <div class="card">
+        <h3 class="card__title">
+          {%- if group.icon %}{% include topic-icon.html name=group.icon %}{% endif -%}
+          {{ group.label }}
+        </h3>
+        <ul class="tag-list" style="margin-top: var(--space-2xs)">
+          {%- for item in group.items %}
+          <li class="tag">{{ item }}</li>
+          {%- endfor %}
         </ul>
       </div>
+      {%- endfor %}
     </div>
+  </div>
+</section>
 
-    <div class="cv-entry">
-      <div class="role">UI Developer</div>
-      <div class="org-date">
-        <span>Studio Bright &mdash; London, UK</span>
-        <span>2019 &ndash; 2022</span>
-      </div>
-      <div class="desc">
-        <ul>
-          <li>Built accessible, responsive front-ends for agency clients across media and e-commerce.</li>
-          <li>Introduced component-driven development practices using React and Storybook.</li>
-        </ul>
-      </div>
+<section class="section" aria-labelledby="education">
+  <div class="shell">
+    <p class="section__eyebrow">University education</p>
+    <h2 id="education">Where I studied, and why I kept moving</h2>
+    <div class="entries">
+      {%- for item in cv.education %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endfor %}
     </div>
+  </div>
+</section>
 
-    <div class="cv-entry">
-      <div class="role">Junior Web Designer</div>
-      <div class="org-date">
-        <span>Freelance</span>
-        <span>2017 &ndash; 2019</span>
-      </div>
-      <div class="desc">
-        <ul>
-          <li>Designed and delivered websites for small businesses and independent creators.</li>
-          <li>Handled full project lifecycle from brief to launch.</li>
-        </ul>
-      </div>
+<section class="section section--alt" aria-labelledby="experience">
+  <div class="shell">
+    <p class="section__eyebrow">Work experience</p>
+    <h2 id="experience">The jobs, and what happened in them</h2>
+    <div class="entries">
+      {%- for item in cv.experience %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endfor %}
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Education</h2>
-
-    <div class="cv-entry">
-      <div class="role">BA (Hons) Graphic Design</div>
-      <div class="org-date">
-        <span>University of the Arts London</span>
-        <span>2014 &ndash; 2017</span>
-      </div>
-      <div class="desc">First-class honours. Dissertation on typographic systems in digital interfaces.</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Figma</li>
-      <li>HTML &amp; CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>TypeScript</li>
-      <li>Design Systems</li>
-      <li>User Research</li>
-      <li>Accessibility (WCAG)</li>
-      <li>Git</li>
+{%- if cv.work_history %}
+<section class="section" aria-labelledby="work-history">
+  <div class="shell shell--reading">
+    <h2 id="work-history">Everything else</h2>
+    <ul class="plain-list">
+      {%- for item in cv.work_history %}
+      <li class="plain-list__item">
+        <span class="plain-list__title">
+          {%- if item.flag %}{% include flag.html code=item.flag %}{% endif -%}
+          {{ item.role }}
+        </span>
+        <span class="plain-list__detail">{{ item.org }}</span>
+        <span class="plain-list__dates">{{ item.dates }}</span>
+      </li>
+      {%- endfor %}
     </ul>
-  </section>
+  </div>
+</section>
+{%- endif %}
 
-  <section>
-    <h2>Contact</h2>
+<section class="section section--alt" aria-labelledby="volunteering">
+  <div class="shell shell--reading">
+    <h2 id="volunteering">Volunteering</h2>
+    <ul class="plain-list">
+      {%- for item in cv.volunteering %}
+      <li class="plain-list__item">
+        <span class="plain-list__title">
+          {%- if item.flag %}{% include flag.html code=item.flag %}{% endif -%}
+          {{ item.title }}
+        </span>
+        <span class="plain-list__dates">{{ item.dates }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="awards">
+  <div class="shell">
+    <h2 id="awards">Scholarships and awards</h2>
+    <div class="entries entries--compact">
+      {%- for item in cv.awards %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="presentations">
+  <div class="shell">
+    <h2 id="presentations">Main presentations</h2>
+    <div class="entries entries--compact">
+      {%- for item in cv.presentations %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="writing">
+  <div class="shell shell--reading">
+    <p class="section__eyebrow">Writing examples</p>
+    <h2 id="writing">Things I have written</h2>
+    <ul class="plain-list">
+      {%- for item in cv.writing %}
+      <li class="plain-list__item">
+        <span class="plain-list__title">
+          {%- include topic-icon.html name="pen" -%}
+          <a href="{{ item.url }}"{% unless item.url contains '/post/' %} rel="noopener"{% endunless %}>{{ item.label }}</a>
+        </span>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    {% include cane-rule.html %}
+
     <p>
-      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-      &nbsp;&middot;&nbsp;
-      <a href="{{ site.url }}">{{ site.url | remove: "https://" }}</a>
+      <a class="btn btn--secondary" href="{{ cv.pdf }}" download>Download the CV (PDF)</a>
     </p>
-  </section>
+  </div>
+</section>
 
-</main>
+<dialog class="lightbox" id="lightbox" aria-label="Enlarged photograph">
+  <button class="lightbox__close" type="button" aria-label="Close photograph">
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <path d="M5 5l10 10M15 5L5 15"/>
+    </svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__image" src="" alt="" />
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</dialog>
+<script src="{{ '/assets/js/lightbox.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/video-embed.js' | relative_url }}" defer></script>

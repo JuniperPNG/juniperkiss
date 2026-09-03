@@ -1,29 +1,38 @@
 ---
 layout: default
 title: Blog
-description: Writing on design, development, and the web.
+description: >-
+  A personal blog: the stories behind the CV, scholarships, fieldwork, brambles,
+  bananas and the science community.
 ---
-<header class="hero">
-  <h1>Blog</h1>
-  <p class="subtitle">Writing on design, development, and the web.</p>
-</header>
 
-<main>
-  {% if site.posts.size > 0 %}
-  <section>
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li class="post-item">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% if post.description %}<p class="post-excerpt">{{ post.description }}</p>{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% else %}
-  <section>
-    <p>No posts yet — check back soon.</p>
-  </section>
-  {% endif %}
-</main>
+<div class="shell shell--reading">
+  <header class="post-header">
+    <p class="section__eyebrow">Blog</p>
+    <h1>Stories behind the CV</h1>
+    <p class="lede">
+      Personal writing. Professional writing examples are listed on
+      <a href="/cv/#writing">my CV</a>. New posts are rare —
+      <a href="/feed.xml">subscribe by RSS</a> if you want them.
+    </p>
+  </header>
+
+  <ul class="post-list">
+    {%- for post in site.posts %}
+    <li class="post-card">
+      <div class="post-card__thumb">
+        {%- if post.image %}
+        <img src="{{ post.image }}" alt="" width="480" height="360" loading="lazy" decoding="async" />
+        {%- endif %}
+      </div>
+      <div>
+        <p class="post-card__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        </p>
+        <h2 class="post-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-card__excerpt">{{ post.description | truncate: 220 }}</p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

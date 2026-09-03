@@ -1,0 +1,84 @@
+{%- comment -%}
+  One CV entry: heading, country flag, topic chips, bullet points, the story
+  note in the margin, and a strip of photographs.
+
+  Params: entry, heading_level (default 3)
+{%- endcomment -%}
+{%- assign e = include.entry -%}
+{%- assign h = include.heading_level | default: 3 -%}
+{%- assign place = e.country | default: site.data.countries[e.flag] -%}
+
+<article class="entry{% if e.note %} entry--noted{% endif %}">
+  <div class="entry__main">
+    <h{{ h }} class="entry__title">{{ e.role | default: e.title }}</h{{ h }}>
+    {%- if e.org %}<p class="entry__org">{{ e.org }}</p>{%- endif %}
+
+    <p class="entry__meta">
+      <span class="entry__dates">{{ e.dates | default: e.year }}</span>
+      {%- if e.flag %}
+      <span class="chip chip--place">
+        {%- include flag.html code=e.flag -%}
+        {{ place }}
+      </span>
+      {%- endif %}
+    </p>
+
+    {%- if e.topics %}
+    <ul class="chip-row">
+      {%- for t in e.topics %}
+      <li class="chip">{% include topic-icon.html name=t.icon %}{{ t.label }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+
+    {%- if e.detail %}<p class="entry__detail">{{ e.detail }}</p>{%- endif %}
+
+    {%- if e.points %}
+    <ul class="entry__points">
+      {%- for point in e.points %}
+      <li>{{ point }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+
+    {%- if e.link %}
+    <p class="entry__link"><a href="{{ e.link }}" rel="noopener">{{ e.link_label | default: e.link }}</a></p>
+    {%- endif %}
+
+    {%- if e.images %}
+    <ul class="photo-strip">
+      {%- for img in e.images %}
+      <li class="photo-strip__item">
+        <a class="photo" href="{{ img.src }}" data-caption="{{ img.alt | escape }}">
+          <img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy" decoding="async" />
+          <span class="photo__zoom" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.5 12.5L17 17"/><path d="M6 8.5h5M8.5 6v5"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+
+    {%- if e.video %}
+    <div class="video-embed" data-video-id="{{ e.video }}">
+      <button type="button" class="video-embed__play" data-title="{{ e.video_label | default: 'YouTube video' | escape }}">
+        <span class="video-embed__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+        <span class="video-embed__label">Watch: {{ e.video_label }}</span>
+      </button>
+    </div>
+    {%- endif %}
+  </div>
+
+  {%- if e.note %}
+  <aside class="note" aria-label="Story behind this entry">
+    <span class="note__tail" aria-hidden="true"></span>
+    <p class="note__eyebrow">The story</p>
+    <p class="note__body">{{ e.note }}</p>
+  </aside>
+  {%- endif %}
+</article>

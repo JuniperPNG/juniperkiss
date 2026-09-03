@@ -1,40 +1,56 @@
 title: Juniper Kiss
-description: Personal website of Juniper Kiss — Designer & Developer.
+tagline: PlantSciCV
+description: >-
+  Plant scientist, data specialist and science communicator. The stories behind
+  the CV — plus a blog and university assignments with their marks.
 url: "https://juniperkiss.com"
 baseurl: ""
+lang: en-GB
 
 author:
-  name: Juniper Kiss
+  name: Juniper Boroka Kiss
+  short_name: Juniper Kiss
   email: hello@juniperkiss.com
 
-# Analytics — replace with your GA4 measurement ID when ready
-google_analytics: ""   # e.g. G-XXXXXXXXXX
+social:
+  linkedin: https://www.linkedin.com/in/juniper-kiss/
+  instagram: https://www.instagram.com/goesbyjuniper
+  github: https://github.com/JuniperPNG
 
-# Collections
+# Analytics — leave blank until a cookie-free provider is chosen.
+google_analytics: ""
+
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:day/:title/
 
-# Defaults
+# Wix used /post/<slug>; keeping the same permalink means no inbound link breaks.
+permalink: /post/:slug/
+
 defaults:
-  - scope:
-      path: ""
-      type: posts
+  - scope: { path: "", type: posts }
     values:
       layout: post
 
-permalink: /blog/:year/:month/:day/:title/
-
-# Markdown
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  auto_ids: true
 
-# Exclude from build
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: /feed.xml
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - "*.sh"
+  - docs/
+  - _migration/
+  - "*.ps1"
+  - "*.py"

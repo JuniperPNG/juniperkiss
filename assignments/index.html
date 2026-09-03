@@ -1,0 +1,69 @@
+---
+layout: default
+title: Assignments
+description: >-
+  Real UK undergraduate essays with their marks and the marker's feedback, so
+  international students, UK students and lecturers can see how the grading works.
+---
+{%- assign data = site.data.assignments -%}
+
+<div class="shell shell--reading">
+  <header class="post-header">
+    <p class="section__eyebrow">University</p>
+    <h1>Assignments, marks and feedback</h1>
+    <div class="callout" style="margin-top: var(--space-l)">
+      <ul class="prose">
+        {%- for line in data.intro %}
+        <li>{{ line }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </header>
+</div>
+
+{%- for group in data.years %}
+<section class="section{% cycle 'band': '', ' section--alt' %}" aria-labelledby="{{ group.year | slugify }}">
+  <div class="shell shell--reading">
+    <p class="section__eyebrow">{{ group.institution }}</p>
+    <h2 id="{{ group.year | slugify }}">{{ group.year }}</h2>
+
+    <div style="margin-top: var(--space-xl)">
+      {%- for item in group.items %}
+      <article class="assignment">
+        <p class="assignment__module">{{ item.module }}</p>
+        <div class="assignment__head">
+          <h3 class="assignment__title">{{ item.title }}</h3>
+          <p class="mark">
+            <span class="visually-hidden">Mark awarded:</span>{{ item.mark }}%
+          </p>
+        </div>
+
+        <dl class="assignment__facts">
+          <dt>Assignment</dt>
+          <dd>{{ item.brief }}</dd>
+          <dt>Word limit</dt>
+          <dd>{{ item.word_limit }}</dd>
+          {%- if item.breakdown %}
+          <dt>Mark breakdown</dt>
+          <dd>{{ item.breakdown }}</dd>
+          {%- endif %}
+          <dt>Feedback</dt>
+          <dd>{{ item.feedback }}</dd>
+        </dl>
+
+        <p>
+          <a class="doc-link" href="{{ item.file }}">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+              <path d="M4 1.5h6l4 4v11H4z" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <path d="M10 1.5v4h4" fill="none" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            {{ item.title }}
+            <span class="doc-link__meta">(PDF)</span>
+          </a>
+        </p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endfor %}

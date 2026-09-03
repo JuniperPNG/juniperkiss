@@ -1,0 +1,113 @@
+{%- comment -%}
+  Simplified flag glyphs, drawn as inline SVG rather than emoji: Windows renders
+  regional-indicator emoji as bare letter pairs, and an icon font would mean a
+  third-party request.
+
+  Decorative — the country name is always printed next to the flag, so these are
+  aria-hidden (SC 1.1.1).
+
+  Usage: {% include flag.html code="au" %}
+{%- endcomment -%}
+{%- assign c = include.code -%}
+<svg class="flag" viewBox="0 0 24 16" aria-hidden="true" focusable="false" role="presentation">
+  {%- case c -%}
+
+  {%- when "hu" -%}
+    <rect width="24" height="5.33" fill="#ce2939"/><rect y="5.33" width="24" height="5.33" fill="#fff"/><rect y="10.66" width="24" height="5.34" fill="#477050"/>
+
+  {%- when "gb" -%}
+    <rect width="24" height="16" fill="#012169"/>
+    <path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"/>
+    <path d="M0 0l24 16M24 0L0 16" stroke="#c8102e" stroke-width="1.9"/>
+    <path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.3"/>
+    <path d="M12 0v16M0 8h24" stroke="#c8102e" stroke-width="3.2"/>
+
+  {%- when "wales" -%}
+    <rect width="24" height="8" fill="#fff"/><rect y="8" width="24" height="8" fill="#00ab39"/>
+    <path d="M4 9c2-1 3-3 6-3 2 0 2 2 4 1 2-1 3 0 5-1-1 2-2 2-2 3 1 1 2 1 3 3-2 0-3-1-5-1-3 0-4 2-7 2-3 0-4-2-4-4z" fill="#c8102e"/>
+
+  {%- when "au" -%}
+    <rect width="24" height="16" fill="#012169"/>
+    <g transform="scale(0.5)">
+      <path d="M0 0l24 16M24 0L0 16" stroke="#fff" stroke-width="3.2"/>
+      <path d="M0 0l24 16M24 0L0 16" stroke="#c8102e" stroke-width="1.9"/>
+      <path d="M12 0v16M0 8h24" stroke="#fff" stroke-width="5.3"/>
+      <path d="M12 0v16M0 8h24" stroke="#c8102e" stroke-width="3.2"/>
+    </g>
+    <g fill="#fff"><circle cx="6" cy="13" r="1.5"/><circle cx="18" cy="4" r="0.9"/><circle cx="20" cy="8" r="0.9"/><circle cx="17.5" cy="11.5" r="0.9"/><circle cx="21" cy="12.5" r="0.7"/><circle cx="19" cy="6.2" r="0.5"/></g>
+
+  {%- when "us" -%}
+    <rect width="24" height="16" fill="#fff"/>
+    <g fill="#b31942"><rect width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.84" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.76" width="24" height="1.24"/></g>
+    <rect width="10" height="8.61" fill="#0a3161"/>
+    <g fill="#fff"><circle cx="2" cy="1.7" r="0.6"/><circle cx="5" cy="1.7" r="0.6"/><circle cx="8" cy="1.7" r="0.6"/><circle cx="3.5" cy="4.3" r="0.6"/><circle cx="6.5" cy="4.3" r="0.6"/><circle cx="2" cy="6.9" r="0.6"/><circle cx="5" cy="6.9" r="0.6"/><circle cx="8" cy="6.9" r="0.6"/></g>
+
+  {%- when "na" -%}
+    <rect width="24" height="16" fill="#003580"/>
+    <path d="M24 0v4L4 16H0v-4L20 0z" fill="#fff"/>
+    <path d="M24 0.7v2.9L3.2 16H0.6z" fill="#d21034"/>
+    <path d="M24 16H10L24 7.5z" fill="#009543"/>
+    <circle cx="5.5" cy="4" r="2" fill="#ffce00"/>
+
+  {%- when "np" -%}
+    <path d="M2 1h13L8.5 7.5H15L2 15z" fill="#dc143c" stroke="#003893" stroke-width="1.1" stroke-linejoin="round"/>
+    <circle cx="6" cy="11" r="1.6" fill="#fff"/>
+    <path d="M6 3.4l0.7 1.5 1.6 0.2-1.2 1.1 0.3 1.6L6 7l-1.4 0.8 0.3-1.6-1.2-1.1 1.6-0.2z" fill="#fff"/>
+
+  {%- when "ph" -%}
+    <rect width="24" height="8" fill="#0038a8"/><rect y="8" width="24" height="8" fill="#ce1126"/>
+    <path d="M0 0l12 8L0 16z" fill="#fff"/>
+    <circle cx="3.4" cy="8" r="2.1" fill="#fcd116"/>
+    <g fill="#fcd116"><circle cx="1" cy="2" r="0.6"/><circle cx="1" cy="14" r="0.6"/><circle cx="8.4" cy="8" r="0.6"/></g>
+
+  {%- when "cr" -%}
+    <rect width="24" height="16" fill="#002b7f"/>
+    <rect y="3.2" width="24" height="9.6" fill="#fff"/>
+    <rect y="5.6" width="24" height="4.8" fill="#ce1126"/>
+
+  {%- when "tz" -%}
+    <path d="M0 0h24L0 16z" fill="#1eb53a"/>
+    <path d="M24 0v16H0z" fill="#00a3dd"/>
+    <path d="M24 0v3.4L5.1 16H0v-3.4L18.9 0z" fill="#000"/>
+    <path d="M24 0L0 16" stroke="#fcd116" stroke-width="2.2"/>
+
+  {%- when "zm" -%}
+    <rect width="24" height="16" fill="#198a00"/>
+    <rect x="15" y="6" width="3" height="10" fill="#de2010"/>
+    <rect x="18" y="6" width="3" height="10" fill="#000"/>
+    <rect x="21" y="6" width="3" height="10" fill="#ef7d00"/>
+    <path d="M18 1.5c2-1.5 4 0 3.5 2-1.5-1-2.5 0-3.5-2z" fill="#ef7d00"/>
+
+  {%- when "pg" -%}
+    <path d="M0 0h24v16z" fill="#ce1126"/>
+    <path d="M0 0v16h24z" fill="#000"/>
+    <g fill="#fff"><circle cx="6" cy="9" r="1"/><circle cx="4" cy="12" r="0.8"/><circle cx="8" cy="12.5" r="0.8"/><circle cx="6" cy="14.2" r="0.7"/><circle cx="6.6" cy="11" r="0.5"/></g>
+    <path d="M14 3.5c2-1 4-0.5 5 1-2 0.2-2.5 1.5-4 2.5-1 0.7-2 0.3-2-0.8 0-1 0.4-2 1-2.7z" fill="#fcd116"/>
+
+  {%- when "fi" -%}
+    <rect width="24" height="16" fill="#fff"/>
+    <rect x="6" width="4" height="16" fill="#003580"/>
+    <rect y="6" width="24" height="4" fill="#003580"/>
+
+  {%- when "id" -%}
+    <rect width="24" height="8" fill="#ce1126"/><rect y="8" width="24" height="8" fill="#fff"/>
+
+  {%- when "be" -%}
+    <rect width="8" height="16" fill="#000"/><rect x="8" width="8" height="16" fill="#fdda24"/><rect x="16" width="8" height="16" fill="#ef3340"/>
+
+  {%- when "do" -%}
+    <rect width="24" height="16" fill="#002d62"/>
+    <path d="M12 0h12v8H12zM0 8h12v8H0z" fill="#ce1126"/>
+    <path d="M10 0h4v16h-4zM0 6h24v4H0z" fill="#fff"/>
+
+  {%- when "hu-eu" or "eu" -%}
+    <rect width="24" height="16" fill="#003399"/>
+    <g fill="#ffcc00"><circle cx="12" cy="4" r="0.7"/><circle cx="15.5" cy="5" r="0.7"/><circle cx="17" cy="8" r="0.7"/><circle cx="15.5" cy="11" r="0.7"/><circle cx="12" cy="12" r="0.7"/><circle cx="8.5" cy="11" r="0.7"/><circle cx="7" cy="8" r="0.7"/><circle cx="8.5" cy="5" r="0.7"/></g>
+
+  {%- else -%}
+    <rect width="24" height="16" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M4 8h16" stroke="currentColor" stroke-width="1.2"/>
+
+  {%- endcase -%}
+  <rect width="24" height="16" fill="none" stroke="rgb(0 0 0 / 0.25)" stroke-width="1"/>
+</svg>

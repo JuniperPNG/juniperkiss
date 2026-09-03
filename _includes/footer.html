@@ -1,10 +1,45 @@
-<footer>
-  <span>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</span>
-  <span>
-    <a href="/cv/">CV</a>
-    &nbsp;&middot;&nbsp;
-    <a href="/blog/">Blog</a>
-    &nbsp;&middot;&nbsp;
-    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-  </span>
+<footer class="site-footer">
+  <div class="shell">
+    <div class="site-footer__grid">
+      <div>
+        <h2 class="site-footer__heading">This site</h2>
+        <ul class="site-footer__list">
+          {%- for item in site.data.nav -%}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="site-footer__heading">Elsewhere</h2>
+        <ul class="site-footer__list">
+          <li><a href="{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a></li>
+          <li><a href="{{ site.social.instagram }}" rel="me noopener">Instagram</a></li>
+          <li><a href="{{ site.social.github }}" rel="me noopener">GitHub</a></li>
+          <li><a href="https://www.goesmagazine.org/" rel="noopener">GOES magazine</a></li>
+          <li><a href="https://www.whystudyplants.com/" rel="noopener">WhyStudyPlants</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="site-footer__heading">Keep in touch</h2>
+        <p>New posts are rare. Subscribe with any reader using the
+          <a href="/feed.xml">RSS feed</a>, or email
+          <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+      </div>
+
+      <div>
+        <h2 class="site-footer__heading">Accessibility</h2>
+        <ul class="site-footer__list">
+          <li><a href="/accessibility/">Accessibility statement</a></li>
+          <li><a href="/colophon/">Colophon &amp; design system</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="site-footer__legal">
+      © {{ 'now' | date: "%Y" }} {{ site.author.name }}. Photographs are subject to copyright.
+      Built with Jekyll, hosted on GitHub Pages. No cookies, no trackers.
+    </p>
+  </div>
 </footer>

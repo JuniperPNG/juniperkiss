@@ -1,0 +1,40 @@
+{%- comment -%}
+  Head partial. No third-party requests: fonts, CSS and JS are all first-party,
+  so the site sets no cookies and discloses no visitor IP to another controller
+  (UK GDPR / GDPR Art. 6). That keeps a cookie banner unnecessary.
+{%- endcomment -%}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+
+{%- assign page_title = page.title | default: site.title -%}
+{%- assign page_desc = page.description | default: site.description | strip_newlines | strip -%}
+<title>{% if page.title %}{{ page_title }} — {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ page_desc | escape }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{{ page_title | escape }}" />
+<meta property="og:description" content="{{ page_desc | escape }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+{%- if page.image %}
+<meta property="og:image" content="{{ page.image | absolute_url }}" />
+{%- endif %}
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} — blog" href="{{ '/feed.xml' | absolute_url }}" />
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" />
+
+<link rel="stylesheet" href="/assets/css/tokens.css" />
+<link rel="stylesheet" href="/assets/css/site.css" />
+
+{%- if site.google_analytics and site.google_analytics != "" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}', { anonymize_ip: true });
+</script>
+{%- endif %}

@@ -1,0 +1,179 @@
+# University assignments, migrated from the Wix "Assignments" page.
+# Marks are UK undergraduate marks: a First / A is 70% and above.
+
+intro:
+  - None of these essays received 100%, and all were marked under the UK system
+    (a First / A is anything above 70%). The essays have not been edited since
+    submission.
+  - The short description, the mark and the marker's feedback are included so UK
+    and international students, and lecturers, can see how the grading works in
+    practice.
+  - Every essay has been submitted to Turnitin. Please do not plagiarise.
+
+years:
+  - year: Year 1
+    institution: Anglia Ruskin University, Cambridge
+    items:
+      - module: Introduction to Marine Biology
+        title: Temperature's role in fish farming
+        file: /assets/documents/temperatures-role-in-fish-farming.pdf
+        mark: 87
+        brief: Choose one topic in mariculture.
+        word_limit: "1,500"
+        feedback: Best mark for a first-year student; the proposed farming system is unique.
+
+      - module: British Wildlife and Conservation
+        title: Tracking an illusion of technology
+        file: /assets/documents/tracking-an-illusion-of-technology.pdf
+        mark: 74
+        brief: Choose one topic — technological advancements in animal tracking.
+        word_limit: "1,500"
+        feedback: >-
+          Flagged for plagiarism — "too much work for a first-year student" — and
+          had to be defended. The table needed more referencing (most of the
+          articles were referenced within a review paper).
+
+      - module: Ecology
+        title: Vegetation survey at Devil's Dyke
+        file: /assets/documents/vegetation-survey-at-devils-dyke.pdf
+        mark: 82
+        brief: Write up one field trip — a vegetation survey at Devil's Dyke, Cambridgeshire.
+        word_limit: "1,000"
+        feedback: Good illustrations and extensive further reading.
+
+  - year: Year 2
+    institution: Anglia Ruskin University, Cambridge and Aberystwyth University
+    items:
+      - module: Invertebrate Biology
+        title: Comparing invertebrate sampling techniques
+        file: /assets/documents/comparing-invertebrate-sampling-techniques.pdf
+        mark: 80
+        brief: Compare invertebrate sampling techniques.
+        word_limit: "1,500"
+        feedback: Good illustrations and extensive further reading.
+
+      - module: Field Skills in Biology
+        title: Winkle stats — shell shape in Devon
+        file: /assets/documents/winkle-stats.pdf
+        mark: 97
+        brief: Group project during a field trip, on shell shape in Devon.
+        word_limit: "2,500"
+        feedback: Novel stats — maybe a bit too much — and the discussion is concise and short enough.
+
+      - module: "Climate Change: Plants, Animals and Ecosystems"
+        title: Multivariate analysis of resource allocation
+        file: /assets/documents/multivariate-analysis-of-resource-allocation.pdf
+        mark: 74
+        brief: Practical write-up of an Arabidopsis drought experiment.
+        word_limit: "1,500"
+        feedback: Novel stats, but not focused enough.
+
+      - module: "Climate Change: Plants, Animals and Ecosystems"
+        title: Long-term Ecological Research (LTER) and Earth observation
+        file: /assets/documents/long-term-ecological-research-lter.pdf
+        mark: 65
+        brief: >-
+          Section A (35%): the UK Environmental Change Network site on Snowdon —
+          its purpose, the environmental measurements recorded, the trends in the
+          accumulated time series, and the historic research around Llyn Llydaw
+          and Nant Teyrn that adds value to its LTER status.
+          Section B (45%): Long Term Ecosystem Research and Earth observation in
+          the UK, Europe and internationally.
+        word_limit: "1,500"
+        feedback: >-
+          "Unfortunate that some requested sub-topics appeared overlooked. The
+          critical review section was very well prepared and also contributed a
+          significant part of the overall mark."
+
+      - module: Applied Molecular Biology with Bioinformatics
+        title: Northern blotting and cDNA microarray analysis
+        file: /assets/documents/northern-blotting-and-cdna-microarray-analysis.pdf
+        mark: 85
+        brief: Pick a topic — gene expression methods.
+        word_limit: "1,500"
+        feedback: '"Some confusions and omissions but excellent effort."'
+
+      - module: Applied Molecular Biology with Bioinformatics
+        title: The Green Revolution — genes in modern crops
+        file: /assets/documents/green-revolution-genes-in-modern-crops.pdf
+        mark: 85
+        brief: Genes involved in the Green Revolution.
+        word_limit: "1,500"
+        feedback: >-
+          "Excellent work — could be written more clearly in some areas but
+          otherwise lots of very nice extra detail."
+
+      - module: Research Methods
+        title: Can subgenus Rubus (bramble) classification rely on leaf morphology?
+        file: /assets/documents/can-subgenus-rubus-classification-rely-on-leaf-morphology.pdf
+        mark: 92
+        brief: Write a review.
+        word_limit: "1,500"
+        feedback: '"Excellent effort, extensive further reading."'
+
+      - module: Understanding Biological Research
+        title: Critique of Klingenberg et al. (2012)
+        file: /assets/documents/critique-of-klingenberg-et-al-2012.pdf
+        mark: 97
+        brief: Critique and evaluate a publication.
+        word_limit: "1,500"
+        feedback: '"Extensive research and re-analysed data of the publication."'
+
+  - year: Year 3
+    institution: Aberystwyth University, Wales
+    items:
+      - module: Conservation Genetics
+        title: Identifying conservation units of mangroves
+        file: /assets/documents/identifying-conservation-units-of-mangroves.pdf
+        mark: 90
+        brief: >-
+          Produce a conservation plan for a species of your choice which takes
+          genetic factors into account.
+        word_limit: "2,000"
+        breakdown: >-
+          Marks (total 40%): introduction 7%, methods 8%, phylogenetic tree 4%,
+          genetic diversity indices, bar chart and Tajima's test 7%, genetic
+          structure tables 4%, discussion 10%.
+        feedback: >-
+          "Groups used in this analysis do not correspond to groups on the
+          phylogenetic tree (why not?). Good use of AMOVA. The conservation plan
+          is also excellent, explicitly based upon the ESUs identified in the
+          genetic analysis."
+
+      - module: Terrestrial Ecology Field Course
+        title: Geometric morphometrics compared to traditional methods
+        file: /assets/documents/geometric-morphometrics-vs-traditional-methods.pdf
+        mark: 87
+        brief: Group project in Ireland.
+        word_limit: "3,000"
+        feedback: '"Excellent effort. Novel statistics answers an ecological question."'
+
+      - module: Agri-environment
+        title: University farm audit
+        file: /assets/documents/agri-environment-farm-audit.pdf
+        mark: 87
+        brief: >-
+          Students are given a whole-farm conservation plan and take the role of
+          an Agri-environment Scheme Officer: a summary statement, the quality of
+          the auditing, the appropriateness of the management prescription, the
+          practicality of the timescales, and what amendments would improve the plan.
+        word_limit: None
+        feedback: >-
+          "Best mark awarded in this module, nice design and written in an
+          appropriate language."
+
+      - module: Microbial Pathogenesis
+        title: Pathogenicity of Fusarium oxysporum f.sp. cubense on bananas
+        file: /assets/documents/pathogenicity-of-fusarium-oxysporum-fsp-cubense.pdf
+        mark: 87
+        brief: Pick a pathogen and describe how it evades the host's defences.
+        word_limit: "1,500"
+        feedback: '"Extensive further reading but not focused enough."'
+
+      - module: Microbial Pathogenesis
+        title: Identification of Pseudomonas syringae pathovars using a PR1a-GUS tobacco response
+        file: /assets/documents/identification-of-pseudomonas-syringae-pathovars.pdf
+        mark: 87
+        brief: Lab practical to identify different Pseudomonas pathovars on tobacco plants.
+        word_limit: "1,500"
+        feedback: '"One strain was identified incorrectly."'
