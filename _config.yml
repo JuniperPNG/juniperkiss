@@ -3,7 +3,7 @@ tagline: PlantSciCV | Troublesome Tendril
 description: >-
   Plant scientist, data specialist and science communicator. The stories behind
   the CV — plus a blog and university assignments with their marks.
-url: "https://juniperpng.github.io"
+url: "https://juniperkiss.com"
 baseurl: ""
 lang: en-GB
 
@@ -38,6 +38,7 @@ kramdown:
   auto_ids: true
 
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 

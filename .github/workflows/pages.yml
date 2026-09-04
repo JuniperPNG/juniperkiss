@@ -1,9 +1,7 @@
 name: Deploy Jekyll site to Pages
 
 # Builds with the correct base path automatically: a project-page subpath
-# while no custom domain is configured (current "test website" phase), and
-# the site root once Settings > Pages > Custom domain is set back to
-# juniperkiss.com. No manual _config.yml edits needed either way.
+# without a custom domain, and the site root when juniperkiss.com is active.
 
 on:
   push:

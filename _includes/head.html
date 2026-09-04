@@ -14,6 +14,7 @@
 <meta name="description" content="{{ page_desc | escape }}" />
 <meta name="robots" content="noimageindex, max-image-preview:none" />
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% feed_meta %}
 
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
 <meta property="og:site_name" content="{{ site.title }}" />
