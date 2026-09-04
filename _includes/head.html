@@ -3,6 +3,7 @@
   so the site sets no cookies and discloses no visitor IP to another controller
   (UK GDPR / GDPR Art. 6). That keeps a cookie banner unnecessary.
 {%- endcomment -%}
+{%- assign asset_version = site.time | date: "%Y%m%d%H%M%S" -%}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
@@ -26,8 +27,8 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} — blog" href="{{ '/feed.xml' | absolute_url }}" />
 <link rel="icon" href="{{ '/assets/brand/favicon.svg' | relative_url }}" type="image/svg+xml" />
 
-<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}" />
-<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}?v={{ asset_version }}" />
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ asset_version }}" />
 
 {%- if site.google_analytics and site.google_analytics != "" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
