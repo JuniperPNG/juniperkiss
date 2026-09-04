@@ -95,9 +95,10 @@
     {%- if e.images %}
     <ul class="photo-strip{% if e.images.size == 1 %} photo-strip--single photo-strip--align-right{% endif %}{% if e.image_layout %} photo-strip--{{ e.image_layout }}{% endif %}{% if e.image_align and e.images.size != 1 %} photo-strip--align-{{ e.image_align }}{% endif %}">
       {%- for img in e.images %}
+      {%- assign dimensions = site.data.cv_image_dimensions[img.src] %}
       <li class="photo-strip__item">
         <a class="photo" href="{{ img.src | relative_url }}" data-caption="{{ img.alt | escape }}">
-          <img src="{{ img.src | relative_url }}" alt="{{ img.alt }}" loading="lazy" decoding="async" />
+          <img src="{{ img.src | relative_url }}" alt="{{ img.alt }}"{% if dimensions %} width="{{ dimensions.width }}" height="{{ dimensions.height }}" style="--image-ratio: {{ dimensions.width }} / {{ dimensions.height }}"{% endif %} loading="lazy" decoding="async" />
           <span class="photo__zoom" aria-hidden="true">
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
               <circle cx="8.5" cy="8.5" r="5.5"/><path d="M12.5 12.5L17 17"/><path d="M6 8.5h5M8.5 6v5"/>

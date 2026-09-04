@@ -149,6 +149,7 @@
   --dur-fast: 120ms;
   --dur: 240ms;
   --dur-slow: 600ms;
+  --dur-load: 900ms;
 
   /* ---- Targets ----------------------------------------------------------- */
   /* WCAG 2.2 SC 2.5.8 Target Size (Minimum) is 24x24 CSS px; 44px is used for
@@ -230,5 +231,6 @@
     --dur-fast: 0ms;
     --dur: 0ms;
     --dur-slow: 0ms;
+    --dur-load: 0ms;
   }
 }

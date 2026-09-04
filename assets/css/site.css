@@ -603,9 +603,23 @@ body.page-cv .entry {
    is deliberately small and is only enabled after the enhancement script has
    loaded, so content never depends on motion or JavaScript to be visible. */
 @media (prefers-reduced-motion: no-preference) {
+  html.reveal-ready [data-scroll-reveal] {
+    opacity: 0;
+    transform: translateY(-14px);
+    filter: blur(0.5px);
+  }
+
+  html.reveal-ready.reveal-armed [data-scroll-reveal] {
+    transition:
+      opacity var(--dur-slow) var(--ease) var(--reveal-delay, 0ms),
+      transform var(--dur-slow) var(--ease) var(--reveal-delay, 0ms),
+      filter var(--dur-slow) var(--ease) var(--reveal-delay, 0ms);
+  }
+
   html.reveal-ready [data-scroll-reveal].is-revealed {
-    animation: scroll-reveal-in var(--dur-slow) var(--ease)
-      var(--reveal-delay, 0ms) backwards;
+    opacity: 1;
+    transform: none;
+    filter: none;
   }
 
   @media (hover: hover) {
@@ -615,11 +629,32 @@ body.page-cv .entry {
   }
 }
 
-@keyframes scroll-reveal-in {
+/* On narrow touchscreens the movement remains gentle, but content never waits
+   invisibly for an observer callback that a privacy browser may delay. */
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  html.reveal-ready [data-scroll-reveal] {
+    opacity: 1;
+    filter: none;
+    transform: translateY(-8px);
+  }
+}
+
+/* Shared page headers and explicitly marked hero groups have their starting
+   state before the first paint. Unlike scroll reveals, these keyframes are
+   never added later by JavaScript and therefore cannot re-flash content. */
+@media (prefers-reduced-motion: no-preference) {
+  .post-header,
+  [data-load-reveal] {
+    animation: load-reveal-in var(--dur-load) var(--ease)
+      var(--load-delay, 0ms) backwards;
+  }
+}
+
+@keyframes load-reveal-in {
   from {
     opacity: 0;
-    transform: translateY(14px);
-    filter: blur(0.5px);
+    transform: translateY(-10px);
+    filter: blur(0.35px);
   }
   to {
     opacity: 1;
@@ -1493,7 +1528,7 @@ ul.entry__points {
 
 .photo-strip--wide .photo img {
   height: auto;
-  aspect-ratio: auto;
+  aspect-ratio: var(--image-ratio, auto);
   object-fit: contain;
 }
 

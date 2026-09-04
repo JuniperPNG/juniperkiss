@@ -12,7 +12,7 @@ description: >-
 
 <div class="shell">
   <header class="cv-header">
-    <div class="cv-header__text">
+    <div class="cv-header__text" data-load-reveal>
       <p class="section__eyebrow">Curriculum vitae</p>
       <h1>{{ cv.known_as }}</h1>
       <p class="cv-header__tagline">{{ cv.tagline }}</p>
@@ -26,7 +26,7 @@ description: >-
         <a class="btn btn--primary" href="{{ cv.pdf | relative_url }}" download>Download the CV (PDF)</a>
       </p>
     </div>
-    <div class="cv-header__portraits">
+    <div class="cv-header__portraits" data-load-reveal style="--load-delay: 90ms">
       {%- if cv.portrait %}
       <img class="cv-header__portrait" src="{{ cv.portrait | relative_url }}"
            alt="An illustrated portrait of Juniper Kiss." width="220" height="220"

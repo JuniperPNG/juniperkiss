@@ -8,13 +8,13 @@ description: >-
 
 <section class="hero">
   <div class="shell">
-    <div class="hero__heading-panel">
+    <div class="hero__heading-panel" data-load-reveal>
       <p class="section__eyebrow">PlantSciCV</p>
       <h1 class="hero__title hero__title--full">Every CV has a million stories behind it</h1>
     </div>
 
     <div class="hero__layout">
-      <div class="hero__copy-panel">
+      <div class="hero__copy-panel" data-load-reveal style="--load-delay: 70ms">
         <p class="hero__lede">
           I first built my website as a final-year undergraduate Plant Biology
           student with a few stories to tell. Research jobs, grants and awards
@@ -30,12 +30,12 @@ description: >-
         <p class="hero__lede">Hope you enjoy my ramblings!</p>
       </div>
 
-      <div>
+      <div data-load-reveal style="--load-delay: 140ms">
         {% include carousel.html %}
       </div>
     </div>
 
-    <div class="hero__actions">
+    <div class="hero__actions" data-load-reveal style="--load-delay: 210ms">
       <a class="btn btn--primary" href="{{ '/cv/' | relative_url }}">Read my troublesome CV</a>
       <a class="btn btn--secondary" href="{{ '/repos/' | relative_url }}">See my GitHub repos</a>
       <a class="btn btn--secondary" href="{{ '/blog/' | relative_url }}">Read my rather slow blog</a>
