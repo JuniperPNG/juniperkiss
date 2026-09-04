@@ -61,6 +61,7 @@
   --highlight-bg: #e4e9d4;
   --highlight-fg: #3c4a26;
   --breadcrumb-bg: rgb(109 205 89 / 0.05);
+  --hero-panel-bg: rgb(68 1 84 / 0.94);
   --on-accent: #ffffff; /* text sitting on an --accent fill */
 
   /* Decorative ramp: non-text graphics only (card rules, timeline nodes).
@@ -196,6 +197,7 @@
     --tone-soft: var(--v-400);
     --highlight-bg: #3a4a2c;
     --highlight-fg: #eef2df;
+    --hero-panel-bg: rgb(255 255 255 / 0.05);
     --on-accent: #120a18;
 
     --deco-1: var(--v-300);

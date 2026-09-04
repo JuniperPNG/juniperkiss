@@ -21,7 +21,8 @@
             width="{{ photo.width }}"
             height="{{ photo.height }}"
             alt="{{ photo.alt }}"
-            loading="lazy"
+            loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+            {% if forloop.first %}fetchpriority="high"{% endif %}
             decoding="async"
           />
         </figure>

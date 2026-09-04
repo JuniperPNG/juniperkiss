@@ -396,9 +396,11 @@ body.page-cv .entry {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgb(255 255 255 / 0.05);
+  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 95%, #fff 5%);
   border-top: var(--rule-weight) solid var(--accent);
   border-bottom: var(--hairline) solid var(--border);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.18);
 }
 
 .masthead__inner {
@@ -492,9 +494,10 @@ body.page-cv .entry {
   border-bottom-color: var(--accent);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-toggle {
     display: inline-flex;
+    background: var(--surface);
   }
   .nav {
     display: none;
@@ -506,6 +509,7 @@ body.page-cv .entry {
   .nav[data-open="true"] {
     display: block;
     padding-bottom: var(--space-s);
+    background: var(--surface);
   }
   .nav__list {
     flex-direction: column;
@@ -574,6 +578,14 @@ body.page-cv .entry {
   align-items: start;
 }
 
+/* Flex-based carousels have a very wide min-content size. Let both hero grid
+   children shrink to the grid track so that width is contained by the
+   carousel scroller instead of making the whole page tens of thousands of
+   pixels wide on phones. */
+.hero__layout > * {
+  min-width: 0;
+}
+
 @media (max-width: 900px) {
   .hero__layout {
     grid-template-columns: 1fr;
@@ -614,10 +626,21 @@ body.page-cv .entry {
   }
 }
 
-/* Trial: 90%-transparent white panels behind the unchanged hero copy. */
+/* On a narrow touchscreen the reveal remains a small vertical movement, but
+   never makes content invisible while it waits for an observer callback. */
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  html.reveal-ready [data-scroll-reveal] {
+    opacity: 1;
+    filter: none;
+    transform: translateY(8px);
+  }
+}
+
+/* Subtle panels behind the hero copy. The light theme uses a deep viridis
+   surface so the deliberately pure-white hero text keeps strong contrast. */
 .hero__heading-panel,
 .hero__copy-panel {
-  background: rgb(255 255 255 / 0.05);
+  background: var(--hero-panel-bg);
 }
 
 .hero__title,
@@ -630,7 +653,7 @@ body.page-cv .entry {
   width: 100%;
   margin-bottom: var(--space-xl);
   padding: var(--space-s) var(--space-m);
-  box-shadow: 0 0 0 100vmax rgb(255 255 255 / 0.05);
+  box-shadow: 0 0 0 100vmax var(--hero-panel-bg);
   clip-path: inset(0 -100vmax);
 }
 
@@ -690,7 +713,7 @@ body.page-cv .entry {
   max-width: var(--measure-narrow);
   margin-top: var(--space-m);
   font-size: var(--step-0);
-  color: var(--ink-muted);
+  color: #fff;
 }
 
 .hero__actions {
@@ -2073,6 +2096,61 @@ ul.entry__points {
   color: var(--v-050);
 }
 
+/* Site-wide return-to-top control. JavaScript removes [hidden] only after the
+   visitor has scrolled far enough for the shortcut to be useful. */
+.scroll-top {
+  position: fixed;
+  right: max(var(--space-m), env(safe-area-inset-right));
+  bottom: max(var(--space-m), env(safe-area-inset-bottom));
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  width: var(--target-comfortable);
+  height: var(--target-comfortable);
+  padding: 0;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--tone-emph);
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.24);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(var(--space-s));
+  pointer-events: none;
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    color var(--dur) var(--ease);
+}
+
+.scroll-top[hidden] {
+  display: none;
+}
+
+.scroll-top.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.scroll-top:hover {
+  background: var(--fill-strong);
+  color: var(--on-fill-strong);
+}
+
+.scroll-top svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+@media (max-width: 700px) {
+  .scroll-top {
+    right: max(var(--space-s), env(safe-area-inset-right));
+    bottom: max(var(--space-s), env(safe-area-inset-bottom));
+  }
+}
+
 /* ============================ 15. Utilities ============================== */
 .visually-hidden {
   position: absolute !important;
@@ -2107,17 +2185,23 @@ ul.entry__points {
 /* Deliberately not a .card-grid: photos keep their native aspect ratio (no
    cropping) so widths vary from item to item, only the row height is fixed. */
 .photo-carousel {
+  min-width: 0;
+  max-width: 100%;
   padding: var(--space-m);
   background: rgb(255 255 255 / 0.05);
 }
 
 .photo-carousel__viewport {
   position: relative;
+  min-width: 0;
+  max-width: 100%;
   margin-top: var(--space-s);
 }
 
 .photo-carousel__track {
   display: flex;
+  min-width: 0;
+  max-width: 100%;
   gap: var(--space-s);
   height: 380px;
   padding-bottom: var(--space-2xs);
@@ -2224,6 +2308,10 @@ ul.entry__points {
 }
 
 @media (max-width: 700px) {
+  .photo-carousel {
+    padding: var(--space-s);
+  }
+
   .photo-carousel__track {
     height: 220px;
   }
@@ -2237,6 +2325,7 @@ ul.entry__points {
   .photo__zoom,
   .lightbox,
   .breadcrumbs,
+  .scroll-top,
   .skip-link {
     display: none !important;
   }

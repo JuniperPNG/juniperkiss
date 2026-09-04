@@ -7,10 +7,7 @@
   if (reducedMotion.matches || !('IntersectionObserver' in window)) return;
 
   var selector = [
-    '.hero__copy-panel',
-    '.photo-carousel',
     '.about__layout',
-    '.cv-header',
     '.section > .shell > h2',
     '.card',
     '.post-card',
@@ -18,8 +15,6 @@
     '.entry',
     '.pub-list',
     '.plain-list',
-    '.post-header',
-    '.post-hero',
     '.rich-text > h2',
     '.callout',
     '.site-footer__grid'

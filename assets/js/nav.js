@@ -27,7 +27,7 @@
   });
 
   // Reset state when the layout returns to the desktop breakpoint.
-  var wide = window.matchMedia("(min-width: 769px)");
+  var wide = window.matchMedia("(min-width: 901px)");
   wide.addEventListener("change", function (event) {
     if (event.matches) setOpen(false);
   });
