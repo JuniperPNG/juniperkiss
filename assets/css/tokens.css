@@ -60,6 +60,7 @@
      selection, mark badges, place chips and story notes. */
   --highlight-bg: #e4e9d4;
   --highlight-fg: #3c4a26;
+  --breadcrumb-bg: rgb(109 205 89 / 0.05);
   --on-accent: #ffffff; /* text sitting on an --accent fill */
 
   /* Decorative ramp: non-text graphics only (card rules, timeline nodes).
@@ -169,10 +170,9 @@
   }
 }
 
-/* Honour an explicit OS/browser preference for dark rendering. The ramp is
-   reversed: light viridis becomes text-safe on the deep purple surface. */
-@media (prefers-color-scheme: dark) {
-  :root {
+/* Dark is the site's default. The early head script may switch this attribute
+   to light before CSS paints when a visitor has saved that preference. */
+:root[data-theme="dark"] {
     --ink: #f2eff5;
     --ink-muted: #c3bacd;
     --surface: #1a1020;
@@ -219,8 +219,7 @@
 
     --focus-core: #ffffff;
     --focus-halo: var(--v-050);
-    --shadow-raised: none;
-  }
+  --shadow-raised: none;
 }
 
 /* WCAG 2.2 SC 2.3.3 — no non-essential motion for users who ask for less. */

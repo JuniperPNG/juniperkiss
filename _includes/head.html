@@ -7,6 +7,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="light dark" />
+<script>
+  (function () {
+    try {
+      var savedTheme = window.localStorage.getItem('juniper-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {
+      /* Dark remains the safe default when browser storage is unavailable. */
+    }
+  }());
+</script>
 
 {%- assign page_title = page.title | default: site.title -%}
 {%- assign page_desc = page.description | default: site.description | strip_newlines | strip -%}

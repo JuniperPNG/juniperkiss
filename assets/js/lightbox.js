@@ -1,4 +1,4 @@
-/* Photo lightbox for the CV page.
+/* Image lightbox for site galleries and project artwork.
    Thumbnails are plain links to the full image, so this is pure enhancement:
    with JavaScript off, clicking opens the image directly. */
 (function () {

@@ -39,6 +39,14 @@ html {
   text-size-adjust: 100%;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
 /* SC 2.4.13 Focus Appearance / 2.4.11 Focus Not Obscured: scroll targets clear
    of the sticky masthead. */
 html:focus-within {
@@ -517,6 +525,11 @@ body.page-cv .entry {
 
 /* ============================ 6. Breadcrumbs ============================== */
 .breadcrumbs {
+  width: 100%;
+  background: var(--breadcrumb-bg);
+}
+
+.breadcrumbs__inner {
   padding-block: var(--space-s);
   font-size: var(--step--1);
 }
@@ -996,17 +1009,54 @@ body.page-cv .entry {
   user-select: none;
 }
 
-.repo-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
-  gap: var(--space-xl);
-  align-items: center;
+.page-repos .shell--reading {
+  max-width: 1120px;
 }
 
-.repo-feature__logo {
+.page-repos .prose {
+  max-width: none;
+}
+
+.repo-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: clamp(var(--space-xl), 6vw, var(--space-2xl));
+  align-items: start;
+  margin-block: var(--space-l);
+}
+
+.repo-feature__copy {
+  padding-bottom: var(--space-m);
+}
+
+.repo-feature__copy > h2:first-child {
+  margin-top: 0;
+}
+
+.page-repos .cane-rule {
+  margin-block: var(--space-m);
+}
+
+.repo-feature__logo-panel.photo {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1;
   justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-l);
+  background: rgb(255 255 255 / 0.2);
+  border-radius: 0;
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+.repo-feature__logo-panel .repo-feature__logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 @media (max-width: 700px) {
@@ -1014,8 +1064,8 @@ body.page-cv .entry {
     grid-template-columns: 1fr;
   }
 
-  .repo-feature__logo {
-    width: min(220px, 70%);
+  .repo-feature__logo-panel.photo {
+    width: min(360px, 100%);
     justify-self: start;
   }
 }
@@ -2003,6 +2053,24 @@ ul.entry__points {
   border-top: var(--hairline) solid rgb(255 255 255 / 0.2);
   font-size: var(--step--1);
   color: var(--on-deep-muted);
+}
+
+.theme-toggle {
+  min-height: var(--target-comfortable);
+  margin-top: var(--space-m);
+  padding: var(--space-xs) var(--space-m);
+  border: var(--hairline) solid var(--v-300);
+  border-radius: 0;
+  background: transparent;
+  color: var(--v-100);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.theme-toggle:hover {
+  background: rgb(255 255 255 / 0.1);
+  color: var(--v-050);
 }
 
 /* ============================ 15. Utilities ============================== */
