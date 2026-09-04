@@ -1,0 +1,38 @@
+<!-- Hero photo carousel. Images keep their native aspect ratio (no cropping);
+     only a shared row height is applied, so width varies photo to photo. -->
+<div class="photo-carousel">
+  <p class="section__eyebrow">Photo carousel</p>
+  <div class="photo-carousel__viewport">
+    <button type="button" class="photo-carousel__nav photo-carousel__nav--prev" data-carousel-prev aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <div
+      class="photo-carousel__track"
+      tabindex="0"
+      role="region"
+      aria-label="Photo carousel of Juniper's fieldwork and travels. Scroll, use the arrow keys, or the buttons either side to browse."
+    >
+      {% for photo in site.data.carousel %}
+        <figure class="photo-carousel__item" style="aspect-ratio: {{ photo.width }} / {{ photo.height }};">
+          <img
+            src="{{ '/assets/home/' | append: photo.src | relative_url }}"
+            width="{{ photo.width }}"
+            height="{{ photo.height }}"
+            alt="{{ photo.alt }}"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      {% endfor %}
+    </div>
+    <button type="button" class="photo-carousel__nav photo-carousel__nav--next" data-carousel-next aria-label="Next photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+  <p class="photo-carousel__copyright">All photographs are my own &copy; Juniper Kiss.</p>
+</div>
+<script src="{{ '/assets/js/carousel.js' | relative_url }}" defer></script>

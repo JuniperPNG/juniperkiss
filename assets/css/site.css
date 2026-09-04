@@ -207,12 +207,32 @@ samp {
   padding-block: var(--pad-v);
 }
 
+/* The CV is long by nature — trim the section rhythm so it scrolls less
+   without touching padding tokens used by every other page. */
+body.page-cv .section {
+  padding-block: calc(var(--pad-v) * 0.6);
+}
+
+body.page-cv .entries {
+  margin-top: var(--space-s);
+}
+
+body.page-cv .entry {
+  padding: var(--space-s) 0;
+  gap: var(--space-s);
+}
+
 .section--alt {
+  /* Translucent, not solid: lets the fixed bramble show through the band
+     instead of vanishing behind it. Foreground text/buttons are unaffected —
+     they paint on top of this same box regardless. */
   background: var(--surface-alt);
+  background: color-mix(in srgb, var(--surface-alt) 88%, transparent);
 }
 
 .section--deep {
   background: var(--surface-deep);
+  background: color-mix(in srgb, var(--surface-deep) 90%, transparent);
   color: var(--on-deep);
 }
 
@@ -278,7 +298,7 @@ samp {
   position: fixed;
   top: 0;
   left: calc(-1 * var(--bramble-bleed, 40px));
-  z-index: 0;
+  z-index: -1;
   width: var(--bramble-width, 200px);
   height: 100vh;
   height: 100dvh;
@@ -295,10 +315,6 @@ samp {
   vector-effect: non-scaling-stroke;
 }
 
-.bramble__cane--minor {
-  stroke-width: 2;
-}
-
 .bramble__blade {
   fill: url(#bramble-ramp);
   fill-opacity: 0.13;
@@ -309,17 +325,12 @@ samp {
 }
 
 .bramble__petiole,
-.bramble__veins path,
-.bramble__tendril {
+.bramble__veins path {
   fill: none;
   stroke: url(#bramble-ramp);
   stroke-width: 1;
   stroke-linecap: round;
   vector-effect: non-scaling-stroke;
-}
-
-.bramble__tendril {
-  stroke-width: 1.4;
 }
 
 .bramble__veins path {
@@ -352,10 +363,12 @@ samp {
   position: relative;
 }
 
-/* The illustration needs real room to read as an illustration. Below 1200px
-   the margins are too narrow, so it is dropped rather than cropped — which also
-   keeps the payload off small screens. */
-@media (max-width: 1200px) {
+/* Only shown once the viewport is wide enough that the page's own side
+   gutter is guaranteed to exceed the bramble's visible width (measured
+   empirically via the rendered ink's bounding box vs .shell's) — so it can
+   never overlap the text column. Below this it is hidden outright rather
+   than clipped/overlapping. */
+@media (max-width: 1470px) {
   .bramble {
     display: none;
   }
@@ -398,9 +411,8 @@ samp {
 }
 
 .brand__mark {
-  width: 2rem;
-  height: 2rem;
-  color: var(--accent);
+  height: 2.5rem;
+  width: auto;
   flex: none;
 }
 
@@ -416,8 +428,7 @@ samp {
   font-size: var(--step--1);
   font-weight: var(--weight-light);
   color: var(--ink-muted);
-  letter-spacing: var(--tracking-caps);
-  text-transform: uppercase;
+  letter-spacing: normal;
 }
 
 .nav-toggle {
@@ -543,8 +554,8 @@ samp {
 .hero__layout {
   display: grid;
   gap: var(--space-2xl);
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
 }
 
 @media (max-width: 900px) {
@@ -554,14 +565,56 @@ samp {
   }
 }
 
-.hero__title {
-  font-size: var(--step-5);
+.hero__title--full {
+  max-width: none;
+  margin-bottom: var(--space-xl);
+  font-size: var(--step-4);
+}
+
+/* ============================ 7b. About layout ============================ */
+.about__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 440px);
+  gap: var(--space-2xl);
+  align-items: stretch;
+}
+
+.about__text {
+  max-width: var(--measure);
+}
+
+.about__art {
+  display: flex;
+}
+
+.about__art img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+@media (max-width: 900px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .about__art {
+    order: -1;
+    max-height: 40vh;
+  }
+
+  .about__art img {
+    height: auto;
+    max-height: 40vh;
+  }
 }
 
 .hero__lede {
   max-width: var(--measure-narrow);
   margin-top: var(--space-m);
-  font-size: var(--step-1);
+  font-size: var(--step-0);
   color: var(--ink-muted);
 }
 
@@ -629,6 +682,54 @@ samp {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* Skills read as one deliberate row of four skill groups, not an
+   auto-wrapping grid — every card fills its row height so a group with
+   fewer, shorter items doesn't look shorter/misaligned next to its
+   neighbours. */
+.card-grid--skills {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+.card-grid--skills .card {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .card-grid--skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .card-grid--skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact cards read as one deliberate row of four ways to get in touch,
+   not an auto-wrapping grid. */
+.card-grid--contact {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+.card-grid--contact .card {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .card-grid--contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid--contact {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -1050,6 +1151,17 @@ ul.entry__points {
   padding: 0;
 }
 
+/* A single photo shouldn't blow up to fill the whole aside column — cap it
+   to roughly text height instead of the full 340px width. */
+.photo-strip--single {
+  grid-template-columns: minmax(0, 220px);
+}
+
+.photo-strip--single .photo img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 .photo-strip__item {
   margin: 0;
 }
@@ -1253,8 +1365,8 @@ ul.entry__points {
 }
 
 .plain-list__item {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto;
   align-items: baseline;
   gap: var(--space-3xs) var(--space-s);
   padding: var(--space-2xs) 0;
@@ -1262,13 +1374,11 @@ ul.entry__points {
 }
 
 .plain-list__title {
-  flex: 1 1 20ch;
   font-size: var(--step--1);
   font-weight: var(--weight-medium);
 }
 
 .plain-list__detail {
-  flex: 1 1 18ch;
   color: var(--ink-muted);
   font-size: var(--step--1);
 }
@@ -1278,6 +1388,71 @@ ul.entry__points {
   font-variant-numeric: tabular-nums;
   color: var(--ink-muted);
   white-space: nowrap;
+  text-align: right;
+}
+
+/* Rows without a detail column (volunteering) collapse to title + dates. */
+.plain-list__item:has(.plain-list__title + .plain-list__dates) {
+  grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 700px) {
+  .plain-list__item {
+    grid-template-columns: 1fr;
+  }
+
+  .plain-list__dates {
+    text-align: left;
+  }
+}
+
+/* Awards read as a dense list, not a sequence of separate articles — drop
+   the section-break hairlines used elsewhere in .entries. */
+.section--awards .entry {
+  border-top: none;
+}
+
+/* --- Publications (citation list) ------------------------------------------ */
+.pub-list {
+  list-style: none;
+  margin: var(--space-m) 0 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-s);
+}
+
+.pub-list__item {
+  padding-bottom: var(--space-s);
+  border-bottom: var(--hairline) solid var(--border);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+
+.pub-list__item:last-child {
+  border-bottom: 0;
+}
+
+.pub-list__authors {
+  display: inline;
+}
+
+.pub-list__year,
+.pub-list__title {
+  display: inline;
+  margin-left: 0.3em;
+}
+
+.pub-list__journal {
+  display: block;
+  margin-top: var(--space-3xs);
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.pub-list__link {
+  display: block;
+  margin-top: var(--space-3xs);
+  word-break: break-all;
 }
 
 .callout--photo {
@@ -1444,6 +1619,7 @@ ul.entry__points {
 .site-footer {
   margin-top: var(--space-3xl);
   background: var(--surface-deep);
+  background: color-mix(in srgb, var(--surface-deep) 90%, transparent);
   color: var(--on-deep);
   border-top: var(--rule-weight) solid var(--v-300);
 }
@@ -1520,6 +1696,117 @@ ul.entry__points {
 
 .callout > * + * {
   margin-top: var(--space-s);
+}
+
+/* ============================ 15b. Photo carousel ========================= */
+/* Deliberately not a .card-grid: photos keep their native aspect ratio (no
+   cropping) so widths vary from item to item, only the row height is fixed. */
+.photo-carousel__viewport {
+  position: relative;
+  margin-top: var(--space-s);
+}
+
+.photo-carousel__track {
+  display: flex;
+  gap: var(--space-s);
+  height: 380px;
+  padding-bottom: var(--space-2xs);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  border-radius: var(--radius-m);
+  scrollbar-width: thin;
+  scrollbar-color: var(--tone-soft) var(--surface-alt);
+}
+
+.photo-carousel__track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.photo-carousel__track::-webkit-scrollbar-track {
+  background: var(--surface-alt);
+  border-radius: var(--radius-s);
+}
+
+.photo-carousel__track::-webkit-scrollbar-thumb {
+  background: var(--tone-soft);
+  border-radius: var(--radius-s);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .photo-carousel__track {
+    scroll-behavior: smooth;
+  }
+}
+
+.photo-carousel__track:focus-visible {
+  outline: 3px solid var(--focus-core);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--focus-halo);
+}
+
+.photo-carousel__item {
+  flex: none;
+  height: 100%;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.photo-carousel__item img {
+  display: block;
+  height: 100%;
+  width: auto;
+  border-radius: var(--radius-m);
+}
+
+.photo-carousel__nav {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--target-comfortable);
+  height: var(--target-comfortable);
+  padding: 0;
+  transform: translateY(-50%);
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--hairline) solid var(--border);
+  border-radius: 50%;
+  box-shadow: var(--shadow-raised);
+  cursor: pointer;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.photo-carousel__nav:hover {
+  background: var(--fill-strong);
+  color: var(--on-fill-strong);
+}
+
+.photo-carousel__nav svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.photo-carousel__nav--prev {
+  left: var(--space-2xs);
+}
+
+.photo-carousel__nav--next {
+  right: var(--space-2xs);
+}
+
+.photo-carousel__copyright {
+  margin-top: var(--space-2xs);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+@media (max-width: 700px) {
+  .photo-carousel__track {
+    height: 220px;
+  }
 }
 
 @media print {

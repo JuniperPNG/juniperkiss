@@ -1,10 +1,12 @@
 {%- comment -%}
-  A bramble cane, drawn as a botanical illustration, running down the margin of
-  every page and behind the content.
+  A bramble cane, drawn as a simple repeating wave so it reads as tidy at a
+  glance rather than an "organic" tangle. Runs down the margin of every page,
+  behind the content.
 
   Decorative only: aria-hidden + focusable="false" so assistive tech skips it
   (WCAG 2.2 SC 1.1.1). It carries no information that is not also in the text,
-  and it is hidden entirely below 1200px so narrow screens stay uncluttered.
+  and it is hidden below the width where a full-width text column would sit
+  under it (see the `.bramble` media query in site.css).
 {%- endcomment -%}
 <svg class="bramble" viewBox="0 0 200 1400" preserveAspectRatio="xMidYMin meet"
      aria-hidden="true" focusable="false" role="presentation">
@@ -28,46 +30,30 @@
         <path d="M50 -25 l 5 -8" />
       </g>
     </g>
-
-    <!-- Curling tendril, the coil a climbing stem makes when it finds nothing. -->
-    <g id="bramble-tendril">
-      <path class="bramble__tendril"
-            d="M0 0 c 9 3, 15 10, 14 17 c -1 6, -8 9, -12 5
-               c -4 -4, -1 -10, 4 -9 c 4 1, 5 6, 2 8" />
-    </g>
   </defs>
 
   <g class="bramble__ink">
-    <!-- Primary cane: the long arching first-year stem -->
+    <!-- Primary cane: one smooth repeating wave, amplitude/period fixed so it
+         never kinks or crosses itself. -->
     <path class="bramble__cane"
-          d="M104 -10
-             C 74 90, 128 168, 96 258
-             C 66 344, 122 420, 92 512
-             C 64 598, 126 676, 98 770
-             C 72 858, 130 936, 100 1030
-             C 74 1114, 124 1196, 96 1290
-             L 92 1410" />
+          d="M100 -10
+             C 140 40, 140 100, 100 150
+             C 60 200, 60 260, 100 310
+             C 140 360, 140 420, 100 470
+             C 60 520, 60 580, 100 630
+             C 140 680, 140 740, 100 790
+             C 60 840, 60 900, 100 950
+             C 140 1000, 140 1060, 100 1110
+             C 60 1160, 60 1220, 100 1270
+             C 140 1320, 140 1380, 100 1410" />
 
-    <!-- Second-year laterals, shorter and stiffer side-shoots -->
-    <path class="bramble__cane bramble__cane--minor"
-          d="M96 258 C 132 296, 150 346, 138 402" />
-    <path class="bramble__cane bramble__cane--minor"
-          d="M98 770 C 62 812, 46 866, 58 922" />
-    <path class="bramble__cane bramble__cane--minor"
-          d="M100 1030 C 66 1064, 40 1108, 52 1160" />
-
-    <use href="#bramble-leaf" x="112" y="150" />
-    <use href="#bramble-leaf" x="66" y="330" transform="rotate(-150 66 330)" />
-    <use href="#bramble-leaf" x="142" y="470" transform="rotate(22 142 470)" />
-    <use href="#bramble-leaf" x="62" y="640" transform="rotate(-155 62 640)" />
-    <use href="#bramble-leaf" x="120" y="820" transform="rotate(14 120 820)" />
-    <use href="#bramble-leaf" x="58" y="990" transform="rotate(-146 58 990)" />
-    <use href="#bramble-leaf" x="126" y="1150" transform="rotate(18 126 1150)" />
-    <use href="#bramble-leaf" x="70" y="1320" transform="rotate(-152 70 1320)" />
-
-    <use href="#bramble-tendril" transform="translate(120 250)" />
-    <use href="#bramble-tendril" transform="translate(78 560) scale(-1 1)" />
-    <use href="#bramble-tendril" transform="translate(124 900)" />
-    <use href="#bramble-tendril" transform="translate(80 1240) scale(-1 1)" />
+    <!-- Leaves sit on every second bulge, evenly spaced (~320 units apart) so
+         none ever overlap each other or the cane. -->
+    <use href="#bramble-leaf" x="127" y="70" />
+    <use href="#bramble-leaf" x="127" y="390" />
+    <use href="#bramble-leaf" x="127" y="710" />
+    <use href="#bramble-leaf" x="127" y="1030" />
+    <use href="#bramble-leaf" x="127" y="1335" />
   </g>
 </svg>
+

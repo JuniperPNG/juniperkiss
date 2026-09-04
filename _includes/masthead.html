@@ -1,13 +1,9 @@
 <header class="masthead">
   <div class="shell masthead__inner">
     <a class="brand" href="{{ '/' | relative_url }}">
-      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <path d="M16 30 C 16 20, 6 18, 8 10 C 9 5, 15 4, 17 9
-                 c 2 5, -4 8, -7 5
-                 M16 22 C 20 18, 28 18, 27 11"
-              fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" />
-      </svg>
+      <img class="brand__mark" src="{{ '/assets/brand/logo-mark.png' | relative_url }}"
+           srcset="{{ '/assets/brand/logo-mark.png' | relative_url }} 1x, {{ '/assets/brand/logo-mark@2x.png' | relative_url }} 2x"
+           width="53" height="80" alt="" />
       <span class="brand__name">
         {{ site.author.short_name }}
         <span class="brand__sub">{{ site.tagline }}</span>

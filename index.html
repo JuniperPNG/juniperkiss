@@ -8,94 +8,132 @@ description: >-
 
 <section class="hero">
   <div class="shell">
+    <p class="section__eyebrow">PlantSciCV</p>
+    <h1 class="hero__title hero__title--full">Every CV has a story behind it.</h1>
+
     <div class="hero__layout">
       <div>
-        <p class="section__eyebrow">PlantSciCV</p>
-        <h1 class="hero__title">Every bullet point<br />has a story behind it.</h1>
         <p class="hero__lede">
-          I made this site as a final-year undergraduate Plant Biology student with
-          a few stories to tell. Research jobs, grants and awards look impressive
-          on a CV — but behind each line there were chance meetings, applications
-          filled out while living in a tent, random emails, and a lot of very good
-          people.
+          I first built my website as a final-year undergraduate Plant Biology
+          student with a few stories to tell. Research jobs, grants and awards
+          look impressive on a CV — but behind each line there were chance
+          meetings, applications filled out while living in a tent, random
+          emails, and a lot of amazing humans. I graduated with the highest
+          degree and undergrad dissertation marks in the UK on a science
+          degree. By 29, I reached the "top of my career" as Extension Group
+          Leader for the Northern Territory Government whilst being on a
+          backpacker visa. But. Now, I'm back to trying to do a PhD. For a
+          third time...
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="{{ '/cv/' | relative_url }}">Read the CV</a>
-          <a class="btn btn--secondary" href="{{ '/blog/' | relative_url }}">Read the blog</a>
-          <a class="btn btn--secondary" href="{{ '/assignments/' | relative_url }}">University assignments</a>
-        </div>
+        <p class="hero__lede">Hope you enjoy my ramblings!</p>
       </div>
 
       <div>
-        <div class="callout">
-          <h2 class="section__eyebrow">Not fitting into boxes</h2>
+        {% include carousel.html %}
+      </div>
+    </div>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{ '/cv/' | relative_url }}">Read my troublesome CV</a>
+      <a class="btn btn--secondary" href="{{ '/blog/' | relative_url }}">Read my rather slow blog</a>
+      <a class="btn btn--secondary" href="{{ '/assignments/' | relative_url }}">Read my ancient uni assignments</a>
+      <a class="btn btn--secondary" href="{{ '/repos/' | relative_url }}">See my GitHub repos</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="shell">
+    <div class="about__layout">
+      <div class="about__text">
+        <h2>About this website and Juniper (troublesome me!)</h2>
+        <div class="prose" style="margin-top: var(--space-l)">
           <p>
-            Two PhDs that did not finish, a tent for a house, a career that
-            peaked early, and a lot of countries. I write it all down, because a
-            tidy CV is a dishonest one.
+            I first built my website as a final-year undergraduate Plant Biology
+            student with a few stories to tell. Research jobs, grants and awards
+            look impressive on a CV — but behind each line there were chance
+            meetings, applications filled out while living in a tent, random
+            emails, and a lot of amazing humans.
           </p>
-          <p><a href="{{ '/cv/' | relative_url }}">See the CV, photographs and all</a></p>
+          <p>
+            The stories include how I ended up in Plant Biology after three years
+            of studying Marine Biology part-time, how I raised £40,000 from grants
+            and awards, how I lived with farmers in Nepal, and how I developed a
+            passion for invasive brambles. I also try to explain why I once had 70
+            fish in a suitcase and two sharks on my back on the London Underground,
+            and why I was once in a dark forest with metre-long shears and red
+            stains on my clothes. Every year, I seem to lose everything, rebuild it
+            all, get everything hoped for &ndash; only until I lose it all again.
+            It's a rollercoaster. That I happen to love.
+          </p>
+          <p>
+            To my continuous surprise, people seem to believe in troublesome me.<br />
+            I have so many ridiculous Juniper-stories and I laugh at myself a lot.<br />
+            I hope that sharing my nerdy ridiculousness makes others laugh too!
+          </p>
+          <p>Thank you for reading and please feel free to giggle at my expense!</p>
         </div>
+      </div>
+      <div class="about__art">
+        <img src="{{ '/assets/brand/logo-full-light.png' | relative_url }}"
+             alt="A hand-drawn illustration of a bramble vine entwined with fruit and the flags of the places I've worked." />
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" aria-labelledby="contact">
   <div class="shell">
-    <p class="section__eyebrow">What is here</p>
-    <h2>Three things, honestly told</h2>
-
-    <ul class="card-grid" style="margin-top: var(--space-xl)">
+    <p class="section__eyebrow">Say hello</p>
+    <h2 id="contact">Get in touch</h2>
+    <p style="margin-top: var(--space-s)">
+      Reach out via <a href="{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a>
+      or <a href="mailto:{{ site.author.email }}">email</a> for any of the below.
+    </p>
+    <ul class="card-grid card-grid--contact" style="margin-top: var(--space-l)">
       <li class="card">
-        <h3 class="card__title"><a href="{{ '/cv/' | relative_url }}">The CV, with the stories</a></h3>
+        <h3 class="card__title">Q&amp;As about work and life</h3>
         <p class="card__body">
-          The full work history, education, awards and presentations — annotated
-          with what actually happened. Including the parts that did not go to plan.
+          Curious how any of this actually worked, in a career that hasn't gone
+          in a straight line? I'm always happy to answer questions — about the
+          science, the choices I made, and the parts that didn't go to plan.
         </p>
       </li>
       <li class="card">
-        <h3 class="card__title"><a href="{{ '/blog/' | relative_url }}">The blog</a></h3>
+        <h3 class="card__title">Collaboration</h3>
         <p class="card__body">
-          How I raised £40,000 from grants and awards, living with farmers in
-          Nepal, and how I developed a passion for invasive brambles.
+          Very open to opportunities, especially around data and spatial
+          modelling, stakeholder engagement, capacity building, or just being
+          nerdy about a shared problem. Formal projects and casual chats are
+          both very welcome, however small or strange the idea.
         </p>
       </li>
       <li class="card">
-        <h3 class="card__title"><a href="{{ '/assignments/' | relative_url }}">University assignments</a></h3>
+        <h3 class="card__title">Science communication</h3>
         <p class="card__body">
-          Real undergraduate essays with their marks and the marker's feedback, so
-          international students and lecturers can see what a UK grade looks like.
+          Happy to chat with students, or anyone curious, and to write
+          articles. I also give talks on loving data, expeditions, and plants
+          — with a bias towards brambles, bananas, sweet potatoes and coffee —
+          plus malaria and seedbanking. A Troublesome Tendril at heart, always
+          fond of a crazy idea.
+        </p>
+      </li>
+      <li class="card">
+        <h3 class="card__title">Open to consultations</h3>
+        <p class="card__body">
+          I'm about to start my third PhD, which means going back to living on
+          a stipend below minimum wage — so paid consultation work is always
+          welcome. Especially keen on agriculture, food security, spatial
+          modelling, capacity building, and digital tool building.
         </p>
       </li>
     </ul>
   </div>
 </section>
 
-<section class="section section--alt">
-  <div class="shell shell--reading">
-    <p class="section__eyebrow">Who this is for</p>
-    <h2>Undergraduates, graduate students, and the people who teach them</h2>
-    <div class="prose" style="margin-top: var(--space-l)">
-      <ul>
-        <li>Undergraduates who either do, or very much do not, know where they want to end up.</li>
-        <li>Graduate students who need a reminder to laugh when an experiment or a presentation does not go to plan.</li>
-        <li>Professors, researchers and employers now teaching, supervising and hiring my generation of scientists.</li>
-      </ul>
-      <p>
-        Behind the fun and unusual stories, I also try to be honest about the
-        sacrifices, and about how world events shape a young scientist's
-        motivation. I share my university assignments with their marks so that
-        international students and educators can see what an essay scoring above
-        90% in the UK system actually looks like.
-      </p>
-    </div>
-  </div>
-</section>
-
 {%- assign recent = site.posts | slice: 0, 3 -%}
 {%- if recent.size > 0 %}
-<section class="section">
+<section class="section section--alt">
   <div class="shell">
     <p class="section__eyebrow">Latest</p>
     <h2>Recent posts</h2>

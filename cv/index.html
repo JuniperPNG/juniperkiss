@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CV
+body_class: page-cv
 description: >-
   The stories behind the CV of Juniper Kiss — plant scientist, geospatial data
   specialist and agricultural extension officer, with work across the UK,
@@ -31,22 +32,13 @@ description: >-
          decoding="async" />
     {%- endif %}
   </header>
-
-  <p class="callout callout--photo">
-    <span class="callout__icon" aria-hidden="true">
-      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2.5 6.5h3l1.5-2h6l1.5 2h3v9h-15z"/><circle cx="10" cy="11" r="3"/>
-      </svg>
-    </span>
-    {{ cv.photo_note }}
-  </p>
 </div>
 
 <section class="section section--alt" aria-labelledby="skills">
   <div class="shell">
-    <p class="section__eyebrow">Skills</p>
-    <h2 id="skills">What I actually do</h2>
-    <div class="card-grid" style="margin-top: var(--space-m)">
+    <p class="section__eyebrow">What I actually do</p>
+    <h2 id="skills">Skills</h2>
+    <div class="card-grid card-grid--skills" style="margin-top: var(--space-m)">
       {%- for group in cv.skill_groups %}
       <div class="card">
         <h3 class="card__title">
@@ -66,8 +58,8 @@ description: >-
 
 <section class="section" aria-labelledby="education">
   <div class="shell">
-    <p class="section__eyebrow">University education</p>
-    <h2 id="education">Where I studied, and why I kept moving</h2>
+    <p class="section__eyebrow">Where I studied, and why I kept moving</p>
+    <h2 id="education">University education</h2>
     <div class="entries">
       {%- for item in cv.education %}
       {% include cv-entry.html entry=item heading_level=3 %}
@@ -78,8 +70,8 @@ description: >-
 
 <section class="section section--alt" aria-labelledby="experience">
   <div class="shell">
-    <p class="section__eyebrow">Work experience</p>
-    <h2 id="experience">The jobs, and what happened in them</h2>
+    <p class="section__eyebrow">The jobs, and what happened in them</p>
+    <h2 id="experience">Work experience</h2>
     <div class="entries">
       {%- for item in cv.experience %}
       {% include cv-entry.html entry=item heading_level=3 %}
@@ -125,7 +117,7 @@ description: >-
   </div>
 </section>
 
-<section class="section" aria-labelledby="awards">
+<section class="section section--awards" aria-labelledby="awards">
   <div class="shell">
     <h2 id="awards">Scholarships and awards</h2>
     <div class="entries entries--compact">
@@ -138,7 +130,7 @@ description: >-
 
 <section class="section section--alt" aria-labelledby="presentations">
   <div class="shell">
-    <h2 id="presentations">Main presentations</h2>
+    <h2 id="presentations">A few previous talks</h2>
     <div class="entries entries--compact">
       {%- for item in cv.presentations %}
       {% include cv-entry.html entry=item heading_level=3 %}
@@ -147,7 +139,27 @@ description: >-
   </div>
 </section>
 
-<section class="section" aria-labelledby="writing">
+{%- if cv.publications %}
+<section class="section" aria-labelledby="publications">
+  <div class="shell">
+    <p class="section__eyebrow">Peer-reviewed output</p>
+    <h2 id="publications">Publications</h2>
+    <ol class="pub-list">
+      {%- for pub in cv.publications %}
+      <li class="pub-list__item">
+        <span class="pub-list__authors">{{ pub.authors }}</span>
+        <span class="pub-list__year">{{ pub.year }}.</span>
+        <span class="pub-list__title">{{ pub.title }}</span>
+        <span class="pub-list__journal">{{ pub.journal }}</span>
+        <a class="pub-list__link" href="{{ pub.url }}" rel="noopener">{{ pub.url }}</a>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endif %}
+
+<section class="section section--alt" aria-labelledby="writing">
   <div class="shell">
     <p class="section__eyebrow">Writing examples</p>
     <h2 id="writing">Things I have written</h2>

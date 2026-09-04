@@ -118,9 +118,9 @@
   --page-max: 1280px;
   --measure: 68ch;
   --measure-narrow: 58ch;
-  --bramble-width: 220px;
-  --bramble-bleed: 56px;
-  --bramble-opacity: 0.85;
+  --bramble-width: 160px;
+  --bramble-bleed: 50px;
+  --bramble-opacity: 0.7;
 
   /* Bramble illustration palette — muted and botanical rather than viridis-
      bright, so the cane reads as a real plant. Runs fresh growth (tip) to

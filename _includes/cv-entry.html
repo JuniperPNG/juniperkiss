@@ -15,7 +15,14 @@
 
     <p class="entry__meta">
       <span class="entry__dates">{{ e.dates | default: e.year }}</span>
-      {%- if e.flag %}
+      {%- if e.flags %}
+      {%- for f in e.flags %}
+      <span class="chip chip--place">
+        {%- include flag.html code=f -%}
+        {{ site.data.countries[f] }}
+      </span>
+      {%- endfor %}
+      {%- elsif e.flag %}
       <span class="chip chip--place">
         {%- include flag.html code=e.flag -%}
         {{ place }}
@@ -41,7 +48,11 @@
     </ul>
     {%- endif %}
 
-    {%- if e.link %}
+    {%- if e.links %}
+    {%- for l in e.links %}
+    <p class="entry__link"><a href="{{ l.url }}" rel="noopener">{{ l.label | default: l.url }}</a></p>
+    {%- endfor %}
+    {%- elsif e.link %}
     <p class="entry__link"><a href="{{ e.link }}" rel="noopener">{{ e.link_label | default: e.link }}</a></p>
     {%- endif %}
 
@@ -59,8 +70,15 @@
 
   {%- if e.images or e.note %}
   <div class="entry__aside">
+    {%- if e.note %}
+    <aside class="note" aria-label="Story behind this entry">
+      <span class="note__tail" aria-hidden="true"></span>
+      <p class="note__body">{{ e.note }}</p>
+    </aside>
+    {%- endif %}
+
     {%- if e.images %}
-    <ul class="photo-strip">
+    <ul class="photo-strip{% if e.images.size == 1 %} photo-strip--single{% endif %}">
       {%- for img in e.images %}
       <li class="photo-strip__item">
         <a class="photo" href="{{ img.src | relative_url }}" data-caption="{{ img.alt | escape }}">
@@ -74,14 +92,6 @@
       </li>
       {%- endfor %}
     </ul>
-    {%- endif %}
-
-    {%- if e.note %}
-    <aside class="note" aria-label="Story behind this entry">
-      <span class="note__tail" aria-hidden="true"></span>
-      <p class="note__eyebrow">The story</p>
-      <p class="note__body">{{ e.note }}</p>
-    </aside>
     {%- endif %}
   </div>
   {%- endif %}
