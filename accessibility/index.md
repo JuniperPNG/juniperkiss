@@ -94,12 +94,14 @@ organisation, so there is no cookie banner to get in your way.
   one. If you hit one that matters to you, please tell me and I will prioritise it.
 - Assignments are shared as PDFs exactly as they were submitted at university.
   Those original files are not tagged for accessibility. If you need one of them
-  in an accessible format, email me and I will provide it.
+  in an accessible format, send me a private message on
+  [LinkedIn]({{ site.social.linkedin }}) and I will provide it.
 
 ## Reporting a problem
 
-Email <hello@juniperkiss.com>. Please say which page you were on and what went
-wrong. I aim to reply within 10 working days.
+Send me a private message on [LinkedIn]({{ site.social.linkedin }}). Please say
+which page you were on and what went wrong. I aim to reply within 10 working
+days.
 
 *Statement prepared {{ 'now' | date: "%-d %B %Y" }}, based on a self-assessment
 against WCAG 2.2 level AA.*

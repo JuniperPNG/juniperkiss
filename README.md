@@ -28,8 +28,7 @@ working. Do not change `permalink` in `_config.yml`.
 ## Design
 
 Viridis palette, Kew-derived spacing and typography, and a bramble cane drawn as
-a botanical illustration running down the left gutter of every page. Documented
-at [/colophon/](https://juniperkiss.com/colophon/).
+a botanical illustration running down the left gutter of every page.
 
 Built to WCAG 2.2 level AA — see [/accessibility/](https://juniperkiss.com/accessibility/).
 

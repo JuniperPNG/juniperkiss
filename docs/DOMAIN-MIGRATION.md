@@ -62,8 +62,7 @@ across.
 In Wix, open **Domains → juniperkiss.com → Advanced → DNS records** and write
 down (or screenshot) *everything*, especially:
 
-- `MX` records — mail delivery. `hello@juniperkiss.com` is referenced on the
-  new site, so something is presumably handling it.
+- `MX` records — mail delivery, if a mailbox is ever added to the domain.
 - `TXT` records — SPF (`v=spf1 ...`), DKIM (`selector._domainkey`), DMARC
   (`_dmarc`). Missing these will silently send your outgoing mail to spam.
 - Any `CNAME` used for verification by Google, Microsoft, or a mailbox provider.
@@ -214,8 +213,7 @@ Invoke-WebRequest https://juniperkiss.com -MaximumRedirection 0
 - [ ] `www` CNAMEs to `juniperpng.github.io` and redirects to the apex
 - [ ] Certificate issued and **Enforce HTTPS** ticked
 - [ ] `https://juniperkiss.com/post/mykindofamentor/` loads (old Wix URL shape)
-- [ ] `https://juniperkiss.com/feed.xml` and `/sitemap.xml` load
-- [ ] Test email sent **and received** at `hello@juniperkiss.com`
+- [ ] `https://juniperkiss.com/sitemap.xml` loads
 - [ ] A week has passed with no problems — *then* cancel the Wix plan
 
 ---

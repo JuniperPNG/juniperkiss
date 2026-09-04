@@ -8,11 +8,13 @@ description: >-
 
 <section class="hero">
   <div class="shell">
-    <p class="section__eyebrow">PlantSciCV</p>
-    <h1 class="hero__title hero__title--full">Every CV has a story behind it.</h1>
+    <div class="hero__heading-panel">
+      <p class="section__eyebrow">PlantSciCV</p>
+      <h1 class="hero__title hero__title--full">Every CV has a story behind it.</h1>
+    </div>
 
     <div class="hero__layout">
-      <div>
+      <div class="hero__copy-panel">
         <p class="hero__lede">
           I first built my website as a final-year undergraduate Plant Biology
           student with a few stories to tell. Research jobs, grants and awards
@@ -35,9 +37,9 @@ description: >-
 
     <div class="hero__actions">
       <a class="btn btn--primary" href="{{ '/cv/' | relative_url }}">Read my troublesome CV</a>
+      <a class="btn btn--secondary" href="{{ '/repos/' | relative_url }}">See my GitHub repos</a>
       <a class="btn btn--secondary" href="{{ '/blog/' | relative_url }}">Read my rather slow blog</a>
       <a class="btn btn--secondary" href="{{ '/assignments/' | relative_url }}">Read my ancient uni assignments</a>
-      <a class="btn btn--secondary" href="{{ '/repos/' | relative_url }}">See my GitHub repos</a>
     </div>
   </div>
 </section>
@@ -67,11 +69,11 @@ description: >-
             It's a rollercoaster. That I happen to love.
           </p>
           <p>
-            To my continuous surprise, people seem to believe in troublesome me.<br />
-            I have so many ridiculous Juniper-stories and I laugh at myself a lot.<br />
+            To my continuous surprise, people seem to believe in troublesome me.
+            I have so many ridiculous Juniper-stories and I laugh at myself a lot.
             I hope that sharing my nerdy ridiculousness makes others laugh too!
           </p>
-          <p>Thank you for reading and please feel free to giggle at my expense!</p>
+          <p>Thank you for reading!</p>
         </div>
       </div>
       <div class="about__art">
@@ -87,8 +89,9 @@ description: >-
     <p class="section__eyebrow">Say hello</p>
     <h2 id="contact">Get in touch</h2>
     <p style="margin-top: var(--space-s)">
-      Reach out via <a href="{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a>
-      or <a href="mailto:{{ site.author.email }}">email</a> for any of the below.
+      Send me a private message via
+      <a href="{{ site.social.linkedin }}" rel="me noopener">LinkedIn</a>
+      about any of the below.
     </p>
     <ul class="card-grid card-grid--contact" style="margin-top: var(--space-l)">
       <li class="card">

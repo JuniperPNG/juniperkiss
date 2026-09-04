@@ -1,8 +1,14 @@
-/* Hero photo carousel prev/next buttons.
-   Track scrolls natively (keyboard, trackpad, scrollbar) without this script;
-   the buttons are pure enhancement on top of that. */
+/* Hero photo carousel controls and gentle autoplay. The track still scrolls
+   natively without this script; autoplay pauses for interaction, visibility
+   changes and reduced-motion preferences. */
 (function () {
   'use strict';
+
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var initialAutoplayDelay = 1000;
+  var autoplayDelay = 2500;
+  var interactionDelay = 1800;
+  var fadeDuration = 280;
 
   document.querySelectorAll('.photo-carousel').forEach(function (carousel) {
     var track = carousel.querySelector('.photo-carousel__track');
@@ -29,18 +35,123 @@
       return closest;
     }
 
-    function go(direction) {
+    function go(direction, wrap) {
       var target = nearestIndex() + direction;
-      target = Math.max(0, Math.min(items.length - 1, target));
-      items[target].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+
+      if (wrap && direction > 0 && atEnd) {
+        target = 0;
+      } else if (wrap && direction < 0 && target < 0) {
+        target = items.length - 1;
+      } else {
+        target = Math.max(0, Math.min(items.length - 1, target));
+      }
+
+      items[target].scrollIntoView({
+        behavior: reducedMotion.matches ? 'auto' : 'smooth',
+        block: 'nearest',
+        inline: 'start'
+      });
+      carousel.setAttribute('data-active-index', String(target));
+    }
+
+    var autoplayTimer = 0;
+    var fadeOutTimer = 0;
+    var fadeInTimer = 0;
+    var hasAutoplayStarted = false;
+    var isPointerDown = false;
+    var isVisible = true;
+
+    function clearTimers() {
+      window.clearTimeout(autoplayTimer);
+      window.clearTimeout(fadeOutTimer);
+      window.clearTimeout(fadeInTimer);
+      carousel.classList.remove('is-auto-fading');
+    }
+
+    function canAutoplay() {
+      return !reducedMotion.matches && !isPointerDown && isVisible && !document.hidden;
+    }
+
+    function scheduleAutoplay(requestedDelay) {
+      window.clearTimeout(autoplayTimer);
+      if (!canAutoplay()) return;
+      var delay = typeof requestedDelay === 'number'
+        ? requestedDelay
+        : (hasAutoplayStarted ? autoplayDelay : initialAutoplayDelay);
+      autoplayTimer = window.setTimeout(function () {
+        hasAutoplayStarted = true;
+        carousel.classList.add('is-auto-fading');
+        fadeOutTimer = window.setTimeout(function () {
+          go(1, true);
+        }, fadeDuration / 2);
+        fadeInTimer = window.setTimeout(function () {
+          carousel.classList.remove('is-auto-fading');
+          scheduleAutoplay();
+        }, fadeDuration);
+      }, delay);
+    }
+
+    function pauseAutoplay() {
+      clearTimers();
     }
 
     prev.addEventListener('click', function () {
       go(-1);
+      hasAutoplayStarted = true;
+      scheduleAutoplay(interactionDelay);
     });
 
     next.addEventListener('click', function () {
       go(1);
+      hasAutoplayStarted = true;
+      scheduleAutoplay(interactionDelay);
     });
+
+    carousel.addEventListener('focusin', function () {
+      pauseAutoplay();
+      scheduleAutoplay(interactionDelay);
+    });
+
+    carousel.addEventListener('focusout', function () {
+      scheduleAutoplay(interactionDelay);
+    });
+
+    track.addEventListener('pointerdown', function () {
+      isPointerDown = true;
+      pauseAutoplay();
+    });
+    track.addEventListener('pointerup', function () {
+      isPointerDown = false;
+      hasAutoplayStarted = true;
+      scheduleAutoplay(interactionDelay);
+    });
+    track.addEventListener('pointercancel', function () {
+      isPointerDown = false;
+      scheduleAutoplay(interactionDelay);
+    });
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) pauseAutoplay();
+      else scheduleAutoplay();
+    });
+
+    if ('IntersectionObserver' in window) {
+      var visibilityObserver = new IntersectionObserver(function (entries) {
+        isVisible = entries[0].isIntersecting;
+        if (isVisible) scheduleAutoplay();
+        else pauseAutoplay();
+      }, { threshold: 0.15 });
+      visibilityObserver.observe(carousel);
+    }
+
+    if (typeof reducedMotion.addEventListener === 'function') {
+      reducedMotion.addEventListener('change', function () {
+        if (reducedMotion.matches) pauseAutoplay();
+        else scheduleAutoplay();
+      });
+    }
+
+    scheduleAutoplay();
   });
 })();

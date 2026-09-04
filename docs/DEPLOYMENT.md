@@ -20,7 +20,7 @@ your laptop  --git push-->  GitHub repo  --Jekyll build-->  GitHub Pages CDN
 | Repository | `JuniperPNG/juniperkiss.com`, branch `main` | GitHub |
 | Site generator | Jekyll, run automatically by GitHub Pages | GitHub's build servers |
 | `CNAME` file | A one-line file in the repo root containing `juniperkiss.com`. This is what tells GitHub Pages "answer for this hostname" | repo root |
-| `_config.yml` | `url: "https://juniperkiss.com"` — used for absolute links in the RSS feed, sitemap and social cards | repo root |
+| `_config.yml` | `url` — used for absolute links in the sitemap and social cards | repo root |
 | TLS certificate | Let's Encrypt, issued and renewed automatically by GitHub once DNS is correct | GitHub |
 | DNS | The records that send `juniperkiss.com` to GitHub instead of Wix | **currently Wix — this is the bit that has to change** |
 

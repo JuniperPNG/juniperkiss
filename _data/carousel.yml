@@ -3,6 +3,10 @@
 # aspect-ratio so the layout never shifts as images load.
 # alt text: TODO — fill in by hand (left blank/placeholder for the ones
 # below that don't already have a ready caption from the original filename).
+- src: carousel-119.jpg
+  width: 1080
+  height: 1080
+  alt: "Juniper smiling at the camera with her fingers crossed"
 - src: carousel-01.jpg
   width: 1599
   height: 1600
@@ -167,3 +171,403 @@
   width: 1067
   height: 1600
   alt: "TODO"
+- src: carousel-42.jpg
+  width: 1600
+  height: 898
+  alt: "Close-up of tightly curled red tropical flower bracts"
+- src: carousel-43.jpg
+  width: 1600
+  height: 898
+  alt: "A damselfly resting on a dried plant against a vivid green background"
+- src: carousel-44.jpg
+  width: 900
+  height: 1200
+  alt: "Cereal root-health samples sealed in bags during a field trial"
+- src: carousel-45.jpg
+  width: 1600
+  height: 1060
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-46.jpg
+  width: 1403
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-47.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-48.jpg
+  width: 1269
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-49.jpg
+  width: 1600
+  height: 965
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-50.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-51.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-52.jpg
+  width: 1252
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-53.jpg
+  width: 1600
+  height: 1200
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-54.jpg
+  width: 1600
+  height: 1084
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-55.jpg
+  width: 1600
+  height: 997
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-56.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-57.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-58.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-59.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-60.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-61.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-62.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-63.jpg
+  width: 1415
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-64.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-65.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-66.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-67.png
+  width: 1600
+  height: 1100
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-68.jpg
+  width: 1600
+  height: 1200
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-69.jpg
+  width: 1600
+  height: 1119
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-70.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-71.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-72.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-73.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-74.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-75.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-76.jpg
+  width: 1145
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-77.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-78.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-79.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-80.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-81.jpg
+  width: 1600
+  height: 1027
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-82.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-83.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-84.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-85.jpg
+  width: 1600
+  height: 971
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-86.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-87.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-88.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-89.jpg
+  width: 1600
+  height: 1060
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-90.jpg
+  width: 1600
+  height: 997
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-91.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-92.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-93.jpg
+  width: 1600
+  height: 1079
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-94.jpg
+  width: 1600
+  height: 997
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-95.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-96.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-97.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-98.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-99.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-100.jpg
+  width: 1600
+  height: 1033
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-101.jpg
+  width: 1600
+  height: 1201
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-102.jpg
+  width: 1600
+  height: 1201
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-103.jpg
+  width: 1600
+  height: 1200
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-104.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-105.jpg
+  width: 1600
+  height: 1200
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-106.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-107.png
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-108.jpg
+  width: 1600
+  height: 1033
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-109.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-110.jpg
+  width: 1067
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-111.png
+  width: 1057
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-112.png
+  width: 1600
+  height: 1082
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-113.png
+  width: 1069
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-114.jpg
+  width: 1600
+  height: 1082
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-115.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-116.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-117.jpg
+  width: 1600
+  height: 1108
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-118.jpg
+  width: 1600
+  height: 997
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-120.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-121.png
+  width: 1600
+  height: 1200
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-122.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-123.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-124.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-125.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-126.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-127.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-128.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-129.png
+  width: 1600
+  height: 1060
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-130.jpg
+  width: 898
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-131.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-132.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-133.jpg
+  width: 898
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-134.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-135.jpg
+  width: 1600
+  height: 1006
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-138.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-139.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-140.jpg
+  width: 1600
+  height: 898
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-141.jpg
+  width: 1200
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-142.jpg
+  width: 1600
+  height: 1067
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-143.jpg
+  width: 1600
+  height: 1088
+  alt: "A photograph from Juniper's travels, fieldwork and research"
+- src: carousel-144.jpg
+  width: 1289
+  height: 1600
+  alt: "A photograph from Juniper's travels, fieldwork and research"

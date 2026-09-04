@@ -30,6 +30,21 @@
       {%- endif %}
     </p>
 
+    {%- if e.secondary_title %}
+    <div class="entry__secondary">
+      <h{{ h }} class="entry__title">{{ e.secondary_title }}</h{{ h }}>
+      <p class="entry__meta">
+        <span class="entry__dates">{{ e.secondary_year }}</span>
+        {%- if e.secondary_flag %}
+        <span class="chip chip--place">
+          {%- include flag.html code=e.secondary_flag -%}
+          {{ site.data.countries[e.secondary_flag] }}
+        </span>
+        {%- endif %}
+      </p>
+    </div>
+    {%- endif %}
+
     {%- if e.topics %}
     <ul class="chip-row">
       {%- for t in e.topics %}
@@ -78,7 +93,7 @@
     {%- endif %}
 
     {%- if e.images %}
-    <ul class="photo-strip{% if e.images.size == 1 %} photo-strip--single{% endif %}">
+    <ul class="photo-strip{% if e.images.size == 1 %} photo-strip--single photo-strip--align-right{% endif %}{% if e.image_layout %} photo-strip--{{ e.image_layout }}{% endif %}{% if e.image_align and e.images.size != 1 %} photo-strip--align-{{ e.image_align }}{% endif %}">
       {%- for img in e.images %}
       <li class="photo-strip__item">
         <a class="photo" href="{{ img.src | relative_url }}" data-caption="{{ img.alt | escape }}">

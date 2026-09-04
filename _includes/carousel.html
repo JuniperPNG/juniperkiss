@@ -33,7 +33,10 @@
       </svg>
     </button>
   </div>
-  <p class="photo-carousel__copyright">All photographs are my own &copy; Juniper Kiss.</p>
+  <p class="photo-carousel__copyright">
+    All photographs are my own &copy; Juniper Kiss.
+    <a href="{{ site.social.instagram }}" rel="me noopener">More pictures on Instagram</a>.
+  </p>
 </div>
 {%- assign asset_version = site.time | date: "%Y%m%d%H%M%S" -%}
 <script src="{{ '/assets/js/carousel.js' | relative_url }}?v={{ asset_version }}" defer></script>

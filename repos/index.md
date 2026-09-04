@@ -18,6 +18,9 @@ Career Researcher programme.
 
 {% include cane-rule.html %}
 
+<div class="repo-feature">
+<div class="repo-feature__copy" markdown="1">
+
 ## engraftR *(teaser)*
 
 An R package and RShiny app for plant data enrichment and prioritisation.
@@ -25,6 +28,11 @@ Still a private repo while it's under active development — get in touch if
 you'd like early access or want to try it.
 
 [Get in touch]({{ '/#contact' | relative_url }})
+
+</div>
+<img class="repo-feature__logo" src="{{ '/assets/engraftr-logo.png' | relative_url }}"
+     width="1312" height="1199" alt="engraftR logo" />
+</div>
 
 {% include cane-rule.html %}
 

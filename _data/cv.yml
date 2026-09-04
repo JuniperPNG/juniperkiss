@@ -13,9 +13,10 @@ nationality: Hungarian
 residency: United Kingdom (since 2014), Australia (since Aug 2022)
 pdf: /assets/documents/juniper-kiss-cv.pdf
 portrait: /assets/cv/juniper-portrait.jpg
+secondary_portrait: /assets/cv/juniper-plantwise-mountain.jpg
 banner: /assets/cv/cv-banner.jpg
 
-tagline: Every now and again, I will be sharing stories behind my CV.
+tagline: A few stories behind my CV
 
 profile: >-
   Trained plant scientist with extensive experience in ecological research and
@@ -29,71 +30,38 @@ skill_groups:
     icon: people
     items:
       - Stakeholder engagement
-      - Project planning and management
-      - Team leadership
-      - Multi-million dollar research proposal writing
-      - Budget management
+      - Project and team leadership
+      - Research proposals and budgets
       - Training and workshop delivery
       - Science communication
-      - Graphic design
-  - label: Science
+      - Graphic and visual design
+  - label: Scientific expertise
     icon: microscope
     items:
-      - Botany
-      - Plant pathology
-      - Epidemiology
-      - Lab and greenhouse experiments
-      - Literature reviews
-      - Plant conservation
-      - Seedbanking
-      - Social science
-      - Innovation adoption
-      - Knowledge transfer
-      - Field trials
-      - Agriculture
-      - Malaria
-      - Phylogenetics
-      - Taxonomy
-      - Data science
-  - label: Analysis
+      - Botany and plant pathology
+      - Agriculture and extension
+      - Field, lab and greenhouse trials
+      - Conservation and seedbanking
+      - Epidemiology and malaria
+      - Taxonomy and phylogenetics
+  - label: Analysis and modelling
     icon: map
     items:
-      - Advanced statistics
-      - Bayesian statistics
-      - Spatial analysis
-      - Remote sensing
-      - GIS (QGIS, ArcGIS)
-      - Google Earth Engine
-      - Shotgun metagenomics
-      - AI chatbot building
-      - Data extraction (APIs, Python)
-      - AI and LLMs
-  - label: Coding, programming and software development
+      - Statistical and Bayesian modelling
+      - Spatial analysis and GIS
+      - Remote sensing and Earth Engine
+      - Data science and visualisation
+      - Metagenomics
+      - Evidence and literature synthesis
+  - label: Coding and digital tools
     icon: code
     items:
-      - R
-      - Python
-      - SQL
-      - Bash
-      - C++
-      - Julia
-      - MATLAB
-      - Java
-      - JavaScript
-      - HTML
-      - VBA
-      - Git, GitHub and GitLab
-      - HPC
-      - AWS (EC2, AWS Batch)
-      - Google Cloud and BigQuery
-      - Azure
-      - Power BI
-      - RShiny app development
-      - Workflow automation
-      - Multi-agent LLM workflows
-      - Power Automate
-      - APIs
-      - Data governance
+      - R, Python and SQL
+      - Git and reproducible workflows
+      - Cloud and high-performance computing
+      - APIs and data pipelines
+      - Interactive apps and dashboards
+      - AI and LLM workflows
 
 education:
   - dates: 2026–2031
@@ -114,6 +82,13 @@ education:
       C4LAND cohort. A spatial Mixed Integer Programming approach to restoration
       and agriculture in coffee landscapes, with a 12-month placement at the
       Karlsruhe Institute of Technology.
+    points:
+      - 'Running title: "Spatial optimisation of restoration actions for ecosystem services"'
+    note: Third PhD try... what could go wrong..?!
+    image_layout: wide
+    images:
+      - src: /assets/cv/melbourne-restoration-optimisation-framework.png
+        alt: Framework for dynamically optimising restoration actions across landscapes and species.
 
   - dates: 2020–2022
     title: PhD, University of Southampton
@@ -145,6 +120,7 @@ education:
     note: >-
       I got severe malaria during my fieldwork in PNG — and then saw my own blood
       smears and parasites!
+    image_layout: tile
     images:
       - src: /assets/cv/png-plant-id-workshop.jpg
         alt: A plant identification workshop in Papua New Guinea.
@@ -152,6 +128,8 @@ education:
         alt: Plant colouring books, which became very popular during my PhD fieldwork in PNG.
       - src: /assets/cv/second-phd-outline.jpg
         alt: The outline of my second PhD project.
+      - src: /assets/cv/southampton-png-banana-field-trial.jpg
+        alt: A banana field trial in Papua New Guinea.
 
   - dates: 2019–2020
     title: MRes (Distinction), University of Bristol, based at the University of Exeter
@@ -186,13 +164,14 @@ education:
         in vivo trials report much larger effect sizes than field trials.
     note: >-
       My supervisor got naked next to me, so I decided to leave my first PhD.
+    image_layout: tile
     images:
       - src: /assets/cv/mres-greenhouse-tr4-trial.jpg
         alt: A greenhouse TR4 trial against Cavendish bananas.
-      - src: /assets/cv/mres-in-vitro-tr4-trial.jpg
-        alt: An in vitro TR4 trial plate.
       - src: /assets/cv/first-phd-fusarium-tr4-trials-against-cavendish-bananas.jpg
         alt: Fusarium TR4 trials against Cavendish bananas.
+      - src: /assets/cv/mres-costa-rica-banana-trial.jpg
+        alt: A marked banana field trial in Costa Rica.
       - src: /assets/cv/banana-sucker-replantation-in-costa-rica.jpg
         alt: Banana sucker replantation in Costa Rica.
 
@@ -212,6 +191,7 @@ education:
     note: >-
       After living with farmers and working with Plantwise in Nepal with a
       scholarship, I decided to switch to study Plant Biology.
+    image_align: right
     images:
       - src: /assets/cv/my-bramble-project-detangled-150-year-old-classification-sys.jpg
         alt: >-
@@ -238,8 +218,6 @@ education:
         alt: My home for three summers — a tent pitched in a field.
       - src: /assets/cv/goes-magazine-was-my-baby.jpg
         alt: GOES magazine, which was my "baby".
-      - src: /assets/cv/goes-magazine-page.png
-        alt: A spread from GOES magazine.
     video: kj9600R_C8w
     video_label: how GOES magazine started
 
@@ -285,7 +263,9 @@ experience:
         alt: An example of a data workflow I developed.
       - src: /assets/cv/kew-hosting-ethiopian-diplomats.jpg
         alt: Hosting Ethiopian diplomats at the Millennium Seed Bank.
-    note: "TODO — add the story behind this one."
+    note: >-
+      After my Aussie WHM ran out, I sought job-hunting, low-cost refuge in
+      Indonesia where I got lucky and magically got a job at Kew!
 
   - role: Technical Advisor
     org: >-
@@ -315,24 +295,26 @@ experience:
       - Built around 15 robust RShiny apps using asynchronous programming and EC2
         deployment, both for internal data processing and as stand-alone secure apps
         for external partners.
-      - Led and designed the first hybrid cohort of the MAP Dar ECR Training and
-        Mentorship Programme to increase research capacity in coding, spatial
-        modelling, communication and leadership in Tanzania and Zambia, with a 100%
-        satisfaction rate across the 10 participants.
-    link: https://juniperpng.github.io/MAP_training/
-    link_label: MAP ECR Training Programme
+      - Led and designed the first hybrid cohort of the <a
+        href="https://juniperpng.github.io/MAP_training/" rel="noopener">MAP ECR
+        Training Programme</a> to increase research capacity in coding, spatial
+        modelling, communication and leadership in Tanzania and Zambia, with a
+        100% satisfaction rate across the 10 participants.
     note: >-
-      I designed and led the first hybrid ECR development programme for Tanzanian
-      and Zambian researchers — coding, spatial modelling and leadership.
+      My former colleague told me "we need you". Knew my soft spot and naturally
+      came back to MAP!
     video: ixgiqMiL97Q
     video_label: welcome to the MAP Dar ECR Programme, Cohort 1
+    image_layout: tile
     images:
       - src: /assets/cv/example-dhs-and-mis-survey-data-in-tanzania-and-zambia-visua.png
         alt: A visualisation of DHS and MIS survey data in Tanzania and Zambia.
-      - src: /assets/cv/inla-model-diagnostics.jpg
-        alt: INLA model diagnostics.
+      - src: /assets/cv/map-sudan-cluster-matching.png
+        alt: Sudan malaria survey-cluster coordinate matching workflow.
       - src: /assets/cv/lancet-malaria-mapping-paper.jpg
         alt: The Lancet paper mapping global Plasmodium falciparum and vivax malaria.
+      - src: /assets/cv/ammnet-symposium-dar-es-salaam.jpg
+        alt: MAP Dar ECR Training Programme symposium participants in Dar es Salaam.
 
   - role: Extension Group Leader
     org: Department of Industry, Trade and Tourism, Northern Territory Government (Darwin, NT)
@@ -367,6 +349,7 @@ experience:
     note: >-
       Left because of knee surgery and Working Holiday Maker visa limits. My career
       peaked early.
+    image_layout: tile-left
     images:
       - src: /assets/cv/watermelon-trials-had-their-perks.jpg
         alt: Watermelon trials, which had their perks.
@@ -374,10 +357,6 @@ experience:
         alt: The long-term cattle grazing research station at Alice Springs.
       - src: /assets/cv/extension-group-brainstorming-session.jpg
         alt: An extension group brainstorming session.
-      - src: /assets/cv/extension-nt-photo-1.jpg
-        alt: Extension work in the Northern Territory.
-      - src: /assets/cv/extension-nt-photo-2.jpg
-        alt: Extension work in the Northern Territory.
 
   - role: Research Officer
     org: Geospatial Health and Development, Telethon Kids Institute (Perth, WA)
@@ -407,11 +386,20 @@ experience:
     note: >-
       My application was basically "I had malaria, it was cool, I love data, can I
       come?" — and they said yes!
+    image_layout: tile-last-wide
     images:
       - src: /assets/cv/antimalarial-treatment-outcome-predictions-based-on-resistan.jpg
         alt: Antimalarial treatment outcome predictions based on resistance genomic data.
+      - src: /assets/cv/research-pipeline-memory-usage.png
+        alt: Memory usage while running a malaria modelling pipeline.
+      - src: /assets/cv/research-malaria-3d-mesh.png
+        alt: Three-dimensional mesh used for spatial malaria modelling.
+      - src: /assets/cv/research-batch-memory-usage.png
+        alt: Memory usage across repeated malaria modelling batches.
+      - src: /assets/cv/inla-model-diagnostics.jpg
+        alt: INLA model diagnostics.
 
-  - role: Agricultural Extension, Research and Development Officer
+  - role: Research & Development Coordinator
     org: Liebe Group (Dalwallinu, WA)
     dates: 08/2022–12/2022
     flag: au
@@ -439,16 +427,19 @@ experience:
         information from 18 paddocks with CSIRO.
       - Led FullCAM modelling for ACCU/carbon estimation through plantation projects
         and soil salinity management trials.
+    image_layout: tile
     images:
       - src: /assets/cv/field-walk-with-farmers-in-canola-trials-in-the-wheatbelt.jpg
         alt: A field walk with farmers in canola trials in the Wheatbelt.
       - src: /assets/cv/yuna-fieldtrip-with-growers.jpg
         alt: A field trip to Yuna with growers.
-      - src: /assets/cv/predicta-b-root-health-samples.jpg
-        alt: Predicta B root health samples.
+      - src: /assets/cv/liebe-field-trials-collage.png
+        alt: Field trials and grower extension activities coordinated with the Liebe Group.
+      - src: /assets/cv/liebe-nitrogen-trial-design.png
+        alt: Nitrogen treatment layout for a replicated field trial.
     note: "TODO — add the story behind this one."
 
-  - role: Blogger
+  - role: Blogger and Social Media Assistant
     org: Botany One (UK)
     dates: 04/2020–01/2022
     flag: gb
@@ -456,20 +447,26 @@ experience:
     topics:
       - icon: pen
         label: Science writing
-      - icon: bramble
-        label: Brambles
+      - icon: talk
+        label: Digital communication
     points:
-      - Wrote two research summaries per week for a general plant science audience.
-    link: https://www.botany.one/author/juniper/
-    link_label: Botany One archive
-    note: >-
-      I also recorded a video about brambles during lockdown, trying to cheer
-      people up.
+      - Managed social media channels using Buffer and TweetDeck and wrote two blog
+        articles per week for the <a href="https://www.botany.one/author/juniper/"
+        rel="noopener">Botany One archive</a>.
+      - Monitored daily plant science-related press releases, interviewed scientists,
+        and wrote a weekly newsletter to 3,000+ subscribers.
+      - Maintained website content in HTML, coordinated blog articles and projects on
+        Airtable with a team of five bloggers, and incorporated AI tools.
+    image_layout: tile
     images:
-      - src: /assets/cv/bramble-plant-day-infographic.jpg
-        alt: My bramble infographic for Fascination of Plants Day.
-    video: EBUj_BngOik
-    video_label: my lockdown video about brambles
+      - src: /assets/cv/botany-one-archive-2021-2022.png
+        alt: Botany One articles written by Juniper in 2021 and 2022.
+      - src: /assets/cv/botany-one-archive-2021.png
+        alt: Botany One plant-science articles written by Juniper in 2021.
+      - src: /assets/cv/botany-one-digital-botany-2026.png
+        alt: Digital Botany focus-issue articles written by Juniper in 2026.
+      - src: /assets/cv/botany-one-plant-day-2021.png
+        alt: Botany One Fascination of Plants Day articles written by Juniper in 2021.
 
   - role: Social Media and Digital Communications Assistant
     org: American Society of Plant Biologists (remote)
@@ -495,7 +492,9 @@ experience:
         alt: The Taproot podcast, which I edited and promoted.
       - src: /assets/cv/established-the-plantae-brand-and-design.png
         alt: The Plantae brand and design system I established.
-    note: "TODO — add the story behind this one."
+    note: >-
+      After being an ASPB Conviron Scholar, I got to keep working with ASPB and
+      got a tad obsessed with social media stats and optimisation.
 
   - role: Field Trials Technician and Team Leader
     org: NIAB (Cambridge, UK)
@@ -520,12 +519,22 @@ experience:
         samples and prepared drilling plans.
       - Visited farms as a certified Crop Inspector for oilseed rape, cereals,
         grasses, legumes and potatoes.
+    image_layout: tile
     images:
+      - src: /assets/cv/niab-fieldwork-2022-09-02.jpg
+        alt: A flowering oilseed rape field during NIAB fieldwork.
+      - src: /assets/cv/niab-fieldwork-2022-12-07.jpg
+        alt: A cereal variety trial marked out across a field.
       - src: /assets/cv/crop-veriaty-trials-included-recroding-approximately-20-seed.jpg
         alt: >-
           Crop variety trials, which included recording around 20 seed
           characteristics of cereals.
-    note: "TODO — add the story behind this one."
+      - src: /assets/cv/niab-fieldwork-2022-11-21.jpg
+        alt: Yield and GPS data displayed inside agricultural field machinery.
+    note: >-
+      At 21, I became a "Teams Leader". I held lots of team building exercises
+      (pranking) and had to be officially told off for... buying too much cake for
+      my team. From then on, I had to claim back all the snacks.
 
   - role: Summer Research Technician
     org: CABI (Egham, UK)
@@ -546,7 +555,11 @@ experience:
     images:
       - src: /assets/cv/trialling-psyllids-as-biocontrol-agents-against-the-invasive.jpg
         alt: Trialling psyllids as biocontrol agents against invasive Japanese knotweed.
-    note: "TODO — add the story behind this one."
+    note: >-
+      I was called a "CABI" baby as I first worked there as a high school
+      student. Got obsessed with the Plantwise programme of plant clinics and
+      plant doctors which I got to visit in Nepal and Costa Rica! Very special
+      place & people.
 
   - role: Independent undergraduate research
     org: Anglia Ruskin University and Aberystwyth University
@@ -573,11 +586,20 @@ experience:
     note: >-
       My supervisors told me NOT to work on brambles, so I HAD to work on
       brambles...
+    image_layout: tile-left-stack
     images:
       - src: /assets/cv/bramble-cane-propagation-protocol.jpg
         alt: >-
           Stages of the bramble cane propagation protocol I developed, from cut
           canes to rooted plants.
+      - src: /assets/cv/bramble-research-113428.png
+        alt: Methods from my undergraduate bramble taxonomy research.
+      - src: /assets/cv/bramble-research-113103.png
+        alt: Phylogenetic signal results from my undergraduate bramble research.
+      - src: /assets/cv/bramble-research-112943.png
+        alt: Summary of my undergraduate bramble taxonomy research.
+    video: EBUj_BngOik
+    video_label: my lockdown video about brambles
 
   - role: C. Roy Adair Scholar
     org: University of Arkansas (Fayetteville, USA)
@@ -605,6 +627,7 @@ experience:
     note: >-
       Summer of 2018: I flew AROUND THE GLOBE on two grants — London to Arkansas,
       then Vancouver, then Manila, then Doha, then Ireland!
+    image_layout: tile-fit
     images:
       - src: /assets/cv/working-on-spinach-farms-in-california.jpg
         alt: Working on spinach farms in California.
@@ -612,6 +635,8 @@ experience:
         alt: Plant pathogen isolations in the lab.
       - src: /assets/cv/c-roy-adair-scholarship.jpg
         alt: The C. Roy Adair Scholarship.
+      - src: /assets/cv/c-roy-adair-scholarship-article.png
+        alt: Methods used to test the viability of downy mildew oospores and sporangia.
 
 work_history:
   - role: Postgraduate Demonstrator
@@ -729,9 +754,13 @@ awards:
   - year: 2019
     title: Royal Society of Biology Top Student Award
     flag: gb
-  - year: 2019
-    title: Royal Society of Biology Top Project Award for a BSc Student on an RSB-accredited scheme
-    flag: gb
+    secondary_title: Royal Society of Biology Top Project Award for a BSc Student on an RSB-accredited scheme
+    secondary_year: 2019
+    secondary_flag: gb
+    image_layout: award-pair
+    images:
+      - src: /assets/cv/rsb-top-student-project-awards.jpg
+        alt: A new bramble shoot produced during my award-winning BSc research project.
   - year: 2019
     title: Stapledon Society Prize
     flag: wales
@@ -753,9 +782,6 @@ awards:
     note: >-
       Couch surfed during my stay with amazing PhD students at UoM as the travel
       award didn't even cover the flights.
-    images:
-      - src: /assets/cv/corteva-travel-award-minnesota.jpg
-        alt: Presenting at the Plant Sciences Symposium, University of Minnesota.
   - year: 2018
     title: "'Best Presenter' Award, Young Systematists Forum, Natural History Museum, London"
     flag: gb
@@ -794,9 +820,6 @@ awards:
       I emailed the organisers eight months ahead of time to ask for this grant —
       and still ended up eating noodles in my room at the Hilton to make the
       money stretch.
-    images:
-      - src: /assets/cv/phenome-travel-grant-tucson.jpg
-        alt: Presenting at the Phenome Conference, Tucson.
     link: /assets/documents/phenome-poster.pdf
     link_label: Download my Phenome poster (PDF)
   - year: 2017
@@ -805,6 +828,11 @@ awards:
     detail: >-
       A hands-on virtual learning programme of career seminars, round tables and
       workshops, mentored by Prof Sarah Wyatt. Built whystudyplants.com as part of it.
+    note: >-
+      I spotted the scholarship opportunity whilst I was on a bus to Scotland and
+      quickly filled it out. Had no idea how it would lead to a job and getting to
+      know amazing plant scientists around the world and then designing the MAP ECR
+      programme somewhat based on this programme!
     links:
       - url: https://aspb.org/awards-funding/aspb-awards/aspb-conviron-scholars-program/awardees/
         label: ASPB Conviron Scholars awardees
@@ -880,6 +908,7 @@ awards:
     detail: >-
       Ten weeks in the Namib Desert at Kuzikus Nature Reserve — vegetation surveys,
       animal population counts and small mammal trapping.
+    image_layout: tile
     images:
       - src: /assets/cv/moth-sample-preparation-in-namibia.jpg
         alt: Preparing moth samples in Namibia.

@@ -16,7 +16,7 @@ description: >-
       <p class="section__eyebrow">Curriculum vitae</p>
       <h1>{{ cv.known_as }}</h1>
       <p class="cv-header__tagline">{{ cv.tagline }}</p>
-      <p class="lede">{{ cv.profile }}</p>
+      <p class="lede cv-header__profile">{{ cv.profile }}</p>
       <dl class="cv-header__facts">
         <dt>Legal name</dt><dd>{{ cv.name }}</dd>
         <dt>Nationality</dt><dd>{% include flag.html code="hu" %}{{ cv.nationality }}</dd>
@@ -26,11 +26,20 @@ description: >-
         <a class="btn btn--primary" href="{{ cv.pdf | relative_url }}" download>Download the CV (PDF)</a>
       </p>
     </div>
-    {%- if cv.portrait %}
-    <img class="cv-header__portrait" src="{{ cv.portrait | relative_url }}"
-         alt="An illustrated portrait of Juniper Kiss." width="220" height="220"
-         decoding="async" />
-    {%- endif %}
+    <div class="cv-header__portraits">
+      {%- if cv.portrait %}
+      <img class="cv-header__portrait" src="{{ cv.portrait | relative_url }}"
+           alt="An illustrated portrait of Juniper Kiss." width="220" height="220"
+           decoding="async" />
+      {%- endif %}
+      {%- if cv.secondary_portrait %}
+      <div class="cv-header__portrait cv-header__portrait--photo">
+        <img src="{{ cv.secondary_portrait | relative_url }}"
+             alt="Juniper Kiss wearing a Plantwise cap in the mountains."
+             width="2448" height="3264" decoding="async" />
+      </div>
+      {%- endif %}
+    </div>
   </header>
 </div>
 
@@ -84,7 +93,7 @@ description: >-
 <section class="section" aria-labelledby="work-history">
   <div class="shell">
     <h2 id="work-history">Everything else</h2>
-    <ul class="plain-list">
+    <ul class="plain-list plain-list--work-history">
       {%- for item in cv.work_history %}
       <li class="plain-list__item">
         <span class="plain-list__title">
@@ -131,7 +140,25 @@ description: >-
 <section class="section section--alt" aria-labelledby="presentations">
   <div class="shell">
     <h2 id="presentations">A few previous talks</h2>
-    <div class="entries entries--compact">
+    <div class="entries entries--compact entries--masonry" aria-label="Previous talks">
+      <div class="entries--masonry__column">
+      {%- for item in cv.presentations %}
+      {%- assign column_remainder = forloop.index0 | modulo: 2 -%}
+      {%- if column_remainder == 0 %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endif -%}
+      {%- endfor %}
+      </div>
+      <div class="entries--masonry__column">
+      {%- for item in cv.presentations %}
+      {%- assign column_remainder = forloop.index0 | modulo: 2 -%}
+      {%- if column_remainder == 1 %}
+      {% include cv-entry.html entry=item heading_level=3 %}
+      {%- endif -%}
+      {%- endfor %}
+      </div>
+    </div>
+    <div class="entries entries--compact entries--talks-mobile" aria-label="Previous talks">
       {%- for item in cv.presentations %}
       {% include cv-entry.html entry=item heading_level=3 %}
       {%- endfor %}
@@ -163,7 +190,7 @@ description: >-
   <div class="shell">
     <p class="section__eyebrow">Writing examples</p>
     <h2 id="writing">Things I have written</h2>
-    <ul class="plain-list">
+    <ul class="plain-list plain-list--writing">
       {%- for item in cv.writing %}
       <li class="plain-list__item">
         <span class="plain-list__title">

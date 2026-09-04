@@ -31,7 +31,7 @@ See [README.md](README.md) for the content-editing table (posts, CV, nav, tokens
 - **Design system**: viridis palette, one font family only (`--font-sans` —
   do not add a second/display font), tokens in `assets/css/tokens.css`. Site
   targets WCAG 2.2 AA — see [/accessibility/index.md](accessibility/index.md)
-  and [/colophon/index.md](colophon/index.md) for the rationale.
+  for the rationale.
   - Spacing/type rhythm is already Kew-inspired (`--pad-h`/`--pad-v`, fluid
     `--step-*` type scale, Roboto) — see the reference bundle at
     `C:\Users\junip\OneDrive - The Royal Botanic Gardens, Kew\DataProcessing\34_Kew_stylesheets\01_Kew_style_guide_22072026`
