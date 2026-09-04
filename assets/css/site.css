@@ -1051,7 +1051,7 @@ body.page-cv .entry {
 
 .cv-header .cv-header__profile {
   font-size: var(--step--1);
-  color: #fff;
+  color: var(--cv-profile-fg);
 }
 
 [data-protected-image] {
