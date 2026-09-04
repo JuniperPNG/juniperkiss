@@ -617,9 +617,9 @@ body.page-cv .entry {
 
 @keyframes scroll-reveal-in {
   from {
-    opacity: 0.72;
-    transform: translateY(12px);
-    filter: blur(0.4px);
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(0.5px);
   }
   to {
     opacity: 1;
