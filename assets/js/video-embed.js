@@ -16,6 +16,8 @@
 
         var iframe = document.createElement("iframe");
         iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1";
+        var start = parseInt(wrap.dataset.videoStart, 10);
+        if (Number.isFinite(start) && start > 0) iframe.src += "&start=" + start;
         iframe.title = title;
         iframe.allow =
           "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";

@@ -1,5 +1,6 @@
 ---
 layout: post
+publication_tag: Published in GOES
 title: "Interview With Exec Producer of Between Earth and Sky documentary (2017)"
 date: 2019-03-01 21:19:17 +0000
 slug: interview-with-exec-producer-of-between-earth-and-sky-documentary-2017

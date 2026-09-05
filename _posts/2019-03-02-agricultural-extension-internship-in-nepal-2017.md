@@ -1,5 +1,6 @@
 ---
 layout: post
+publication_tag: Published in GOES
 title: "Agricultural Extension Internship in Nepal (2017)"
 date: 2019-03-02 21:49:14 +0000
 slug: agricultural-extension-internship-in-nepal-2017

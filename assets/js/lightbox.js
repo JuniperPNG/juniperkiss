@@ -15,7 +15,8 @@
   function open(link) {
     lastFocused = link;
     image.src = link.getAttribute('href');
-    image.alt = link.getAttribute('data-caption') || '';
+    var thumbnail = link.querySelector('img');
+    image.alt = thumbnail ? thumbnail.alt : (link.getAttribute('data-caption') || '');
     caption.textContent = link.getAttribute('data-caption') || '';
     dialog.showModal();
     closeButton.focus();

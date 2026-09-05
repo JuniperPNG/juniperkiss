@@ -1038,5 +1038,27 @@
         "width": 1600
       }
     ]
+  },
+  "maria-susana-sanchez-chavez-on-edge-data-and-conserving-pinus-culminicola-on-the-ground-in-mexico": {
+    "gallery-10": [
+      {
+        "src": "/assets/blog/botany-one/mexico-pine-conservation/10.jpg",
+        "alt": "People on a grassy mountain slope above a layer of low cloud.",
+        "width": 675,
+        "height": 1200
+      },
+      {
+        "src": "/assets/blog/botany-one/mexico-pine-conservation/11.jpg",
+        "alt": "A group standing beneath a tall pine tree in open woodland.",
+        "width": 800,
+        "height": 1200
+      },
+      {
+        "src": "/assets/blog/botany-one/mexico-pine-conservation/12.jpg",
+        "alt": "A person wearing an EDGE cap and a neck covering on a rocky, wooded slope.",
+        "width": 900,
+        "height": 1200
+      }
+    ]
   }
 }

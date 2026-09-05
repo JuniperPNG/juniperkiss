@@ -61,6 +61,21 @@ use the actual pixel dimensions. Do not leave a placeholder path active.
 
 ## Publish when ready
 
+For an article first published elsewhere, keep its original date and add
+these fields above the second `---` line:
+
+```yaml
+date: 2026-07-19 11:30:09 +0000
+original_publication: Botany One
+original_url: https://www.botany.one/the-original-article/
+```
+
+The post displays a linked publication credit below the date. Keep original
+image credits and their links in the figure captions. Use `show_hero: false`
+if the `image` is already in the article: it will still appear on blog cards
+without repeating above the text. An optional `image_caption` credits a
+separate cover image.
+
 1. Move the finished draft into `_posts/` and name it
    `YYYY-MM-DD-your-post-slug.md` with the intended publication date.
 2. Set `slug: your-post-slug`, add its `date` if you want a specific time,

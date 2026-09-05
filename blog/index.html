@@ -28,6 +28,15 @@ description: >-
       <div>
         <p class="post-card__meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          {%- if post.publication_tag %}
+            {%- if post.original_url %}
+          <a class="tag" href="{{ post.original_url | escape }}">{{ post.publication_tag | escape }}</a>
+            {%- else %}
+          <span class="tag">{{ post.publication_tag | escape }}</span>
+            {%- endif %}
+          {%- elsif post.original_publication == 'Botany One' and post.original_url %}
+          <a class="tag" href="{{ post.original_url | escape }}">Published on BotanyOne</a>
+          {%- endif %}
         </p>
         <h2 class="post-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="post-card__excerpt">{{ post.description | truncate: 220 }}</p>

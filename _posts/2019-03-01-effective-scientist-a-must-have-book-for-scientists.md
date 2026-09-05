@@ -1,5 +1,8 @@
 ---
 layout: post
+publication_tag: Published on Plantae
+original_publication: Plantae
+original_url: https://plantae.org/effective-scientist-a-must-have-book-for-scientists-2/
 title: "'Effective Scientist' - a must-have book for scientists"
 date: 2019-03-01 22:01:58 +0000
 slug: effective-scientist-a-must-have-book-for-scientists

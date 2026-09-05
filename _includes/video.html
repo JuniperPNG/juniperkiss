@@ -1,7 +1,7 @@
-<div class="video-embed" data-video-id="{{ include.id | escape }}">
+<div class="video-embed" data-video-id="{{ include.id | escape }}"{% if include.start %} data-video-start="{{ include.start | plus: 0 }}"{% endif %}>
   <button type="button" class="video-embed__play" data-title="{{ include.title | escape }}">
     <span class="video-embed__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
     <span class="video-embed__label">Watch: {{ include.title | escape }}</span>
   </button>
 </div>
-<p class="video-embed__fallback"><a href="https://www.youtube.com/watch?v={{ include.id | escape }}" rel="noopener">Watch on YouTube: {{ include.title | escape }}</a></p>
+<p class="video-embed__fallback"><a href="https://www.youtube.com/watch?v={{ include.id | escape }}{% if include.start %}&amp;t={{ include.start | plus: 0 }}s{% endif %}" rel="noopener">Watch on YouTube: {{ include.title | escape }}</a></p>

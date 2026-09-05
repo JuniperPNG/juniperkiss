@@ -1059,6 +1059,10 @@ body.page-cv .entry {
 }
 
 .post-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2xs) var(--space-m);
   font-size: var(--step--1);
   color: var(--ink-muted);
   margin-bottom: var(--space-2xs);
@@ -1088,6 +1092,11 @@ body.page-cv .entry {
   color: var(--ink-muted);
 }
 
+.post-source {
+  margin-top: var(--space-xs);
+  font-size: var(--step--1);
+}
+
 .post-hero img {
   width: 100%;
   max-height: 60vh;
@@ -1105,7 +1114,8 @@ body.page-cv .entry {
   background: var(--surface-sunken);
 }
 
-.post-figure figcaption {
+.post-figure figcaption,
+.post-hero figcaption {
   margin-top: var(--space-2xs);
   font-size: var(--step--1);
   color: var(--ink-muted);
