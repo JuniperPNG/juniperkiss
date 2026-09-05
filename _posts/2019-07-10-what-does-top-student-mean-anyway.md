@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "What does ‘Top Student’ mean anyway? &#010;"
+title: "What does ‘Top Student’ mean anyway?"
 date: 2019-07-10 18:26:53 +0000
 slug: what-does-top-student-mean-anyway
-description: "Over a week has passed by since I got back my undergrad graduation results. I was over the moon when I saw the 95% overall mark for my dissertation module and eagerly calculated my overall average. It was 84.29%. I know - it is not 85%. Just a gentle reminder to the UK marking system - above 70% eve"
+description: "Behind a top student award are colourful pens, careful preparation and plenty of self-doubt. I share how I approach essays and exams, and why the people who encourage us matter."
 image: /assets/blog/what-does-top-student-mean-anyway/00-hero-812149_569bb757623a4defa10df7195bbe7fb9-mv2.jpg
+image_alt: "A speaker on a TED stage beside a projected Venn diagram."
 migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anyway
+image_width: 1110
+image_height: 618
 ---
 <p>Over a week has passed by since I got back my undergrad graduation results. I was over the moon when I saw the 95% overall mark for my dissertation module and eagerly calculated my overall average. It was 84.29%. I know - it is not 85%. </p>
 
@@ -147,9 +150,7 @@ migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anywa
 
 <p>[If I have lost anyone just for starting a sentence with 'Wikipedia says' - I am sorry. But this is how a 'Top Student' does things, you know]</p>
 
-<figure class="post-figure">
-  <img src="{{ '/assets/blog/what-does-top-student-mean-anyway/01-812149_46e9b7f1b948490da388db85be3e78f6-mv2.png' | relative_url }}" alt="" loading="lazy" decoding="async" />
-</figure>
+{% include blog-gallery.html gallery="gallery-1" %}
 
 <p><strong>So. </strong>What I do - I find lectures rooms in a hidden part of the uni, somewhat close to each other. I ‘assign’ each room to each question. Oh yes. This gets better. </p>
 
@@ -167,7 +168,7 @@ migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anywa
 
 <p><strong>Rotating between rooms, closing eyes and pretending to be a magician for 3 days. </strong></p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_a324e15aa48648b1967e43dbd728b123~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_a324e15aa48648b1967e43dbd728b123~mv2_d_3264_2448_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_d70602d7a1c243e9b8e0c4a9a6c7b4ab~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_d70602d7a1c243e9b8e0c4a9a6c7b4ab~mv2_d_3264_2448_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_26a542f00c0542b88d8d45c0cd81b428~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_26a542f00c0542b88d8d45c0cd81b428~mv2_d_3264_2448_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_4037bf193fef4408a5397fc23dffb31a~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_4037bf193fef4408a5397fc23dffb31a~mv2_d_3264_2448_s_4_2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-2" %}
 
 <p>This is how I got between 87-92% for essays in exams. If you wanna strengthen the differences between rooms - change pen colours, drink different things (switch from coffee to tea and then tea to water). The only thing I have not done is getting different scents to induce olfactory senses (^^). </p>
 
@@ -197,9 +198,7 @@ migrated_from: https://www.juniperkiss.com/post/what-does-top-student-mean-anywa
 
 <p>Minutes after posting this blog onto FB - I got the kindest reply 🙈</p>
 
-<figure class="post-figure">
-  <img src="{{ '/assets/blog/what-does-top-student-mean-anyway/02-812149_d63bf8c15d2b40f2b960643a3ff3a2b3-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
-</figure>
+{% include blog-gallery.html gallery="gallery-3" %}
 
 <p>So while I am waiting on my bus after being in the library for 13 hours, I might as well add.... </p>
 

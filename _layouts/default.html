@@ -8,6 +8,7 @@
 
   {%- include masthead.html -%}
   {%- include breadcrumbs.html -%}
+  {%- include section-nav.html -%}
 
   <main id="main" class="has-bramble" tabindex="-1">
     {%- include bramble.html -%}
@@ -24,6 +25,7 @@
   {%- assign asset_version = site.time | date: "%Y%m%d%H%M%S" -%}
   <script src="{{ '/assets/js/theme.js' | relative_url }}?v={{ asset_version }}" defer></script>
   <script src="{{ '/assets/js/nav.js' | relative_url }}?v={{ asset_version }}" defer></script>
+  <script src="{{ '/assets/js/section-nav.js' | relative_url }}?v={{ asset_version }}" defer></script>
   <script src="{{ '/assets/js/scroll-top.js' | relative_url }}?v={{ asset_version }}" defer></script>
   <script src="{{ '/assets/js/reveal.js' | relative_url }}?v={{ asset_version }}" defer></script>
   <script src="{{ '/assets/js/image-protection.js' | relative_url }}?v={{ asset_version }}" defer></script>

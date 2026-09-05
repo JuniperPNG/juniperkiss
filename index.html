@@ -13,7 +13,7 @@ description: >-
       <h1 class="hero__title hero__title--full">Every CV has a million stories behind it</h1>
     </div>
 
-    <div class="hero__layout">
+    <div class="hero__layout" data-section-nav-start>
       <div class="hero__copy-panel" data-load-reveal style="--load-delay: 70ms">
         <p class="hero__lede">
           I first built my website as a final-year undergraduate Plant Biology
@@ -30,7 +30,7 @@ description: >-
         <p class="hero__lede">Hope you enjoy my ramblings!</p>
       </div>
 
-      <div data-load-reveal style="--load-delay: 140ms">
+      <div class="hero__carousel-panel" data-load-reveal style="--load-delay: 70ms">
         {% include carousel.html %}
       </div>
     </div>
@@ -50,13 +50,6 @@ description: >-
       <div class="about__text">
         <h2>About this website and Juniper (troublesome me!)</h2>
         <div class="prose" style="margin-top: var(--space-l)">
-          <p>
-            I first built my website as a final-year undergraduate Plant Biology
-            student with a few stories to tell. Research jobs, grants and awards
-            look impressive on a CV — but behind each line there were chance
-            meetings, applications filled out while living in a tent, random
-            emails, and a lot of amazing humans.
-          </p>
           <p>
             The stories include how I ended up in Plant Biology after three years
             of studying Marine Biology part-time, how I raised £40,000 from grants
@@ -78,7 +71,7 @@ description: >-
       </div>
       <div class="about__art">
         <img src="{{ '/assets/brand/logo-full-light.png' | relative_url }}"
-             alt="A hand-drawn illustration of a bramble vine entwined with fruit and the flags of the places I've worked." />
+             alt="A colourful botanical illustration of curling stems, fruit, flowers and flags growing above a globe." />
       </div>
     </div>
   </div>

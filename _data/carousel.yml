@@ -1,681 +1,960 @@
 # Home-page hero photo carousel. All photographs are Juniper's own.
 # width/height are native (post-resize) pixel dimensions, used for CSS
 # aspect-ratio so the layout never shifts as images load.
-# alt text: TODO — fill in by hand (left blank/placeholder for the ones
-# below that don't already have a ready caption from the original filename).
+# Alt text describes the visible image; do not infer locations or events from filenames.
 - src: carousel-119.jpg
   width: 1080
   height: 1080
-  alt: "Juniper smiling at the camera with her fingers crossed"
+  alt: "Juniper smiling at the camera with the fingers of both hands crossed."
 - src: carousel-01.jpg
   width: 1599
   height: 1600
-  alt: "TODO"
+  alt: "Juniper sitting on shoreline rocks and looking across the sea."
 - src: carousel-02.jpg
   width: 1595
   height: 1600
-  alt: "TODO"
+  alt: "Juniper sitting on a rocky summit with both arms raised above a mountain valley."
 - src: carousel-03.jpg
   width: 1596
   height: 1600
-  alt: "TODO"
+  alt: "Dark mountain peaks beyond a sunlit golden field."
 - src: carousel-04.jpg
   width: 1600
   height: 1059
-  alt: "TODO"
+  alt: "Juniper and a child smiling at each other beside a wooden post."
 - src: carousel-05.jpg
   width: 1600
   height: 1067
-  alt: "TODO"
+  alt: "Green coffee cherries growing along a leafy branch."
 - src: carousel-06.jpg
   width: 1600
   height: 1067
-  alt: "TODO"
+  alt: "Two people examining plant material among crops on a hillside."
 - src: carousel-07.jpg
   width: 1600
   height: 1067
-  alt: "TODO"
+  alt: "Pouring a brown liquid through a funnel into a container beside a blue barrel."
 - src: carousel-08.jpg
   width: 1600
   height: 1067
-  alt: "TODO"
+  alt: "A scooter parked beside green rice fields with mountains in the distance."
 - src: carousel-09.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "Waves breaking over dark rocks beneath a mountainous coastline."
 - src: carousel-10.jpg
   width: 1600
   height: 905
-  alt: "Counting the number of sweet potato varieties in a very steep garden with local children and Shen, a masters student from the New Guinea Binatang Research Centre"
+  alt: "People walking through a steep cultivated hillside with low-growing crops."
 - src: carousel-11.jpg
   width: 1600
   height: 772
-  alt: "Sweet potato garden in Sinopas"
+  alt: "A cultivated hillside with small huts and cloud drifting across the forest."
 - src: carousel-12.jpg
   width: 1600
   height: 1600
-  alt: "TODO"
+  alt: "Juniper standing beside a woman, wearing a pale scarf and a red mark on her forehead."
 - src: carousel-13.jpg
   width: 1600
   height: 1600
-  alt: "TODO"
+  alt: "Juniper standing in deep snow with both arms raised."
 - src: carousel-14.jpg
   width: 1262
   height: 1600
-  alt: "TODO"
+  alt: "People working beside a fallen banana stem in a plantation."
 - src: carousel-15.jpg
   width: 1600
   height: 1067
-  alt: "TODO"
+  alt: "A turquoise bay enclosed by steep cliffs and offshore rocks."
 - src: carousel-16.jpg
   width: 1600
   height: 1200
-  alt: "TODO"
+  alt: "A combine harvester working across a golden cereal field."
 - src: carousel-17.jpg
   width: 1600
   height: 1200
-  alt: "TODO"
+  alt: "The underside of agricultural machinery above cut cereal stubble."
 - src: carousel-18.jpg
   width: 1200
   height: 1600
-  alt: "TODO"
+  alt: "A tray of uprooted plants with exposed roots held beside a crop field."
 - src: carousel-19.jpg
   width: 1200
   height: 1600
-  alt: "Soil DNA extraction trials with beads"
+  alt: "A gloved hand holding soil sample tubes above a laboratory rack."
 - src: carousel-20.jpg
   width: 1200
   height: 1600
-  alt: "Microcentrifuge and DNA extraction kit testing at the University of Southampton, pre-trip"
+  alt: "Juniper wearing a face mask beside laboratory equipment at a workbench."
 - src: carousel-21.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "Cattle grazing on dry grass beneath a rocky ridge."
 - src: carousel-22.jpg
   width: 1600
   height: 1600
-  alt: "TODO"
+  alt: "Small green plants growing in glass culture tubes."
 - src: carousel-23.jpg
   width: 1600
   height: 1600
-  alt: "TODO"
+  alt: "Rows of potted banana plants on greenhouse benches."
 - src: carousel-24.jpg
   width: 1243
   height: 1600
-  alt: "TODO"
+  alt: "Small pink flowers among narrow green leaves."
 - src: carousel-25.jpg
   width: 1600
   height: 1200
-  alt: "We had great chats beside the evening fires with community leaders and farmers"
+  alt: "People gathered around an outdoor fire."
 - src: carousel-26.jpg
   width: 1600
   height: 887
-  alt: "View from Sinopas of an old hut with Mt Wilhelm in the background"
+  alt: "A hut and cultivated hillside beneath distant mountain ridges."
 - src: carousel-27.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "Evening light falling across a wooded valley and distant hills."
 - src: carousel-28.jpg
   width: 1200
   height: 1600
-  alt: "TODO"
+  alt: "Juniper standing beside a large bunch of green bananas."
 - src: carousel-29.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "A pink water lily flower above the water."
 - src: carousel-30.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "Orange sunset clouds above a dark island landscape."
 - src: carousel-31.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "Red tubular flowers beside small yellow flower heads."
 - src: carousel-32.jpg
   width: 1600
   height: 780
-  alt: "TODO"
+  alt: "Surf rolling onto a dark beach beneath steep coastal cliffs."
 - src: carousel-33.jpg
   width: 746
   height: 1600
-  alt: "TODO"
+  alt: "A scooter on a paved track beside terraced fields and mountains."
 - src: carousel-34.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "A tiered temple beside a lake with mountains behind it."
 - src: carousel-35.jpg
   width: 746
   height: 1600
-  alt: "TODO"
+  alt: "Juniper standing beside an elephant at a wooden barrier."
 - src: carousel-36.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "A leafy plant in a wrapped container on a white surface beneath trees."
 - src: carousel-37.jpg
   width: 1600
   height: 898
-  alt: "TODO"
+  alt: "A rocky shoreline facing a small green island."
 - src: carousel-38.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "A hanging cluster of red and yellow tropical flower bracts."
 - src: carousel-39.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "A woodland path beneath an arch of twisting branches."
 - src: carousel-40.jpg
   width: 898
   height: 1600
-  alt: "TODO"
+  alt: "A village and winding road in a steep mountain valley."
 - src: carousel-41.jpg
   width: 1067
   height: 1600
-  alt: "TODO"
+  alt: "A shaded walkway beneath hanging foliage and flowers."
 - src: carousel-42.jpg
   width: 1600
   height: 898
-  alt: "Close-up of tightly curled red tropical flower bracts"
+  alt: "A close-up of overlapping red flower bracts."
 - src: carousel-43.jpg
   width: 1600
   height: 898
-  alt: "A damselfly resting on a dried plant against a vivid green background"
+  alt: "A slender insect with four transparent wings perched on a dry stem."
 - src: carousel-44.jpg
   width: 900
   height: 1200
-  alt: "Cereal root-health samples sealed in bags during a field trial"
+  alt: "Bagged plant samples on red soil beside a green crop field."
 - src: carousel-45.jpg
   width: 1600
   height: 1060
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper holding a compact camera beside a person wearing a broad-brimmed hat."
 - src: carousel-46.jpg
   width: 1403
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A coastal town and bay beyond a wooded campsite."
 - src: carousel-47.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper holding a small quadcopter beside a tree."
 - src: carousel-48.jpg
   width: 1269
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "People examining plant samples beside a laptop at an outdoor table."
 - src: carousel-49.jpg
   width: 1600
   height: 965
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Dew and fine spider silk stretched between bramble leaves and a thorny stem."
 - src: carousel-50.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A boat wake beneath steep mountains and a tall waterfall."
 - src: carousel-51.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Golden cooked banana slices on a patterned plate."
 - src: carousel-52.jpg
   width: 1252
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper wearing a Plantwise cap beside smoke rising from the ground."
 - src: carousel-53.jpg
   width: 1600
   height: 1200
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Colouring sheets and pencils spread across a wooden table."
 - src: carousel-54.jpg
   width: 1600
   height: 1084
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "White fluffy flowers and red buds on a branch."
 - src: carousel-55.jpg
   width: 1600
   height: 997
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A drainage ditch running between fields in misty morning light."
 - src: carousel-56.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A close-up of a cut plant stem with small white roots."
 - src: carousel-57.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "People reaching towards a bunch of bananas on a plant."
 - src: carousel-58.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Drooping seed heads among long green crop leaves."
 - src: carousel-59.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Young narrow-leaved plants growing in rows in wet soil."
 - src: carousel-60.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Green bananas growing around a thick central stalk."
 - src: carousel-61.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Two people operating a small tiller in a flooded field."
 - src: carousel-62.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Workers harvesting leafy vegetables in a large field."
 - src: carousel-63.jpg
   width: 1415
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A stony valley framed by steep, snow-covered mountains."
 - src: carousel-64.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper carrying red and white field markers beside a green crop."
 - src: carousel-65.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "The underside of a leaf covered in small dark insects or specks."
 - src: carousel-66.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A tractor attached to a multi-row planter on bare soil."
 - src: carousel-67.png
   width: 1600
   height: 1100
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Plants growing in reused plastic bottles suspended from a wooden frame."
 - src: carousel-68.jpg
   width: 1600
   height: 1200
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "White seabirds with pale yellow heads nesting on a rocky ledge."
 - src: carousel-69.jpg
   width: 1600
   height: 1119
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Pale pink blossoms against a blue sky."
 - src: carousel-70.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper and three other people gathered on a covered veranda."
 - src: carousel-71.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Plant stems standing in a glass of water beside other plant samples."
 - src: carousel-72.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Adult giraffes and a smaller giraffe among sparse trees."
 - src: carousel-73.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A lakeside town beneath green mountains and low cloud."
 - src: carousel-74.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A group standing in front of an E-Plant Clinic banner."
 - src: carousel-75.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small black-and-white bird standing in shallow water."
 - src: carousel-76.jpg
   width: 1145
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Muddy boots stretched out above a grassy coastal viewpoint."
 - src: carousel-77.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A person crouching beside a wooden post to photograph the landscape."
 - src: carousel-78.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A woven bird nest hanging from a tree branch."
 - src: carousel-79.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A microscope view of round structures among translucent plant cells."
 - src: carousel-80.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A microscope view of two rounded structures stained red and purple."
 - src: carousel-81.jpg
   width: 1600
   height: 1027
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Green mountain ridges and valleys beneath a cloudy sky."
 - src: carousel-82.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A long-billed wading bird standing on a rock in the sea."
 - src: carousel-83.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Two black-and-white birds with orange bills on shoreline rocks."
 - src: carousel-84.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A close-up of a white flower with a green centre."
 - src: carousel-85.jpg
   width: 1600
   height: 971
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Ice crystals around thin stems emerging from dark water."
 - src: carousel-86.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper looking up at a rocky cliff."
 - src: carousel-87.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper smiling on a white sandy beach."
 - src: carousel-88.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small yellow-and-black bird caught in fine netting."
 - src: carousel-89.jpg
   width: 1600
   height: 1060
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper looking through a camera in a dry woodland landscape."
 - src: carousel-90.jpg
   width: 1600
   height: 997
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Dew drops hanging from fine grass stems."
 - src: carousel-91.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Tiny mushrooms growing on a moss-covered fallen branch."
 - src: carousel-92.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Filter papers in funnels above glass bottles on a laboratory bench."
 - src: carousel-93.jpg
   width: 1600
   height: 1079
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A green agricultural valley surrounded by wooded mountains."
 - src: carousel-94.jpg
   width: 1600
   height: 997
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small seed head covered in dew and fine spider silk."
 - src: carousel-95.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A golden-coloured snake coiled on a woven nest in a tree."
 - src: carousel-96.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A person walking beside a grazing buffalo in a green field."
 - src: carousel-97.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A broad lake dotted with small structures beneath cloud-covered hills."
 - src: carousel-98.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A glass beaker containing pale liquid and small samples on a laboratory plate."
 - src: carousel-99.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A group taking turns with a small tiller in a flooded field."
 - src: carousel-100.jpg
   width: 1600
   height: 1033
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A dark fin rising above the sea with a coastline in the distance."
 - src: carousel-101.jpg
   width: 1600
   height: 1201
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Bright sun above snow-covered mountains reflected in a still lake."
 - src: carousel-102.jpg
   width: 1600
   height: 1201
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A white blossom opening on a woody branch."
 - src: carousel-103.jpg
   width: 1600
   height: 1200
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small timber and thatch house beside banana plants."
 - src: carousel-104.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper resting indoors beneath a roof with pinpoints of daylight."
 - src: carousel-105.jpg
   width: 1600
   height: 1200
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Sample racks, bottles and small equipment on a laboratory bench."
 - src: carousel-106.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper standing beside a collection of large paper sample bags."
 - src: carousel-107.png
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Pink banana flower bracts opening around yellow flowers."
 - src: carousel-108.jpg
   width: 1600
   height: 1033
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Round brown fruits growing in a dense cluster beside a tree trunk."
 - src: carousel-109.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "An orange-and-black butterfly resting on a flowering stem."
 - src: carousel-110.jpg
   width: 1067
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A tall white mushroom with a shaggy cap on the woodland floor."
 - src: carousel-111.png
   width: 1057
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A large red tropical flower beneath green foliage."
 - src: carousel-112.png
   width: 1600
   height: 1082
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Looking up along tall bamboo stems into a leafy canopy."
 - src: carousel-113.png
   width: 1069
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A dark waterbird resting on a fallen log above water."
 - src: carousel-114.jpg
   width: 1600
   height: 1082
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Seedlings growing inside a reused tyre, with a dog behind the planting bed."
 - src: carousel-115.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Two people walking through dry grass in low golden sunlight."
 - src: carousel-116.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Two walkers following a snowy path through frost-covered trees."
 - src: carousel-117.jpg
   width: 1600
   height: 1108
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Rows of illuminated shelves holding plant culture containers."
 - src: carousel-118.jpg
   width: 1600
   height: 997
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Clusters of small white flowers with pink centres."
 - src: carousel-120.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A pink flower among fine, needle-like foliage."
 - src: carousel-121.png
   width: 1600
   height: 1200
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "An overhead view of waves meeting a rocky shoreline."
 - src: carousel-122.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A compact rosette of thick green leaves emerging from stony soil."
 - src: carousel-123.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper smiling beside a bramble stem."
 - src: carousel-124.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A boardwalk crossing open moorland beside a stream."
 - src: carousel-125.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A purple flower with raindrops on its petals."
 - src: carousel-126.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A cut plant stem with a new shoot and branching white roots."
 - src: carousel-127.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A winding coastal road beside a blue bay."
 - src: carousel-128.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A bottle and belongings resting in dune grass above a turquoise sea."
 - src: carousel-129.png
   width: 1600
   height: 1060
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Rows of banana plants in a grassy field beneath low cloud."
 - src: carousel-130.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small butterfly on seaweed-strewn sand with surf in the background."
 - src: carousel-131.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "White and pink flowers beside a mountain path overlooking a wide plain."
 - src: carousel-132.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A mountain lake bordered by autumn-coloured vegetation and rocky peaks."
 - src: carousel-133.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Hiking boots stretched out towards a mountain lake."
 - src: carousel-134.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Four walkers on a road beside a lake and snow-dusted hills."
 - src: carousel-135.jpg
   width: 1600
   height: 1006
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A wooden jetty extending into a still lake beneath snowy mountains."
 - src: carousel-138.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A butterfly hanging beneath a leaf with its patterned wings closed."
 - src: carousel-139.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A brightly coloured parrot leaning through white netting."
 - src: carousel-140.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A whale's tail above the sea with a distant coastline behind it."
 - src: carousel-141.jpg
   width: 1200
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Clusters of pale pink tubular flowers among narrow leaves."
 - src: carousel-142.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small bird perched on a branch holding a long strand of nesting material."
 - src: carousel-143.jpg
   width: 1600
   height: 1088
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A dolphin swimming just below the surface of clear blue water."
 - src: carousel-144.jpg
   width: 1289
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A blue lake between steep forested slopes, framed by overhanging branches."
 - src: carousel-145.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Scattered trees across dry open ground beneath low hills."
 - src: carousel-146.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Elephants standing and bathing in reddish-brown mud."
 - src: carousel-147.jpg
   width: 1600
   height: 1066
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Large circular water lily leaves with raised rims floating on a pond."
 - src: carousel-148.png
   width: 1600
   height: 889
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "The underside of a banana leaf covered in pale speckling."
 - src: carousel-149.jpg
   width: 1600
   height: 1023
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "An antelope standing in shade beneath a thorny tree."
 - src: carousel-150.jpg
   width: 1600
   height: 997
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A springbok leaping above dry grass."
 - src: carousel-151.png
   width: 1600
   height: 842
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A pointed rock formation above a steep coastal village."
 - src: carousel-152.png
   width: 1600
   height: 806
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Narrow cultivated terraces rising above the shoreline."
 - src: carousel-153.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A dried umbrella-shaped seed head in warm light."
 - src: carousel-154.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper sitting on coastal rocks with one boot raised."
 - src: carousel-155.jpg
   width: 1201
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Snow-covered mountain peaks beneath a clear blue sky."
 - src: carousel-156.jpg
   width: 1600
   height: 1201
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Shafts of sunlight breaking through clouds above a lake and snowy hills."
 - src: carousel-157.png
   width: 1600
   height: 1156
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Waves breaking along a volcanic coastline in golden light."
 - src: carousel-158.png
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A torn banana leaf with extensive pale speckling on its underside."
 - src: carousel-159.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A turquoise wave breaking with distant hills beyond it."
 - src: carousel-160.jpg
   width: 1600
   height: 1181
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A stone arch bridge spanning a river below a hillside town."
 - src: carousel-161.jpg
   width: 1600
   height: 919
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Small cultivated plots and scattered trees on a steep hillside."
 - src: carousel-162.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A close-up of a green tree trunk covered in short spines."
 - src: carousel-163.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Large oblong fruits growing in clusters along a tree trunk."
 - src: carousel-164.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Fishing boats and people along a sandy waterfront."
 - src: carousel-165.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A small boat beside a white beach beneath a scrub-covered hillside."
 - src: carousel-166.jpg
   width: 1600
   height: 900
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A hiking boot above clear turquoise water."
 - src: carousel-167.jpg
   width: 898
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A young elephant walking across a sandy track."
 - src: carousel-168.jpg
   width: 1600
   height: 898
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A flat-topped wooded hill beneath an overcast sky."
 - src: carousel-169.jpg
   width: 1036
   height: 1600
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Two people examining plant samples at a table beside a microscope."
 - src: carousel-170.jpg
   width: 1600
   height: 986
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "A person standing in a dry, open landscape with scattered trees."
 - src: carousel-171.jpg
   width: 1600
   height: 1067
-  alt: "A photograph from Juniper's travels, fieldwork and research"
+  alt: "Juniper sitting beside a barred window with flowers in her hair."
+- src: instagram-mg-8061.jpg
+  width: 1600
+  height: 1067
+  alt: "Red feathery flowers and narrow leaves on a branch."
+- src: instagram-mg-8161.jpg
+  width: 1600
+  height: 1067
+  alt: "Layers of dark hills beneath distant snow-capped peaks."
+- src: instagram-img-8211.jpg
+  width: 1067
+  height: 1600
+  alt: "A seated woman examining the roots of an uprooted plant beside other people."
+- src: instagram-img-3250.jpg
+  width: 1600
+  height: 1067
+  alt: "A small yellow and blue bird perched among bare reddish twigs."
+- src: instagram-mg-8212.jpg
+  width: 1600
+  height: 835
+  alt: "A crowded car park between snow-covered mountain slopes."
+- src: instagram-2022-07-31-09-36-02.jpg
+  width: 1600
+  height: 1200
+  alt: "A boat's foamy wake between steep green mountains."
+- src: instagram-mg-8643.jpg
+  width: 1600
+  height: 898
+  alt: "Snow-covered mountain peaks beyond a dark blue lake and a small island."
+- src: instagram-mg-7723.jpg
+  width: 1600
+  height: 898
+  alt: "A waterbird leaving a ripple across a lake beneath dry hills."
+- src: instagram-20220424052806-mg-6981.jpg
+  width: 1600
+  height: 854
+  alt: "Green wooded hills beneath dark clouds."
+- src: instagram-20220602030647-mg-7205.jpg
+  width: 1600
+  height: 949
+  alt: "A brown and white bird with a pale crest perched on a branch."
+- src: instagram-20220425022730-mg-6992.jpg
+  width: 1600
+  height: 898
+  alt: "A green leaf with brown spots beside tweezers and scissors."
+- src: instagram-20220425023653-img-7013.jpg
+  width: 1600
+  height: 898
+  alt: "Open Petri dishes, a sample tube and plant material on a wooden table."
+- src: instagram-mg-7291.jpg
+  width: 1600
+  height: 898
+  alt: "Blue water winding around dry hills and wooded islands."
+- src: instagram-mg-3546.jpg
+  width: 1067
+  height: 1600
+  alt: "People gathered around a large blue barrel inside a wooden enclosure."
+- src: instagram-mg-3392.jpg
+  width: 1110
+  height: 1600
+  alt: "A hand holding a glossy green leaf."
+- src: instagram-mg-3375.jpg
+  width: 1067
+  height: 1600
+  alt: "A hanging banana flower beneath broad green leaves."
+- src: instagram-mg-3276.jpg
+  width: 1081
+  height: 1600
+  alt: "Clusters of round brown fruit growing along a tree trunk."
+- src: instagram-mg-2751.jpg
+  width: 1600
+  height: 1067
+  alt: "The bow of a small boat on a muddy river bordered by trees."
+- src: instagram-mg-2734.jpg
+  width: 1142
+  height: 1600
+  alt: "Two people holding cut leaves among tall banana plants."
+- src: instagram-mg-2719.jpg
+  width: 1600
+  height: 1067
+  alt: "A pile of broad green leaves and cut plant stems."
+- src: instagram-mg-2531.jpg
+  width: 1067
+  height: 1600
+  alt: "Fingers holding a small clear tube containing dark material."
+- src: instagram-mg-2426.jpg
+  width: 1600
+  height: 1038
+  alt: "Juniper writing on a large sheet of paper beside a banana display."
+- src: instagram-mg-2530.jpg
+  width: 1600
+  height: 1067
+  alt: "A hand lifting a split plant stem containing dark insects from a container."
+- src: instagram-12.jpg
+  width: 1600
+  height: 1089
+  alt: "Small green plants in labelled glass tubes held in metal racks."
+- src: instagram-img-6491.jpg
+  width: 1600
+  height: 1301
+  alt: "A green insect specimen held in position by pins on a board."
+- src: instagram-mg-2195b.jpg
+  width: 1600
+  height: 1067
+  alt: "Juniper leaning on the railing of a wooden boardwalk among green trees."
+- src: instagram-mg-2137b.jpg
+  width: 1600
+  height: 996
+  alt: "Small white flowers among thick oval green leaves."
+- src: instagram-peony2.jpg
+  width: 1600
+  height: 1092
+  alt: "A four-panel scientific image showing damaged leaves, a split stem, a culture plate and microscopic structures."
+- src: instagram-mg-2894.jpg
+  width: 992
+  height: 1600
+  alt: "Long, deeply divided green leaves growing from a plant stem."
+- src: instagram-mg-8591.jpg
+  width: 1600
+  height: 1067
+  alt: "A hazy volcanic peak rising above a lush green valley."
+- src: instagram-mg-7559.jpg
+  width: 1600
+  height: 898
+  alt: "A small orange and white flower at the tip of a slender green stem."
+- src: instagram-mg-7191.jpg
+  width: 1600
+  height: 855
+  alt: "A broad plain and scattered hills beneath a blue sky with white clouds."
+- src: instagram-spinachwhiteexamplessmall.jpg
+  width: 1600
+  height: 811
+  alt: "A six-panel scientific image showing marked green leaves and microscopic structures."
+- src: instagram-img-5743.jpg
+  width: 1600
+  height: 1000
+  alt: "One antelope leaping above dry grass beside another standing antelope."
+- src: instagram-img-3600.jpg
+  width: 1600
+  height: 1067
+  alt: "A foamy wave breaking against dark rocks."
+- src: instagram-mg-9529.jpg
+  width: 1600
+  height: 1067
+  alt: "Trays of small leafy plants under growing lights."
+- src: instagram-20170620-134746-richtone-hdr.jpg
+  width: 1200
+  height: 1600
+  alt: "A microscope with an illuminated specimen on a laboratory bench."
+- src: instagram-img-0090.jpg
+  width: 1600
+  height: 1200
+  alt: "A hand holding the underside of a green leaf with small insects on its veins."
+- src: instagram-2022-12-08-16-02-58.jpg
+  width: 1200
+  height: 1600
+  alt: "Juniper holding dried cereal heads beside a microscope in a laboratory."
+- src: instagram-20180615-180517.jpg
+  width: 1159
+  height: 1600
+  alt: "Rows of Petri dishes containing pink and pale cultures."
+- src: instagram-20150802-220021.jpg
+  width: 1600
+  height: 867
+  alt: "Two instant photographs of smiling groups lying on a dark surface."
+- src: instagram-img-9229.jpg
+  width: 1600
+  height: 1016
+  alt: "Sunlight filtering through dense plants inside a glasshouse."
+- src: instagram-mg-0077.jpg
+  width: 1600
+  height: 1097
+  alt: "A whale's tail above blue water with a boat in the distance."
+- src: instagram-mg-9858.jpg
+  width: 1600
+  height: 1067
+  alt: "Rows of strawberry plants beside a soil path, with hills beyond."
+- src: instagram-20220908-071816.jpg
+  width: 1600
+  height: 1014
+  alt: "Parallel rows of green cereal plants beneath a low sun and streaked clouds."
+- src: instagram-20220908-144952.jpg
+  width: 1600
+  height: 1266
+  alt: "Yellow flowers beneath dark storm clouds."
+- src: instagram-20221111-150943.jpg
+  width: 1200
+  height: 1600
+  alt: "A track through a golden cereal field beneath bright blue sky."
+- src: instagram-20221115-153700.jpg
+  width: 1600
+  height: 1200
+  alt: "A white pick-up truck beside a yellow combine harvester in a cut field."
+- src: instagram-20221121-122459.jpg
+  width: 1145
+  height: 1600
+  alt: "Grain pouring from a pipe into a metal silo beside a field."
+- src: instagram-20221126-153818.jpg
+  width: 1200
+  height: 1600
+  alt: "A hand beside plant roots and soil inside a long red tray."
+- src: instagram-20221121-084044.jpg
+  width: 1600
+  height: 1200
+  alt: "A digital control screen inside the cab of a farm vehicle."
+- src: instagram-20170618-063040-richtone-hdr.jpg
+  width: 1600
+  height: 900
+  alt: "Cups and a metal jug beside a railing overlooking hazy mountains."
+- src: instagram-20180604-181017.jpg
+  width: 1600
+  height: 1200
+  alt: "Rows of Petri dishes and a tall metal container on a laboratory work surface."
+- src: instagram-mg-8309.jpg
+  width: 1600
+  height: 898
+  alt: "Juniper standing on a snowy slope with mountains in the distance."
+- src: instagram-20221117-111655.jpg
+  width: 1200
+  height: 1600
+  alt: "Dry plant stems and cut stubble on bare soil."
+- src: instagram-2022-08-22-13-03-18.jpg
+  width: 1600
+  height: 1200
+  alt: "Sample bags and a backpack beside a path between green crops and yellow flowers."
+- src: instagram-20220909-172818.jpg
+  width: 1200
+  height: 1600
+  alt: "Green cereal stems and exposed roots emerging from dry soil."
+- src: instagram-20220909-161329.jpg
+  width: 1200
+  height: 1600
+  alt: "A broad field of yellow flowers beneath blue sky."
+- src: instagram-20221121-100354.jpg
+  width: 1600
+  height: 1200
+  alt: "A combine harvester's cutting header viewed from inside its cab."
+- src: instagram-2023-10-28-08-44-22.jpg
+  width: 1103
+  height: 1600
+  alt: "Juniper wearing a cap on a sandy path beneath red rock cliffs."
+- src: instagram-2023-08-29-17-47-29.jpg
+  width: 1200
+  height: 1600
+  alt: "Juniper leaning towards pale purple flowers beneath trees."
+- src: instagram-2022-12-05-12-14-13.jpg
+  width: 1200
+  height: 1600
+  alt: "Juniper wearing a sun hat and mirrored sunglasses beside an open vehicle door."
+- src: instagram-20221011-114431.jpg
+  width: 1200
+  height: 1600
+  alt: "A hand holding a green cereal head in a golden field."
+- src: instagram-20221011-114511.jpg
+  width: 1200
+  height: 1600
+  alt: "A hand holding a yellowing leaf with elongated brown markings."
+- src: instagram-20221011-143948.jpg
+  width: 1600
+  height: 1200
+  alt: "A golden cereal plot beside patches of bare red soil and low plants."
+- src: instagram-20170620-134651-richtone-hdr.jpg
+  width: 1200
+  height: 1600
+  alt: "Plant samples, Petri dishes and microscopes arranged along a laboratory bench."
+- src: instagram-2023-06-18-15-07-56.jpg
+  width: 1305
+  height: 1600
+  alt: "Juniper looking upwards beneath a crown of long green fronds."
+- src: instagram-2023-10-05-10-16-59.jpg
+  width: 1200
+  height: 1600
+  alt: "Hands holding clumps of red soil with fine roots visible."
+- src: instagram-2023-10-26-07-53-49.jpg
+  width: 1200
+  height: 1600
+  alt: "Juniper wearing a cap and sunglasses in a dry field with tall palms behind her."
+- src: instagram-2023-11-17-11-52-07.jpg
+  width: 1600
+  height: 1200
+  alt: "Juniper wearing a blue padded jacket beside a lake beneath rocky hills."

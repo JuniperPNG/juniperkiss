@@ -1,0 +1,11 @@
+{%- assign gallery = site.data.blog_galleries[page.slug][include.gallery] -%}
+<div class="blog-gallery{% if gallery.size == 1 %} blog-gallery--single{% endif %}">
+  {%- for photo in gallery %}
+  <figure class="blog-gallery__item">
+    <a class="photo" href="{{ photo.src | relative_url }}" data-caption="{{ photo.alt | escape }}">
+      <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async" />
+    </a>
+    <figcaption>{{ photo.alt | escape }}</figcaption>
+  </figure>
+  {%- endfor %}
+</div>

@@ -3,9 +3,12 @@ layout: post
 title: "The story of Features Editor at Nature (2017)"
 date: 2019-02-28 21:19:28 +0000
 slug: the-story-of-features-editor-at-nature-2017
-description: "A science journalism career path ‘Specialisation is the way to stand out and to have a marketable skill as a scientist’ said my course leader, Dr Dylan Gwynn Jones at Aberystwyth University. A traditional academic path can be described as specialising in one subject and working within the same field"
+description: "Nature features editor Richard Van Noorden describes his route into science journalism, the daily work of writing and editing, and practical advice for students considering a similar career."
 image: /assets/blog/the-story-of-features-editor-at-nature-2017/00-hero-812149_9378a1543e0d42c48aa1af3f63296680-mv2.png
+image_alt: "The white Nature wordmark on a dark red background."
 migrated_from: https://www.juniperkiss.com/post/the-story-of-features-editor-at-nature-2017
+image_width: 744
+image_height: 360
 ---
 <h2> A science journalism career path </h2>
 
@@ -70,6 +73,8 @@ migrated_from: https://www.juniperkiss.com/post/the-story-of-features-editor-at-
 <p>As an undergraduate student, specialising in image analysis and bioinformatics, and coming from an academic family, I was convinced that a PhD is a must for a scientist. However, having worked in developing countries, made me realise of the importance of disseminating science within and outside the scientific community. I published my first article and cover picture of the Hungarian Elet es Tudomany (Life and Science) magazine at the age of 14 and the thrill of publishing have stayed with me ever since.</p>
 
 <p>Hearing how much Richard enjoys his work, being in the center of scientific discoveries and continuously learning about other people’s work definitely convinced me to look for internships next summer!</p>
+
+{% include video.html id="SgZKFVaSDRw" title="Cat domestication: From farms to sofas" %}
 
 <p>This video by Nature has brightened up many scientists’ day on the International Cat Day. Thinking of the creative process of taking <a href="https://www.nature.com/articles/s41559-017-0139" rel="noopener">the original research paper</a> and turning it into this video must have been just as exciting and fun as it would be for an entomologist to discover new beetles in the Namib Desert.</p>
 

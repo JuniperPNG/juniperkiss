@@ -22,10 +22,10 @@ Career Researcher programme.
 
 </div>
 <a class="repo-feature__logo-panel photo" href="{{ '/assets/map-ecr-program-2025.png' | relative_url }}"
-   data-caption="MAP Dar ECR Development Program, Cohort 1 (2025)"
+   data-caption="A training programme table with columns for data wrangling, coding, communication and proposal writing."
    aria-label="Expand the MAP Dar ECR Development Program diagram">
   <img class="repo-feature__logo" src="{{ '/assets/map-ecr-program-2025.png' | relative_url }}"
-       width="4555" height="3694" alt="Diagram of the MAP Dar ECR Development Program for 2025" />
+       width="4555" height="3694" alt="A training programme table with columns for data wrangling, coding, communication and proposal writing." />
 </a>
 </div>
 
@@ -51,9 +51,9 @@ touch if you'd like early access or want to try it.
 
 </div>
 <a class="repo-feature__logo-panel photo" href="{{ '/assets/engraftr-logo.png' | relative_url }}"
-   data-caption="engraftR package logo" aria-label="Expand the engraftR package logo">
+   data-caption="The engraftR wordmark beneath a leaf, data symbols and numbered plant icons." aria-label="Expand the engraftR package logo">
   <img class="repo-feature__logo" src="{{ '/assets/engraftr-logo.png' | relative_url }}"
-       width="1312" height="1199" alt="engraftR logo" />
+       width="1312" height="1199" alt="The engraftR wordmark beneath a leaf, data symbols and numbered plant icons." />
 </a>
 </div>
 
@@ -78,9 +78,9 @@ pipelines into one reusable workflow and is still under active development.
 
 </div>
 <a class="repo-feature__logo-panel photo" href="{{ '/assets/whereisthatr-logo.png' | relative_url }}"
-   data-caption="whereisthatR package logo" aria-label="Expand the whereisthatR package logo">
+   data-caption="The whereisthatR wordmark beneath a magnifying glass and location markers on a folded map." aria-label="Expand the whereisthatR package logo">
   <img class="repo-feature__logo" src="{{ '/assets/whereisthatr-logo.png' | relative_url }}"
-       width="1330" height="1182" alt="whereisthatR logo: a magnifying glass and candidate routes over a map" />
+       width="1330" height="1182" alt="The whereisthatR wordmark beneath a magnifying glass and location markers on a folded map." />
 </a>
 </div>
 

@@ -61,10 +61,48 @@ overflow. Also test with reduced motion enabled.
 
 ## Adding content
 
+Every page has a fixed "On this page" navigator on screens at least 1200px
+wide; it is hidden on smaller screens and in print. The shared
+`assets/js/section-nav.js` builds its links from `h2` headings and prose `h3`
+subheadings, preserving existing IDs and generating unique IDs where needed.
+The active link follows the scroll position. Add headings to the content to
+update the navigator; no separate link list needs maintaining. It starts below
+the breadcrumbs and follows the sticky masthead once the breadcrumbs scroll
+away. The breadcrumb background spans the full viewport width, flush beneath
+the masthead, with no outer gaps. Only its text follows the content column.
+On Home, the navigator starts level with the hero text panel, using the
+`data-section-nav-start` marker, then settles beneath the masthead on scroll.
+
+All rectangular components use square corners through the shared radius
+tokens. Keep circular icon controls circular.
+
+The carousel pauses while the pointer is over it or keyboard focus is inside
+it. It resumes after both leave, unless reduced motion is enabled or the
+carousel/page is hidden. `_data/carousel.yml` preserves the original photo
+order. Append new photographs at the end in the requested order; do not shuffle
+the existing collection.
+
+Photo descriptions should say what is visible, without inferring places,
+events, dates or job context from filenames. The CV uses each image's `alt`
+for its lightbox caption too; blog hero descriptions use `image_alt` in front
+matter. Keep alt attributes escaped in shared templates. See
+`docs/site-review-2026-09-05.md` for the visual review and suggested next steps.
+
+Each blog post's `description` is a complete summary shown below the title
+and reused in post cards and metadata. Hero images also need `image_alt`,
+`image_width` and `image_height`. Blog galleries are grouped by post `slug`
+and gallery key in `_data/blog_galleries.json`; render one with
+`{% include blog-gallery.html gallery="gallery-1" %}`. Each image records its
+local `src`, neutral `alt`, `width` and `height`. The shared component handles
+captions, lazy loading and enlargement. Use the `video.html` include with
+`id` and `title` for a YouTube video that loads only after a click.
+
 | Task | File |
 | --- | --- |
 | New blog post | `_posts/YYYY-MM-DD-slug.md` (front matter: `layout: post`, `title`, `date`, `description`, `image`) |
 | Post images | `assets/blog/<slug>/` |
+| Blog galleries | `_data/blog_galleries.json` + `_includes/blog-gallery.html` |
+| Home carousel | `_data/carousel.yml` + images in `assets/home/` |
 | CV | `_data/cv.yml` |
 | CV image dimensions | `_data/cv_image_dimensions.json` |
 | Assignments | `_data/assignments.yml` + PDF in `assets/documents/` |
@@ -73,6 +111,26 @@ overflow. Also test with reduced motion enabled.
 
 Blog URLs use `/post/:slug/`, matching the old Wix site so inbound links keep
 working. Do not change `permalink` in `_config.yml`.
+
+### Reordering Home carousel photos
+
+1. Open `_data/carousel.yml`. The carousel follows this file from top to bottom.
+2. Find a photo by searching for its `src` filename or words in its `alt`
+   description. Imported filenames use hyphens in place of spaces, dots and
+   underscores: `2023-10-28 08.44.22` becomes
+   `instagram-2023-10-28-08-44-22.jpg`.
+3. Cut the whole photo entry, from `- src:` through its `width`, `height` and
+   `alt` lines. Paste it before or after another complete entry. Keep the
+   indentation exactly as it is. The first entry is the opening photo.
+4. Save, run `bundle exec jekyll build`, and refresh the Home page. A server
+   started with the ordinary `bundle exec jekyll serve` command rebuilds on
+   changes automatically; a server using `--no-watch` needs the manual build.
+
+No HTML edits are needed to change the order. `_includes/carousel.html`
+renders the photos using `{% for photo in site.data.carousel %}`.
+`index.html` places that component inside `hero__carousel-panel` with
+`{% include carousel.html %}`. The actual image files are in `assets/home/`.
+Do not edit `_site/index.html`: it is generated and gets replaced on each build.
 
 ## Design
 

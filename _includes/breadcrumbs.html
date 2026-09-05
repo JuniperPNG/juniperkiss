@@ -1,6 +1,7 @@
 {%- if page.url != "/" -%}
 <div class="breadcrumbs">
-  <nav class="breadcrumbs__inner shell" aria-label="Breadcrumb">
+  <div class="shell{% if page.layout == 'page' or page.layout == 'post' or page.url == '/blog/' %} shell--reading{% endif %}">
+  <nav class="breadcrumbs__inner" aria-label="Breadcrumb">
     <ol class="breadcrumbs__list">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       {%- if page.layout == "post" -%}
@@ -11,5 +12,6 @@
       {%- endif -%}
     </ol>
   </nav>
+  </div>
 </div>
 {%- endif -%}

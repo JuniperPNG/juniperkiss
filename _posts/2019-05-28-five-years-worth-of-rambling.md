@@ -3,9 +3,12 @@ layout: post
 title: "Five years worth of rambling"
 date: 2019-05-28 15:24:08 +0000
 slug: five-years-worth-of-rambling
-description: "Once upon a time, I dreamed of becoming a marine biologist. Today, I am at Zurich airport, ready to fly to Miami to the CORBANA International Banana Congress having finished my undergraduate degree in Plant Biology and about to start my PhD. How did this all happen one might ask. Well, here it goes!"
+description: "A candid look back at five years of studying, working and travelling, from early fieldwork and scholarships to plant science and a PhD offer, with plenty of detours along the way."
 image: /assets/blog/five-years-worth-of-rambling/00-hero-812149_1e97fd65f14446a6998ebd74ea747987-mv2_d_2048_1536_s_2.jpg
+image_alt: "A train and passengers beneath the arched glass roof of a railway station."
 migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
+image_width: 1600
+image_height: 1200
 ---
 <p><strong>Once upon a time, I dreamed of becoming a marine biologist. </strong></p>
 
@@ -15,7 +18,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>Well, here it goes!</p>
 
-<p><strong>Moving to Southampton (2014)</strong></p>
+<h2>Moving to Southampton (2014)</h2>
 
 <p>In my last year of secondary school in Hungary, I was committed to only apply to Marine Biology degrees abroad – and as the UK was the cheapest option (compared to Australia/US/Canada), I set my eyes on the University of Stirling in Scotland. </p>
 
@@ -39,7 +42,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>So, I started to look for anything Marine Biology related, part-time undergraduate degrees through Clearance (i.e. universities that still had openings).</p>
 
-<p><strong>Moving to Cambridge</strong></p>
+<h2>Moving to Cambridge</h2>
 
 <p>I had some family friends near Cambridge who could put me up in their annexe for a few months. The only option I was left with was the part-time Marine Biology with Biodiversity and Conservation course at Anglia Ruskin University in Cambridge. </p>
 
@@ -53,19 +56,19 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>The managers said that as soon as they saw me showing up to the job interview with tasty brownies – ‘I was in’. </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_bee2c8e53bfe4b698c4523e2d223f851~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_bee2c8e53bfe4b698c4523e2d223f851~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_0ce0a65bbcc6457ea9447260b4cb71b2~mv2.jpg/v1/fill/w_1920,h_890,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_0ce0a65bbcc6457ea9447260b4cb71b2~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_d05fa4e0f3344868839d391d1834300f~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_d05fa4e0f3344868839d391d1834300f~mv2_d_2048_1365_s_2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-1" %}
 
 <p><em>(Anglesey Abbey 2014-2015)</em></p>
 
-<p><strong>Brainstorming in Cambridge, CABI and Namibia</strong></p>
+<h2>Brainstorming in Cambridge, CABI and Namibia</h2>
 
 <p>So, this is how it all happened – within a few weeks, new uni, new job and new home. </p>
 
 <p>That year, I was working five-six days while taking half days off to go to university. </p>
 
-<p>In the first year, I continued to work at Anglesey Abbey, and I received my first scholarship in January 2015 to <a href="{{ '/blog/first-scholarship-off-to-namibia-2015' | relative_url }}">go to Namibia</a>. </p>
+<p>In the first year, I continued to work at Anglesey Abbey, and I received my first scholarship in January 2015 to <a href="{{ '/post/first-scholarship-off-to-namibia-2015/' | relative_url }}">go to Namibia</a>. </p>
 
-<p>I had the chance to work at <a href="{{ '/blog/first-job-and-taking-days-off' | relative_url }}">CABI again </a>after finishing exams and lived in a tent to save up the money to go off to Africa. </p>
+<p>I had the chance to work at <a href="{{ '/post/first-job-and-taking-days-off/' | relative_url }}">CABI again </a>after finishing exams and lived in a tent to save up the money to go off to Africa. </p>
 
 <p>In the summer I applied for the Winston Churchill Future Leaders scholarship which I thought was a good idea. I remember that the night before the deadline, I had about 30% charge left on my laptop and little mobile data to send off my application. </p>
 
@@ -87,9 +90,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>One morning, I wrote down… Global Opportunities for Ecological Sustainability (GOES). That sounded a cool name for that institute I pitched in the summer. (Will get back to GOES later…)</p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_b08d05ad302e42428fed69eefb26c70f~mv2_d_2048_1275_s_2.jpg/v1/fill/w_1920,h_1195,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_b08d05ad302e42428fed69eefb26c70f~mv2_d_2048_1275_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_a11228512b924805ac56f99f7188e42b~mv2_d_2048_1275_s_2.jpg/v1/fill/w_1920,h_1195,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_a11228512b924805ac56f99f7188e42b~mv2_d_2048_1275_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_4c9e4b0752b9487da7f819fb12693827~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_4c9e4b0752b9487da7f819fb12693827~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_d434417e67524b359b12a2c057cf8f05~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_d434417e67524b359b12a2c057cf8f05~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_7bbc12ba5e8b4d099b7072d76b313ba1~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_7bbc12ba5e8b4d099b7072d76b313ba1~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_c5cc8fe9cf9e4f9793252c0366827108~mv2_d_2048_1664_s_2.jpg/v1/fill/w_1920,h_1560,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_c5cc8fe9cf9e4f9793252c0366827108~mv2_d_2048_1664_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_9c1522ee4f7b44a68c2949f539737ffa~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_9c1522ee4f7b44a68c2949f539737ffa~mv2_d_2048_1365_s_2.jpg"/></figure></li></ul>
-
-<ul><li><img alt="" src="https://static.wixstatic.com/media/812149_b08d05ad302e42428fed69eefb26c70f~mv2_d_2048_1275_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_b08d05ad302e42428fed69eefb26c70f~mv2_d_2048_1275_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_a11228512b924805ac56f99f7188e42b~mv2_d_2048_1275_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_a11228512b924805ac56f99f7188e42b~mv2_d_2048_1275_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_4c9e4b0752b9487da7f819fb12693827~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_4c9e4b0752b9487da7f819fb12693827~mv2_d_2048_1365_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_d434417e67524b359b12a2c057cf8f05~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_d434417e67524b359b12a2c057cf8f05~mv2_d_2048_1365_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_7bbc12ba5e8b4d099b7072d76b313ba1~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_7bbc12ba5e8b4d099b7072d76b313ba1~mv2_d_2048_1365_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_c5cc8fe9cf9e4f9793252c0366827108~mv2_d_2048_1664_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_c5cc8fe9cf9e4f9793252c0366827108~mv2_d_2048_1664_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_9c1522ee4f7b44a68c2949f539737ffa~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_9c1522ee4f7b44a68c2949f539737ffa~mv2_d_2048_1365_s_2.jpg"/></li></ul>
+{% include blog-gallery.html gallery="gallery-2" %}
 
 <p>During my last week in Namibia, I emailed NIAB (National Institute of Agricultural Botany) in Cambridge if they are looking for a hand by any chance. It was a big surprise that I was put in touch with the Technical Support Team part of the Agronomic Crop Characterisation department. Arrived back to Cambridge, moved into a new room and got a 6-8 weeklong position to help on the Oilseed Rape cotyledon image analysis project. </p>
 
@@ -117,19 +118,17 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>Plant biology during the day, marine biology at night. Fun! </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_dda7feef08ac479ea0480ff00c1ae1b1~mv2.jpg/v1/fill/w_960,h_720,al_c,q_85,enc_auto/812149_dda7feef08ac479ea0480ff00c1ae1b1~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_e6b9bee8eaed4fc0820ba285c3622e64~mv2_d_2048_1200_s_2.jpg/v1/fill/w_1920,h_1125,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_e6b9bee8eaed4fc0820ba285c3622e64~mv2_d_2048_1200_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_f3becd7911964bcb886ed63872219c34~mv2_d_2048_1447_s_2.jpg/v1/fill/w_1920,h_1357,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_f3becd7911964bcb886ed63872219c34~mv2_d_2048_1447_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_8c344db21cb741fb801ff56f7c8dee82~mv2.jpg/v1/fill/w_640,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_8c344db21cb741fb801ff56f7c8dee82~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_20ee183bb2e74b2d8d48b93d06feff8f~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_20ee183bb2e74b2d8d48b93d06feff8f~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_813f3147e491477bb386565d7e07308c~mv2_d_1365_2048_s_2.jpg/v1/fill/w_1280,h_1920,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_813f3147e491477bb386565d7e07308c~mv2_d_1365_2048_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_40bbd13afb0b499faba3523c9628973e~mv2.jpg/v1/fill/w_320,h_582,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_40bbd13afb0b499faba3523c9628973e~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_fe9ee686b82744e78308086b8bdd2a9f~mv2.jpg/v1/fill/w_640,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_fe9ee686b82744e78308086b8bdd2a9f~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_a1e4d095af2543b69c7d193ded1a2050~mv2.jpg/v1/fill/w_960,h_640,al_c,q_85,enc_auto/812149_a1e4d095af2543b69c7d193ded1a2050~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_51bcb93c5a42451e92041c65aaff7e45~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_51bcb93c5a42451e92041c65aaff7e45~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_d663e720557d43b296b19c7a6a77bb52~mv2.jpg/v1/fill/w_640,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_d663e720557d43b296b19c7a6a77bb52~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_73a5b9c04d27480eab7d3b3ca13756da~mv2_d_3076_1362_s_2.jpg/v1/fill/w_1920,h_850,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_73a5b9c04d27480eab7d3b3ca13756da~mv2_d_3076_1362_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_8f64d2e568164ac1b4c376413ed4828e~mv2_d_2048_1262_s_2.jpg/v1/fill/w_1920,h_1183,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_8f64d2e568164ac1b4c376413ed4828e~mv2_d_2048_1262_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_e4f5aed78a87421c9f8fb32ce1aceec0~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_e4f5aed78a87421c9f8fb32ce1aceec0~mv2_d_2048_1365_s_2.jpg"/></figure></li></ul>
-
-<ul><li><img alt="" src="https://static.wixstatic.com/media/812149_dda7feef08ac479ea0480ff00c1ae1b1~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_dda7feef08ac479ea0480ff00c1ae1b1~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_e6b9bee8eaed4fc0820ba285c3622e64~mv2_d_2048_1200_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_e6b9bee8eaed4fc0820ba285c3622e64~mv2_d_2048_1200_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_f3becd7911964bcb886ed63872219c34~mv2_d_2048_1447_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_f3becd7911964bcb886ed63872219c34~mv2_d_2048_1447_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_8c344db21cb741fb801ff56f7c8dee82~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_8c344db21cb741fb801ff56f7c8dee82~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_20ee183bb2e74b2d8d48b93d06feff8f~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_20ee183bb2e74b2d8d48b93d06feff8f~mv2_d_2048_1365_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_813f3147e491477bb386565d7e07308c~mv2_d_1365_2048_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_813f3147e491477bb386565d7e07308c~mv2_d_1365_2048_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_40bbd13afb0b499faba3523c9628973e~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_40bbd13afb0b499faba3523c9628973e~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_fe9ee686b82744e78308086b8bdd2a9f~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_fe9ee686b82744e78308086b8bdd2a9f~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_a1e4d095af2543b69c7d193ded1a2050~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_a1e4d095af2543b69c7d193ded1a2050~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_51bcb93c5a42451e92041c65aaff7e45~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_51bcb93c5a42451e92041c65aaff7e45~mv2_d_2048_1365_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_d663e720557d43b296b19c7a6a77bb52~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_d663e720557d43b296b19c7a6a77bb52~mv2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_73a5b9c04d27480eab7d3b3ca13756da~mv2_d_3076_1362_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_73a5b9c04d27480eab7d3b3ca13756da~mv2_d_3076_1362_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_8f64d2e568164ac1b4c376413ed4828e~mv2_d_2048_1262_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_8f64d2e568164ac1b4c376413ed4828e~mv2_d_2048_1262_s_2.jpg"/></li><li><img alt="" src="https://static.wixstatic.com/media/812149_e4f5aed78a87421c9f8fb32ce1aceec0~mv2_d_2048_1365_s_2.jpg/v1/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/812149_e4f5aed78a87421c9f8fb32ce1aceec0~mv2_d_2048_1365_s_2.jpg"/></li></ul>
+{% include blog-gallery.html gallery="gallery-3" %}
 
 <p><em>Mixture of pictures during my time at ARU</em></p>
 
-<p><strong>Scholarships and GOES</strong></p>
+<h2>Scholarships and GOES</h2>
 
 <p>After my scholarship to Namibia in 2015, I reapplied to the same scholarship to go to Finland in 2016, for a two-week winter school of boreal and community ecology. </p>
 
 <p>Once again, I received the scholarship, met amazing students and scientists at Konnevesi Research Station (University of Jyvaskyla) and to prove everyone’s scepticism wrong – I went canoeing on half-frozen streams and lakes with a local canoe instructor. </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_ed874a3d47eb4614a752b1dcbf79397d~mv2_d_2048_1275_s_2.jpg/v1/fill/w_1920,h_1195,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_ed874a3d47eb4614a752b1dcbf79397d~mv2_d_2048_1275_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_9f7a3f2e148043259229a7bbac3d6279~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_9f7a3f2e148043259229a7bbac3d6279~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_7a91fce16de54b1f98dce67c244012b7~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_7a91fce16de54b1f98dce67c244012b7~mv2_d_2048_1365_s_2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-4" %}
 
 <p>I cannot quite recall how, but I found the <a href="https://www.agronomy.org/awards/view/137" rel="noopener">Golden Opportunities Scholarship </a>by the American Tri-societies and randomly applied. </p>
 
@@ -173,23 +172,23 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>While the scholarship included covering all the food and travels, I still only had £70 on my bank card. While other students and professors were going out to fancy restaurants, I walked 20 minutes to find a general store to get some sandwich lookalike for dinner. </p>
 
-<p>I invited a fantastic scientist over to Cambridge to screen his new documentary about soil science – little did I know that I would <a href="{{ '/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017' | relative_url }}">be hosting him</a> five months later! </p>
+<p>I invited a fantastic scientist over to Cambridge to screen his new documentary about soil science – little did I know that I would <a href="{{ '/post/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017/' | relative_url }}">be hosting him</a> five months later! </p>
 
 <p>I also had [awkward face] lunch with the Executive Editor of National Geographic who gave me tips on how to re-design GOES (more, more, more big pictures!). </p>
 
 <p>The days went by and by the last night, both my bank accounts were in minus £1. </p>
 
-<p>Hm. As I mentioned in <a href="{{ '/blog/conferences-and-pot-noodles' | relative_url }}">another blog post</a>, I ended up sharing a bed that night with a PhD student. </p>
+<p>Hm. As I mentioned in <a href="{{ '/post/conferences-and-pot-noodles/' | relative_url }}">another blog post</a>, I ended up sharing a bed that night with a PhD student. </p>
 
 <p>So, I arrived back in London super overwhelmed, jetlagged, in a skirt and sandals – without my backpack (which was stuck in Minneapolis). A friend bought my coach tickets to get home to Cambridge and well. I remained hungry until my salary arrived. I cannot thank enough for all my former colleagues who started up food banks for me. </p>
 
 <p>I am very <em>very</em> stubborn, well about many things, but mostly about asking for help, and well... Money. </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_e0cc988461044785bb2986b1516aa297~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_96e52ca8dcc14100afa8de9ab9b9d487~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_96e52ca8dcc14100afa8de9ab9b9d487~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_c6a00454fb494db3b76ee2ee832cb8db~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_c6a00454fb494db3b76ee2ee832cb8db~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_9139fbec2cf644988ebb8b985e5dc925~mv2_d_2048_1240_s_2.jpg/v1/fill/w_1920,h_1163,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_9139fbec2cf644988ebb8b985e5dc925~mv2_d_2048_1240_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_213864cdc35f4eeda17756f1c91b49aa~mv2.jpg/v1/fill/w_1280,h_960,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_213864cdc35f4eeda17756f1c91b49aa~mv2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_1fa87c94e72c49ef8b59a4e3fed870af~mv2_d_2048_1292_s_2.jpg/v1/fill/w_1920,h_1211,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_1fa87c94e72c49ef8b59a4e3fed870af~mv2_d_2048_1292_s_2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-5" %}
 
 <p><em>Pictures from my trip to ASA, CSSA, and SSSA AGM</em></p>
 
-<p><strong>Last year at ARU</strong></p>
+<h2>Last year at ARU</h2>
 
 <p>As I entered the third year of my undergraduate course, it became trickier and trickier to go to university while working at NIAB – I kept thinking work comes first but my modules did require me to be in practicals and do weekly write-ups. </p>
 
@@ -237,7 +236,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>After all the dancing, I set off to Nepal via Turkey (there are some stories there too, but let’s not get lost in the details). </p>
 
-<p>I wrote about Nepal in <a href="{{ '/blog/agricultural-extension-internship-in-nepal-2017' | relative_url }}">another post</a>. </p>
+<p>I wrote about Nepal in <a href="{{ '/post/agricultural-extension-internship-in-nepal-2017/' | relative_url }}">another post</a>. </p>
 
 <p>I got back on the plane after Nepal. Flew back to Cambridge. </p>
 
@@ -253,11 +252,11 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>I started putting together the last issue of GOES and started Google-ing Plant Biology degrees in the UK.</p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_9118f7cc972d493b9f3f8a9effb1fd84~mv2_d_3264_1836_s_2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_9118f7cc972d493b9f3f8a9effb1fd84~mv2_d_3264_1836_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_f2ae79f2ef7d44ce913ad4aea7e621f5~mv2_d_3264_1836_s_2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_f2ae79f2ef7d44ce913ad4aea7e621f5~mv2_d_3264_1836_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_a036b85113384ff6af20da8bb16a5ede~mv2_d_3264_1836_s_2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_a036b85113384ff6af20da8bb16a5ede~mv2_d_3264_1836_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_7a7d6a2a06fa4f8ea5181228d5449eb2~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_1920,h_2560,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_7a7d6a2a06fa4f8ea5181228d5449eb2~mv2_d_2448_3264_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_4c2381e1785b4a5787af68e7a179905d~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_4c2381e1785b4a5787af68e7a179905d~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_fcda6dbccbf74929bfaede7489f536c8~mv2_d_3264_1836_s_2.jpg/v1/fill/w_1920,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_fcda6dbccbf74929bfaede7489f536c8~mv2_d_3264_1836_s_2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-6" %}
 
 <p><em>Pictures from Nepal</em></p>
 
-<p><strong>Moving to Aberystwyth and more scholarships</strong></p>
+<h2>Moving to Aberystwyth and more scholarships</h2>
 
 <p>Not 48 hours had passed when I started looking at Plant Biology degrees in July. </p>
 
@@ -301,11 +300,11 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>Okay. So. I had a few weeks to sort out my internship visa… flights… accommodation in Arkansas. Oh, had to take an exam earlier so I can start my scholarship on time. Two exams on one day, in the afternoon my passport was delivered with the visa, following day at 8 am, my boxes were taken to storage and I rushed to Birmingham Airport to… Fly around the globe! </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_3041fb2343ba4bec9c75cee22e2faf14~mv2.jpg/v1/fill/w_960,h_720,al_c,q_85,enc_auto/812149_3041fb2343ba4bec9c75cee22e2faf14~mv2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-7" %}
 
 <p><em>My home</em></p>
 
-<p><strong>The summer of 2018</strong></p>
+<h2>The summer of 2018</h2>
 
 <p>Nuts. </p>
 
@@ -347,9 +346,9 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>I flew with Qatar Airlines which offered a free one night stay if the layover is over 12 hours in Doha. Overwhelmed with a culture shock from the Philippines to arrive in a man-made city in a desert, and got a free night at the Hilton. Aha. I still have pictures of my room was and that huge bathtub... </p>
 
-<ul><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_97361e8a89304e6987a542323ab5dac2~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_97361e8a89304e6987a542323ab5dac2~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_dd2c30319f3f401e8ab84129d424dca8~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_dd2c30319f3f401e8ab84129d424dca8~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_e392515581ed44f0b561cd2305d23540~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_e392515581ed44f0b561cd2305d23540~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_1d685ad28c994b8fa0394fbdfb9c28ca~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_1d685ad28c994b8fa0394fbdfb9c28ca~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_6417c9fc339b4bf68ab4061123a6171d~mv2_d_3456_5184_s_4_2.jpg/v1/fill/w_1920,h_2880,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_6417c9fc339b4bf68ab4061123a6171d~mv2_d_3456_5184_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_96489242bfa84d75bd95d752212dbfde~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_96489242bfa84d75bd95d752212dbfde~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_65e77c12181040e686ca291c44a34ebf~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_65e77c12181040e686ca291c44a34ebf~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_b98c3a56432f463faa13287ac1a3e890~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_b98c3a56432f463faa13287ac1a3e890~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_7601b8bce60a4e4f89c621b32b677b71~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_7601b8bce60a4e4f89c621b32b677b71~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_3ab9677d684449f58207358e7603800f~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_3ab9677d684449f58207358e7603800f~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_0082e564a3a1471182ba9554ba7f63f2~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_0082e564a3a1471182ba9554ba7f63f2~mv2_d_5184_3456_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_2adfb5be38944b19a4a2056193ed18ec~mv2_d_3456_5184_s_4_2.jpg/v1/fill/w_1920,h_2880,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_2adfb5be38944b19a4a2056193ed18ec~mv2_d_3456_5184_s_4_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_0ddf341106444ff696754d31b4b7f805~mv2_d_1520_2040_s_2.jpg/v1/fill/w_1280,h_1718,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_0ddf341106444ff696754d31b4b7f805~mv2_d_1520_2040_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_ff855e10bc224317a9aee837d179881b~mv2_d_1944_1296_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_ff855e10bc224317a9aee837d179881b~mv2_d_1944_1296_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_a83c20ce156848f4a70efab11f5c5870~mv2_d_1728_1884_s_2.jpg/v1/fill/w_1280,h_1396,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_a83c20ce156848f4a70efab11f5c5870~mv2_d_1728_1884_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_87e4ec26483d4693b6da86a517466c70~mv2_d_1815_1210_s_2.jpg/v1/fill/w_1280,h_853,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_87e4ec26483d4693b6da86a517466c70~mv2_d_1815_1210_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_f582b135fc5b43928c112b6397cd94b8~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_f582b135fc5b43928c112b6397cd94b8~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_2a04a39fc8154dfbb6c7dda5b8361c52~mv2_d_2048_1365_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_2a04a39fc8154dfbb6c7dda5b8361c52~mv2_d_2048_1365_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_e1cbe01d0b5747f2ab74baa64333ff90~mv2_d_2040_1530_s_2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_e1cbe01d0b5747f2ab74baa64333ff90~mv2_d_2040_1530_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_498acbc989124e3a91011a9b36cc6df1~mv2_d_1944_1296_s_2.jpg/v1/fill/w_1920,h_1280,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/812149_498acbc989124e3a91011a9b36cc6df1~mv2_d_1944_1296_s_2.jpg"/></figure></li><li><figure><img alt="" src="https://static.wixstatic.com/media/812149_8ed008ac545243fbb67285b8672305b4~mv2.jpg/v1/fill/w_640,h_859,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/812149_8ed008ac545243fbb67285b8672305b4~mv2.jpg"/></figure></li></ul>
+{% include blog-gallery.html gallery="gallery-8" %}
 
-<p><strong>The final frontier - PhD hunt</strong></p>
+<h2>The final frontier - PhD hunt</h2>
 
 <p>I hope my love of brambles is clear to the reader. I loved my research project, proving people wrong... So last year, around March 2018 I also started emailing Australian professors to continue my research - detangling the evolution of plant phenotypic plasticity and added a bit of biocontrol and plant disease stuff. Australia is the only country where a biocontrol rust disease is used to control brambles and in 2017, the first population crash was reported. I could go on - in short, I wrote a 40 page PhD proposal... </p>
 
@@ -359,9 +358,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>I was still a full year ahead of graduating. I applied for the Northcote Trust Scholarship but looking back, even though scientists have proofread my application, I believe I wrote it in a way too technical language. I read the rejection email in October - so I started to look for UK PhDs. </p>
 
-<figure class="post-figure">
-  <img src="{{ '/assets/blog/five-years-worth-of-rambling/01-812149_23afdac7e49a4dd7a3ad0d9c80767e8d-mv2.jpg' | relative_url }}" alt="" loading="lazy" decoding="async" />
-</figure>
+{% include blog-gallery.html gallery="gallery-9" %}
 
 <p><em>Facebook post when I got accepted to ANU.</em></p>
 
@@ -403,9 +400,7 @@ migrated_from: https://www.juniperkiss.com/post/five-years-worth-of-rambling
 
 <p>I would like to remind the dear reader that these are the ramblings of a half-asleep lady on a plane crossing the Atlantic, catching up with her thoughts and repressed feelings. </p>
 
-<figure class="post-figure">
-  <img src="{{ '/assets/blog/five-years-worth-of-rambling/02-812149_362b8362d1634c3b8b043691318ca306-mv2_d_1536_2048_s_2.jpeg' | relative_url }}" alt="" loading="lazy" decoding="async" />
-</figure>
+{% include blog-gallery.html gallery="gallery-10" %}
 
 <p><em>Picture from Publix shop in Miami</em></p>
 

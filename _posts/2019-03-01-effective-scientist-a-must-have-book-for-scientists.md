@@ -3,7 +3,7 @@ layout: post
 title: "'Effective Scientist' - a must-have book for scientists"
 date: 2019-03-01 22:01:58 +0000
 slug: effective-scientist-a-must-have-book-for-scientists
-description: "A Plantae interview with Prof Corey Bradshaw about his new book Professor Corey J.A. Bradshaw is a Matthew Flinders Fellow in Global Ecology at Flinders University, Australia. His research focuses on global-change ecology and has had over 10,000 citations since 2013. His blog is www.conservationbyte"
+description: "An interview with ecologist Corey Bradshaw about writing, publishing, managing research and making science useful beyond academia, with candid advice for scientists at the start of their careers."
 migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-book-for-scientists
 ---
 <h2><strong>A Plantae interview with Prof Corey Bradshaw about his new book</strong></h2>
@@ -15,6 +15,8 @@ migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-
 <p>We had a chat about his new book, <a href="https://www.amazon.com/Effective-Scientist-Successful-Academic-Career/dp/1316620859" rel="noopener"><em>'Effective Scientist: A handy guide to a successful academic career'</em></a> published this April, which was inspired by the feedback on his career advice blogs.</p>
 
 <p>Listen to our interview here: </p>
+
+{% include video.html id="g3c02sqD3Xw" title="Plantae interview with Corey Bradshaw" %}
 
 <p><a href="https://community.plantae.org/files/posts/4966899199242143674/b972e76d6387573be8d48c8e66d26f8f_Plantae_Interview_Prof_Corey_Bradshaw_Effective_Scientist.mp3" rel="noopener">Download audio interview</a></p>
 

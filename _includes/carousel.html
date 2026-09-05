@@ -20,7 +20,7 @@
             src="{{ '/assets/home/' | append: photo.src | relative_url }}"
             width="{{ photo.width }}"
             height="{{ photo.height }}"
-            alt="{{ photo.alt }}"
+            alt="{{ photo.alt | escape }}"
             loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
             {% if forloop.first %}fetchpriority="high"{% endif %}
             decoding="async"

@@ -88,7 +88,7 @@ education:
     image_layout: wide
     images:
       - src: /assets/cv/melbourne-restoration-optimisation-framework.png
-        alt: Framework for dynamically optimising restoration actions across landscapes and species.
+        alt: "Diagram linking landscape data, restoration scenarios and optimisation at several spatial scales."
 
   - dates: 2020–2022
     title: PhD, University of Southampton
@@ -123,13 +123,13 @@ education:
     image_layout: tile
     images:
       - src: /assets/cv/png-plant-id-workshop.jpg
-        alt: A plant identification workshop in Papua New Guinea.
+        alt: "A woman examining plant material and making notes at a table beside a flag."
       - src: /assets/cv/plant-colouring-books-became-very-popular-during-my-phd-fiel.jpg
-        alt: Plant colouring books, which became very popular during my PhD fieldwork in PNG.
+        alt: "Three children holding a colourful activity sheet and pencils outdoors."
       - src: /assets/cv/second-phd-outline.jpg
-        alt: The outline of my second PhD project.
+        alt: "Research slide linking soil functioning, crop diversity and food security in Papua New Guinea."
       - src: /assets/cv/southampton-png-banana-field-trial.jpg
-        alt: A banana field trial in Papua New Guinea.
+        alt: "Small cultivated plots and scattered trees on a steep hillside."
 
   - dates: 2019–2020
     title: MRes (Distinction), University of Bristol, based at the University of Exeter
@@ -167,13 +167,13 @@ education:
     image_layout: tile
     images:
       - src: /assets/cv/mres-greenhouse-tr4-trial.jpg
-        alt: A greenhouse TR4 trial against Cavendish bananas.
+        alt: "Rows of potted banana plants, including wilted plants, beneath greenhouse lights."
       - src: /assets/cv/first-phd-fusarium-tr4-trials-against-cavendish-bananas.jpg
-        alt: Fusarium TR4 trials against Cavendish bananas.
+        alt: "Research slide showing banana plants, culture plates and laboratory trials with Fusarium and biocontrol bacteria."
       - src: /assets/cv/mres-costa-rica-banana-trial.jpg
-        alt: A marked banana field trial in Costa Rica.
+        alt: "Banana plants in marked trial plots with a treatment label in the foreground."
       - src: /assets/cv/banana-sucker-replantation-in-costa-rica.jpg
-        alt: Banana sucker replantation in Costa Rica.
+        alt: "People working beside a fallen banana stem in a plantation."
 
   - dates: 2017–2019
     title: BSc (Hons) Plant Biology, First Class — Aberystwyth University, Wales
@@ -194,9 +194,7 @@ education:
     image_align: right
     images:
       - src: /assets/cv/my-bramble-project-detangled-150-year-old-classification-sys.jpg
-        alt: >-
-          My bramble project untangled a 150-year-old classification system by
-          combining geometric morphometrics with three-loci phylogenetic analysis.
+        alt: "A laptop and overhead imaging equipment arranged to photograph bramble leaves."
 
   - dates: 2014–2017
     title: CertHE Marine Biology with Biodiversity and Conservation — Anglia Ruskin University, Cambridge
@@ -215,9 +213,9 @@ education:
       summers to save on rent.
     images:
       - src: /assets/cv/my-home.jpg
-        alt: My home for three summers — a tent pitched in a field.
+        alt: "A green tent and camping equipment pitched beside trees."
       - src: /assets/cv/goes-magazine-was-my-baby.jpg
-        alt: GOES magazine, which was my "baby".
+        alt: "Three GOES magazine covers beside a Being a Sustainable Biologist publication."
     video: kj9600R_C8w
     video_label: how GOES magazine started
 
@@ -256,13 +254,13 @@ experience:
         decision-making across ex situ and in situ programmes.
     images:
       - src: /assets/cv/dominican-republic-species-distribution-modelling.jpg
-        alt: Species distribution modelling output for the Dominican Republic.
+        alt: "Research slide showing species distribution maps and collection priorities for the Dominican Republic."
       - src: /assets/cv/brahms-migration.jpg
-        alt: Planning the BRAHMS7 to BRAHMS8 data migration.
+        alt: "A migration workflow slide showing data profiling, matching and validation steps."
       - src: /assets/cv/example-workflow-that-i-have-developed.jpg
-        alt: An example of a data workflow I developed.
+        alt: "A slide titled Sudan data and workflow, with data sources and processing steps."
       - src: /assets/cv/kew-hosting-ethiopian-diplomats.jpg
-        alt: Hosting Ethiopian diplomats at the Millennium Seed Bank.
+        alt: "Juniper and three visitors standing among plants inside a glasshouse."
     note: >-
       After my Aussie WHM ran out, I sought job-hunting, low-cost refuge in
       Indonesia where I got lucky and magically got a job at Kew!
@@ -308,13 +306,13 @@ experience:
     image_layout: tile
     images:
       - src: /assets/cv/example-dhs-and-mis-survey-data-in-tanzania-and-zambia-visua.png
-        alt: A visualisation of DHS and MIS survey data in Tanzania and Zambia.
+        alt: "Map showing district-level insecticide-treated net use and survey clusters in Zambia and Tanzania."
       - src: /assets/cv/map-sudan-cluster-matching.png
-        alt: Sudan malaria survey-cluster coordinate matching workflow.
+        alt: "A slide showing the workflow for matching Sudan survey clusters to map coordinates."
       - src: /assets/cv/lancet-malaria-mapping-paper.jpg
-        alt: The Lancet paper mapping global Plasmodium falciparum and vivax malaria.
+        alt: "Title and author list of a Lancet paper mapping global malaria prevalence, incidence and mortality from 2000 to 2022."
       - src: /assets/cv/ammnet-symposium-dar-es-salaam.jpg
-        alt: MAP Dar ECR Training Programme symposium participants in Dar es Salaam.
+        alt: "Juniper and six other people seated around a table indoors."
 
   - role: Extension Group Leader
     org: Department of Industry, Trade and Tourism, Northern Territory Government (Darwin, NT)
@@ -352,11 +350,11 @@ experience:
     image_layout: tile-left
     images:
       - src: /assets/cv/watermelon-trials-had-their-perks.jpg
-        alt: Watermelon trials, which had their perks.
+        alt: "Large cardboard boxes filled with harvested watermelons."
       - src: /assets/cv/alice-springs-long-term-cattle-grazing-research-station.jpg
-        alt: The long-term cattle grazing research station at Alice Springs.
+        alt: "Cattle grazing on dry grass beneath a rocky ridge."
       - src: /assets/cv/extension-group-brainstorming-session.jpg
-        alt: An extension group brainstorming session.
+        alt: "A slide showing an extension planning diagram and a person writing on a whiteboard."
 
   - role: Research Officer
     org: Geospatial Health and Development, Telethon Kids Institute (Perth, WA)
@@ -389,15 +387,15 @@ experience:
     image_layout: tile-last-wide
     images:
       - src: /assets/cv/antimalarial-treatment-outcome-predictions-based-on-resistan.jpg
-        alt: Antimalarial treatment outcome predictions based on resistance genomic data.
+        alt: "Maps comparing predicted treatment failure and success under several modelled scenarios."
       - src: /assets/cv/research-pipeline-memory-usage.png
-        alt: Memory usage while running a malaria modelling pipeline.
+        alt: "A line chart showing memory use rising, dropping and rising again during a modelling run."
       - src: /assets/cv/research-malaria-3d-mesh.png
-        alt: Three-dimensional mesh used for spatial malaria modelling.
+        alt: "A three-dimensional triangulated sphere with blue spatial points concentrated across it."
       - src: /assets/cv/research-batch-memory-usage.png
-        alt: Memory usage across repeated malaria modelling batches.
+        alt: "A line chart showing repeated rises and resets in memory use across modelling batches."
       - src: /assets/cv/inla-model-diagnostics.jpg
-        alt: INLA model diagnostics.
+        alt: "Model diagnostic plots beside maps of mesh and prediction locations."
 
   - role: Research & Development Coordinator
     org: Liebe Group (Dalwallinu, WA)
@@ -430,13 +428,13 @@ experience:
     image_layout: tile
     images:
       - src: /assets/cv/field-walk-with-farmers-in-canola-trials-in-the-wheatbelt.jpg
-        alt: A field walk with farmers in canola trials in the Wheatbelt.
+        alt: "A group walking through a field of yellow flowering canola."
       - src: /assets/cv/yuna-fieldtrip-with-growers.jpg
-        alt: A field trip to Yuna with growers.
+        alt: "A group posing along the edge of a green crop field."
       - src: /assets/cv/liebe-field-trials-collage.png
-        alt: Field trials and grower extension activities coordinated with the Liebe Group.
+        alt: "A collage of field walks, farm machinery and grower visits."
       - src: /assets/cv/liebe-nitrogen-trial-design.png
-        alt: Nitrogen treatment layout for a replicated field trial.
+        alt: "A field-trial plan showing replicated nitrogen treatments across a yield gradient."
     note: "TODO — add the story behind this one."
 
   - role: Blogger and Social Media Assistant
@@ -460,13 +458,13 @@ experience:
     image_layout: tile
     images:
       - src: /assets/cv/botany-one-archive-2021-2022.png
-        alt: Botany One articles written by Juniper in 2021 and 2022.
+        alt: "Three Botany One article previews about tree buds, plant motivation and floral seasonality."
       - src: /assets/cv/botany-one-archive-2021.png
-        alt: Botany One plant-science articles written by Juniper in 2021.
+        alt: "Three Botany One article previews about grapes, Facebook and modelling."
       - src: /assets/cv/botany-one-digital-botany-2026.png
-        alt: Digital Botany focus-issue articles written by Juniper in 2026.
+        alt: "Two Digital Botany event reports and an editorial reflection on Botany One."
       - src: /assets/cv/botany-one-plant-day-2021.png
-        alt: Botany One Fascination of Plants Day articles written by Juniper in 2021.
+        alt: "Three Botany One article previews about fruit and vegetables, drones and tropical islands."
 
   - role: Social Media and Digital Communications Assistant
     org: American Society of Plant Biologists (remote)
@@ -489,9 +487,9 @@ experience:
         infographics), and workshops, webinars and podcasts.
     images:
       - src: /assets/cv/edited-the-taproot-podcast-and-promoted-it.png
-        alt: The Taproot podcast, which I edited and promoted.
+        alt: "Taproot podcast episode artwork for an interview with Rishi R. Masalia about sunflowers and drought."
       - src: /assets/cv/established-the-plantae-brand-and-design.png
-        alt: The Plantae brand and design system I established.
+        alt: "Plantae seminar artwork titled Visual methods and tools, illustrated with plants and scientific diagrams."
     note: >-
       After being an ASPB Conviron Scholar, I got to keep working with ASPB and
       got a tad obsessed with social media stats and optimisation.
@@ -522,15 +520,13 @@ experience:
     image_layout: tile
     images:
       - src: /assets/cv/niab-fieldwork-2022-09-02.jpg
-        alt: A flowering oilseed rape field during NIAB fieldwork.
+        alt: "A sideways photograph of a yellow flowering crop field beneath a cloudy sky."
       - src: /assets/cv/niab-fieldwork-2022-12-07.jpg
-        alt: A cereal variety trial marked out across a field.
+        alt: "A ripe cereal field with coloured plot markers."
       - src: /assets/cv/crop-veriaty-trials-included-recroding-approximately-20-seed.jpg
-        alt: >-
-          Crop variety trials, which included recording around 20 seed
-          characteristics of cereals.
+        alt: "A cereal grain viewed under magnification beside a measuring pointer."
       - src: /assets/cv/niab-fieldwork-2022-11-21.jpg
-        alt: Yield and GPS data displayed inside agricultural field machinery.
+        alt: "Agricultural machinery controls and a digital display overlooking a harvested field."
     note: >-
       At 21, I became a "Teams Leader". I held lots of team building exercises
       (pranking) and had to be officially told off for... buying too much cake for
@@ -554,7 +550,7 @@ experience:
       - Maintained Level 2 and Level 3 quarantine facilities to standard operating procedures.
     images:
       - src: /assets/cv/trialling-psyllids-as-biocontrol-agents-against-the-invasive.jpg
-        alt: Trialling psyllids as biocontrol agents against invasive Japanese knotweed.
+        alt: "A magnifying lens held in front of a leafy plant on a laboratory bench."
     note: >-
       I was called a "CABI" baby as I first worked there as a high school
       student. Got obsessed with the Plantwise programme of plant clinics and
@@ -589,15 +585,13 @@ experience:
     image_layout: tile-left-stack
     images:
       - src: /assets/cv/bramble-cane-propagation-protocol.jpg
-        alt: >-
-          Stages of the bramble cane propagation protocol I developed, from cut
-          canes to rooted plants.
+        alt: "A sequence of photographs showing cut bramble canes, emerging roots and young plants."
       - src: /assets/cv/bramble-research-113428.png
-        alt: Methods from my undergraduate bramble taxonomy research.
+        alt: "A methods slide showing bramble sampling, leaf measurements and genetic analyses."
       - src: /assets/cv/bramble-research-113103.png
-        alt: Phylogenetic signal results from my undergraduate bramble research.
+        alt: "A research slide comparing bramble leaf shapes and phylogenetic relationships."
       - src: /assets/cv/bramble-research-112943.png
-        alt: Summary of my undergraduate bramble taxonomy research.
+        alt: "A summary slide combining bramble leaf images, genetic results and the imaging setup."
     video: EBUj_BngOik
     video_label: my lockdown video about brambles
 
@@ -630,13 +624,13 @@ experience:
     image_layout: tile-fit
     images:
       - src: /assets/cv/working-on-spinach-farms-in-california.jpg
-        alt: Working on spinach farms in California.
+        alt: "Rows of leafy green crops beside a white pick-up truck and dry hills."
       - src: /assets/cv/plant-pathogen-isolations.jpg
-        alt: Plant pathogen isolations in the lab.
+        alt: "Hands holding a Petri dish containing small pieces of plant material."
       - src: /assets/cv/c-roy-adair-scholarship.jpg
-        alt: The C. Roy Adair Scholarship.
+        alt: "A C. Roy Adair Scholarship slide showing plant samples, microscopy and culture plates."
       - src: /assets/cv/c-roy-adair-scholarship-article.png
-        alt: Methods used to test the viability of downy mildew oospores and sporangia.
+        alt: "Two methods slides comparing killing and staining treatments for oospores and sporangia."
 
 work_history:
   - role: Postgraduate Demonstrator
@@ -691,21 +685,21 @@ awards:
       Spatial Modelling and Malaria Control" in Dar es Salaam, Tanzania.
     images:
       - src: /assets/cv/ammnet-symposium-dar-es-salaam.jpg
-        alt: The AMMNet symposium in Dar es Salaam, Tanzania.
+        alt: "Juniper and six other people seated around a table indoors."
   - year: 2022
     title: Royal Geographical Society (with IBG) Postgraduate Research Grant (£500)
     flag: pg
     detail: Swidden agriculture meets new soil metagenomics approaches in Papua New Guinea.
     images:
       - src: /assets/cv/rgs-grant-fieldwork.jpg
-        alt: Fieldwork supported by the Royal Geographical Society grant.
+        alt: "People walking through a steep cultivated hillside with low-growing crops."
   - year: 2021
     title: Judith Heath Explorer for Botany and Research, Scientific Exploration Society (£5,250)
     flag: pg
     detail: A "sweet potato hunt" along Mt Wilhelm, Papua New Guinea.
     images:
       - src: /assets/cv/ses-explorer-award.jpg
-        alt: Receiving the Scientific Exploration Society Explorer Award.
+        alt: "Juniper holding flowers and a Scientific Exploration Society award."
   - year: 2021
     title: NEOF Early Career Pilot Scheme (£10,000)
     flag: pg
@@ -714,14 +708,14 @@ awards:
       experimental sweet potato gardens.
     images:
       - src: /assets/cv/neof-extractions-trial.jpg
-        alt: A soil DNA extractions trial for the NEOF pilot scheme.
+        alt: "A gloved hand holding two soil sample tubes above a laboratory rack."
   - year: 2021
     title: Heredity Fieldwork Grant, Genetics Society (£1,500)
     flag: pg
     detail: Soil functioning during the swidden agricultural cycle in Papua New Guinea.
     images:
       - src: /assets/cv/heredity-fieldwork-grant.jpg
-        alt: Fieldwork supported by the Heredity Fieldwork Grant.
+        alt: "A cultivated hillside with small huts and cloud drifting across the forest."
   - year: 2021
     title: British Society for Plant Pathology Junior Fellowship (£3,000)
     flag: pg
@@ -730,27 +724,27 @@ awards:
       crop species richness in Papua New Guinea.
     images:
       - src: /assets/cv/bspp-fellowship-fieldwork.jpg
-        alt: Fieldwork supported by the BSPP Junior Fellowship.
+        alt: "Small pieces of plant material spaced across the surface of a Petri dish."
   - year: 2021
     title: Tropical Agriculture Association Standard Award (£2,000)
     flag: pg
     detail: PhD fieldwork establishing experimental gardens in Papua New Guinea.
     images:
       - src: /assets/cv/taa-award-fieldwork.jpg
-        alt: Fieldwork supported by the Tropical Agriculture Association Standard Award.
+        alt: "Golden cooked banana slices on a patterned plate."
   - year: 2020
     title: Nelson Yield-Limiting Factors Graduate Student Scholarship ($3,000)
     flag: us
     detail: American Society of Agronomy, Crop Science Society and Soil Science Society.
     images:
       - src: /assets/cv/nelson-yield-limiting-scholarship.jpg
-        alt: The Nelson Yield-Limiting Factors Graduate Student Scholarship.
+        alt: "People pouring a brown liquid through a funnel beside a blue barrel."
   - year: 2020
     title: Featured in the "Top 20 Under 30" list, Seed World Magazine
     flag: us
     images:
       - src: /assets/cv/featured-in-the-top-20-under-30-feautre-by-seed-world-magazi.jpg
-        alt: Featured in the "Top 20 Under 30" list by Seed World Magazine.
+        alt: "A Seed World graphic congratulating Juniper as one of its 2019 Top 20 Under 30."
   - year: 2019
     title: Royal Society of Biology Top Student Award
     flag: gb
@@ -760,21 +754,21 @@ awards:
     image_layout: award-pair
     images:
       - src: /assets/cv/rsb-top-student-project-awards.jpg
-        alt: A new bramble shoot produced during my award-winning BSc research project.
+        alt: "A rooted bramble cutting with a new leafy shoot."
   - year: 2019
     title: Stapledon Society Prize
     flag: wales
     detail: For the highest mark of any IBERS Bachelor of Science degree.
     images:
       - src: /assets/cv/rsb-stapledon-graduation.jpg
-        alt: Graduating from Aberystwyth University.
+        alt: "Juniper and another speaker at a lectern in front of Royal Society of Biology branding."
   - year: 2019
     title: David Miller Award, Society of Chemical Industry (£500)
     flag: us
     detail: Attended the CORBANA International Banana Congress in Miami.
     images:
       - src: /assets/cv/david-miller-corbana-miami.jpg
-        alt: Attending the CORBANA International Banana Congress in Miami.
+        alt: "An audience seated at round tables facing conference presentations."
   - year: 2019
     title: Travel Award, sponsored by Corteva ($500)
     flag: us
@@ -790,7 +784,7 @@ awards:
       shape using geometric morphometrics".
     images:
       - src: /assets/cv/nhm-young-systematists-award.jpg
-        alt: The Young Systematists Forum at the Natural History Museum, London.
+        alt: "A young bramble plant growing in a container."
   - year: 2018
     title: Agronomic Travel Study Undergraduate Scholarship ($5,000)
     flag: ph
@@ -799,7 +793,7 @@ awards:
       Production" course at IRRI, Los Baños, Philippines.
     images:
       - src: /assets/cv/planting-rice-at-irri-in-the-philippines.jpg
-        alt: Planting rice at IRRI in the Philippines.
+        alt: "Juniper at the wheel of a small red tractor beside a flooded field."
   - year: 2018
     title: C. Roy Adair Scholar, University of Arkansas ($5,600)
     flag: us
@@ -808,7 +802,7 @@ awards:
       spinach and plant-pathogen diagnosis.
     images:
       - src: /assets/cv/c-roy-adair-scholar-award.jpg
-        alt: The C. Roy Adair Scholar award, University of Arkansas.
+        alt: "Rows of leafy green crops beside a white pick-up truck and dry hills."
   - year: 2018
     title: Phenome Travel Grant ($2,000)
     flag: us
@@ -849,16 +843,16 @@ awards:
       Biology right after I flew back to Cambridge.
     images:
       - src: /assets/cv/anglia-trust-nepal-1.jpg
-        alt: Living with farmers in Nepal.
+        alt: "Hands holding up a plant with exposed roots during a plant clinic."
       - src: /assets/cv/anglia-trust-nepal-2.jpg
-        alt: Working with the Ministry of Agriculture and Plantwise in Nepal.
+        alt: "Juniper standing beside a woman, wearing a pale scarf and a red mark on her forehead."
   - year: 2017
     title: The Big Pitch, Anglia Ruskin University (£1,000)
     flag: gb
     detail: A start-up competition with a year of mentorship, leadership coaching and a business planning boot camp.
     images:
       - src: /assets/cv/big-pitch-aru.jpg
-        alt: Winning the Big Pitch start-up competition at Anglia Ruskin University.
+        alt: "Juniper and two other people posing in front of a Big Pitch banner."
   - year: 2017
     title: "'Be the Change' grant, Global Sustainability Institute (£1,000)"
     flag: gb
@@ -868,14 +862,14 @@ awards:
       question, and everyone got to design their own website and business cards.
     images:
       - src: /assets/cv/be-the-change-goes-module.jpg
-        alt: Running the GOES module funded by the 'Be the Change' grant.
+        alt: "A webpage advertising the Being a Sustainable Biologist project."
   - year: 2017
     title: Andy Wilson Bursary, Anglia Ruskin University (£1,000)
     flag: gb
     detail: Start-up costs for GOES magazine.
     images:
       - src: /assets/cv/andy-wilson-bursary-goes.png
-        alt: GOES magazine, funded by the Andy Wilson Bursary.
+        alt: "A publishing dashboard displaying GOES magazine layouts and covers."
   - year: 2017
     title: John Ray Summer Research Grant (£500)
     flag: gb
@@ -884,14 +878,14 @@ awards:
       molecular methods.
     images:
       - src: /assets/cv/john-ray-summer-research.jpg
-        alt: Blackberry taxonomy research funded by the John Ray Summer Research Grant.
+        alt: "Field notebooks and equipment beside coastal vegetation overlooking the sea."
   - year: 2016
     title: Golden Opportunities Scholar ($2,200)
     flag: us
     detail: American Society of Agronomy — travel to the ASA, CSSA and SSSA annual meeting in Phoenix, Arizona.
     images:
       - src: /assets/cv/golden-opportunities-asa.png
-        alt: The ASA, CSSA and SSSA annual meeting in Phoenix, Arizona.
+        alt: "A social media post showing Juniper and other attendees at an awards dinner."
   - year: 2016
     title: Anglia Trust Foundation Scholarship (£560)
     flag: fi
@@ -901,7 +895,7 @@ awards:
     note: I fell in love with statistics here.
     images:
       - src: /assets/cv/winter-ecology-school-at-jyvaskyla-university.jpg
-        alt: The Winter Ecology School at Jyväskylä University.
+        alt: "Juniper standing in deep snow with both arms raised, beside a snow-covered forest."
   - year: 2015
     title: Anglia Trust Foundation Scholarship (£750)
     flag: na
@@ -911,9 +905,9 @@ awards:
     image_layout: tile
     images:
       - src: /assets/cv/moth-sample-preparation-in-namibia.jpg
-        alt: Preparing moth samples in Namibia.
+        alt: "A moth specimen pinned with its wings spread on a mounting board."
       - src: /assets/cv/springbok-midair-in-namibia.jpg
-        alt: A springbok caught mid-air in Namibia.
+        alt: "A springbok leaping above dry grass."
 
 presentations:
   - year: 2024
@@ -962,7 +956,7 @@ presentations:
     note: I recorded this one for the Sustainable Agronomy Conference in 2020.
     images:
       - src: /assets/cv/presentation-about-biocontrols.jpg
-        alt: Presenting about biological controls.
+        alt: "A presenter pointing to a projected slide about microbial mediation of plant interactions."
     video: 7l-g6VP-16k
     video_label: the recorded conference talk
   - year: 2019

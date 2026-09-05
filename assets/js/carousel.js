@@ -47,10 +47,11 @@
         target = Math.max(0, Math.min(items.length - 1, target));
       }
 
-      items[target].scrollIntoView({
-        behavior: reducedMotion.matches ? 'auto' : 'smooth',
-        block: 'nearest',
-        inline: 'start'
+      // Move only the photo track: scrollIntoView also moves page ancestors
+      // and can pull the reader back towards the hero during autoplay.
+      track.scrollTo({
+        left: track.scrollLeft + items[target].getBoundingClientRect().left - track.getBoundingClientRect().left,
+        behavior: reducedMotion.matches ? 'auto' : 'smooth'
       });
       carousel.setAttribute('data-active-index', String(target));
     }
@@ -60,6 +61,8 @@
     var fadeInTimer = 0;
     var hasAutoplayStarted = false;
     var isPointerDown = false;
+    var isHovered = false;
+    var hasFocus = carousel.contains(document.activeElement);
     var isVisible = true;
 
     function clearTimers() {
@@ -70,7 +73,7 @@
     }
 
     function canAutoplay() {
-      return !reducedMotion.matches && !isPointerDown && isVisible && !document.hidden;
+      return !reducedMotion.matches && !isPointerDown && !isHovered && !hasFocus && isVisible && !document.hidden;
     }
 
     function scheduleAutoplay(requestedDelay) {
@@ -80,10 +83,11 @@
         ? requestedDelay
         : (hasAutoplayStarted ? autoplayDelay : initialAutoplayDelay);
       autoplayTimer = window.setTimeout(function () {
+        if (!canAutoplay()) return;
         hasAutoplayStarted = true;
         carousel.classList.add('is-auto-fading');
         fadeOutTimer = window.setTimeout(function () {
-          go(1, true);
+          if (canAutoplay()) go(1, true);
         }, fadeDuration / 2);
         fadeInTimer = window.setTimeout(function () {
           carousel.classList.remove('is-auto-fading');
@@ -109,11 +113,24 @@
     });
 
     carousel.addEventListener('focusin', function () {
+      hasFocus = true;
       pauseAutoplay();
-      scheduleAutoplay(interactionDelay);
     });
 
-    carousel.addEventListener('focusout', function () {
+    carousel.addEventListener('focusout', function (event) {
+      hasFocus = carousel.contains(event.relatedTarget);
+      if (!hasFocus) scheduleAutoplay(interactionDelay);
+    });
+
+    carousel.addEventListener('pointerenter', function (event) {
+      if (event.pointerType === 'touch') return;
+      isHovered = true;
+      pauseAutoplay();
+    });
+
+    carousel.addEventListener('pointerleave', function (event) {
+      if (event.pointerType === 'touch') return;
+      isHovered = false;
       scheduleAutoplay(interactionDelay);
     });
 

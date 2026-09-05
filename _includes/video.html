@@ -1,0 +1,7 @@
+<div class="video-embed" data-video-id="{{ include.id | escape }}">
+  <button type="button" class="video-embed__play" data-title="{{ include.title | escape }}">
+    <span class="video-embed__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+    <span class="video-embed__label">Watch: {{ include.title | escape }}</span>
+  </button>
+</div>
+<p class="video-embed__fallback"><a href="https://www.youtube.com/watch?v={{ include.id | escape }}" rel="noopener">Watch on YouTube: {{ include.title | escape }}</a></p>
