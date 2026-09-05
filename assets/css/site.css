@@ -725,12 +725,10 @@ body.page-cv .entry {
   }
 }
 
-/* On narrow touchscreens the movement remains gentle, but content never waits
-   invisibly for an observer callback that a privacy browser may delay. */
+/* Use the same fade on mobile, with a smaller movement. The shared scroll
+   fallback reveals content even when observer callbacks are delayed. */
 @media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
   html.reveal-ready [data-scroll-reveal] {
-    opacity: 1;
-    filter: none;
     transform: translateY(-8px);
   }
 }
@@ -1158,9 +1156,68 @@ body.page-cv .entry {
   font-size: var(--step--1);
   line-height: 1.4;
 }
+
+/* Larger photo groups form a compact strip; their order and captions stay intact. */
+.blog-carousel {
+  --blog-photo-height: 260px;
+  min-width: 0;
+  margin-block: var(--space-l);
+}
+.blog-carousel__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+.blog-carousel__controls[hidden] { display: none; }
+.blog-carousel__controls .blog-carousel__count {
+  margin: 0 auto 0 0;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+.blog-carousel__controls .btn {
+  padding: var(--space-2xs);
+  min-width: var(--target-comfortable);
+}
+.blog-carousel__controls .btn:disabled { opacity: 0.4; cursor: default; }
+.blog-carousel .blog-gallery--carousel {
+  display: flex;
+  margin: 0;
+  padding: var(--space-2xs) var(--space-2xs) var(--space-xs);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: var(--space-2xs);
+  scrollbar-width: thin;
+  scrollbar-color: var(--tone-soft) var(--surface-alt);
+}
+.blog-gallery--carousel .blog-gallery__item {
+  flex: none;
+  width: min(85%, calc(var(--blog-photo-height) * var(--photo-ratio)));
+  scroll-snap-align: start;
+}
+.blog-gallery--carousel .photo { height: var(--blog-photo-height); }
+.blog-gallery--carousel .photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 .video-embed__fallback { font-size: var(--step--1); }
 @media (max-width: 700px) {
   .blog-gallery { grid-template-columns: minmax(0, 1fr); }
+  .blog-carousel { --blog-photo-height: 220px; }
+}
+@media print {
+  .blog-carousel__controls { display: none; }
+  .blog-carousel .blog-gallery--carousel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
+    padding: 0;
+  }
+  .blog-gallery--carousel .blog-gallery__item { width: auto; break-inside: avoid; }
+  .blog-gallery--carousel .photo,
+  .blog-gallery--carousel .photo img { height: auto; }
 }
 
 .cv-header__text {
@@ -2479,6 +2536,12 @@ ul.entry__points {
   .scroll-top,
   .skip-link {
     display: none !important;
+  }
+  html.reveal-ready [data-scroll-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
   }
   body {
     font-size: 11pt;

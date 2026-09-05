@@ -46,6 +46,10 @@ The gentle reveal behaviour has two deliberately separate paths:
   toggle it while scrolling.
 - Hidden responsive duplicates are ignored when reveal targets are collected.
   Keep all motion inside the existing `prefers-reduced-motion` guards.
+- Blog and ordinary-page prose use the same scroll reveal for headings,
+  paragraphs, lists, quotes, figures and galleries. Blocks inside an already
+  animated group are not animated a second time. Desktop and mobile both
+  fade once; keyboard focus, reduced motion and print keep content available.
 
 CV photographs are lazy-loaded, so their space must be reserved before the
 files arrive. `_includes/cv-entry.html` reads intrinsic dimensions from
@@ -60,6 +64,11 @@ the page height stays stable as images load, and there is no horizontal
 overflow. Also test with reduced motion enabled.
 
 ## Adding content
+
+Start new posts by copying `_drafts/new-blog-entry.md`. Keep `published: false`
+while writing: the template and drafts stay out of normal builds, listings,
+feeds and the sitemap. See [Writing blog posts](docs/WRITING-BLOG-POSTS.md)
+for local draft previews, photo galleries and publishing instructions.
 
 Every page has a fixed "On this page" navigator on screens at least 1200px
 wide; it is hidden on smaller screens and in print. The shared
@@ -96,6 +105,12 @@ and gallery key in `_data/blog_galleries.json`; render one with
 local `src`, neutral `alt`, `width` and `height`. The shared component handles
 captions, lazy loading and enlargement. Use the `video.html` include with
 `id` and `title` for a YouTube video that loads only after a click.
+
+Blog gallery groups with more than two images automatically become horizontal
+photo strips, with previous/next buttons, keyboard arrows and touch scrolling.
+They do not autoplay. One- and two-image groups keep the regular layout.
+All photos retain their order, full-image previews and captions; print shows
+the complete grid. Controls are in `assets/js/blog-gallery.js`.
 
 | Task | File |
 | --- | --- |

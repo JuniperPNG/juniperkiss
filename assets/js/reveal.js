@@ -17,7 +17,8 @@
     '.entry',
     '.pub-list',
     '.plain-list',
-    '.rich-text > h2',
+    '.rich-text > :is(p, h2, h3, h4, h5, h6, ul, ol, blockquote, pre, table, figure, .blog-gallery, .blog-carousel, .video-embed)',
+    '.post-hero',
     '.callout',
     '.site-footer__grid'
   ].join(',');
@@ -25,7 +26,9 @@
   /* Ignore alternate responsive layouts that are display:none at this width.
      Unmarked elements remain normally visible if the breakpoint later changes. */
   var elements = Array.prototype.slice.call(document.querySelectorAll(selector)).filter(function (element) {
-    return element.getClientRects().length > 0;
+    return element.getClientRects().length > 0 &&
+      !element.parentElement.closest(selector) &&
+      !element.closest('[data-load-reveal], .post-header');
   });
   if (!elements.length) return;
 
@@ -86,6 +89,18 @@
     ticking = true;
     window.requestAnimationFrame(revealVisible);
   }
+
+  // If the preference changes while reading, reveal remaining content before
+  // transitions are disabled. Switching back must not hide it again.
+  reducedMotion.addEventListener('change', function () {
+    if (reducedMotion.matches) pending.forEach(reveal);
+  });
+
+  // Keyboard navigation should never land on an invisible link or control.
+  document.addEventListener('focusin', function (event) {
+    var target = event.target.closest('[data-scroll-reveal]');
+    if (target && pending.has(target)) reveal(target);
+  });
 
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(function (entries) {

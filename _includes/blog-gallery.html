@@ -1,7 +1,20 @@
 {%- assign gallery = site.data.blog_galleries[page.slug][include.gallery] -%}
-<div class="blog-gallery{% if gallery.size == 1 %} blog-gallery--single{% endif %}">
+{%- assign gallery_id = page.slug | append: '-' | append: include.gallery -%}
+{%- if gallery.size > 2 %}
+<div class="blog-carousel" data-blog-carousel>
+  <div class="blog-carousel__controls" hidden>
+    <p class="blog-carousel__count" role="status" data-gallery-count>{{ gallery.size }} photos</p>
+    <button class="btn btn--secondary" type="button" data-gallery-prev aria-label="Previous photos" aria-controls="{{ gallery_id }}">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+    <button class="btn btn--secondary" type="button" data-gallery-next aria-label="Next photos" aria-controls="{{ gallery_id }}">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </div>
+{%- endif %}
+<div class="blog-gallery{% if gallery.size == 1 %} blog-gallery--single{% elsif gallery.size > 2 %} blog-gallery--carousel{% endif %}"{% if gallery.size > 2 %} id="{{ gallery_id }}" tabindex="0" role="region" aria-label="Photo gallery, {{ gallery.size }} photos. Scroll horizontally to browse."{% endif %}>
   {%- for photo in gallery %}
-  <figure class="blog-gallery__item">
+  <figure class="blog-gallery__item"{% if gallery.size > 2 %} style="--photo-ratio: {{ photo.width | times: 1.0 | divided_by: photo.height }}"{% endif %}>
     <a class="photo" href="{{ photo.src | relative_url }}" data-caption="{{ photo.alt | escape }}">
       <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async" />
     </a>
@@ -9,3 +22,6 @@
   </figure>
   {%- endfor %}
 </div>
+{%- if gallery.size > 2 %}
+</div>
+{%- endif %}
