@@ -425,6 +425,12 @@ body.page-cv .entry {
   color: var(--ink);
 }
 
+/* Beats the generic a:visited rule's specificity so the brand never turns
+   the link-visited colour once the homepage has been visited. */
+.brand:visited {
+  color: var(--ink);
+}
+
 .brand__mark {
   height: 2.5rem;
   width: auto;
@@ -483,8 +489,14 @@ body.page-cv .entry {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--ink-muted);
+  color: var(--ink);
   border-bottom: var(--rule-weight) solid transparent;
+}
+
+/* Beats the generic a:visited rule's specificity so nav items stay white
+   after their page has been visited, instead of the link-visited colour. */
+.nav__link:visited {
+  color: var(--ink);
 }
 
 /* Hover is deliberately subtle (no accent colour) so it can never be
@@ -2373,7 +2385,7 @@ ul.entry__points {
   font-size: var(--step--1);
   letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
-  color: var(--v-100);
+  color: var(--on-deep);
   margin-bottom: var(--space-s);
 }
 
@@ -2401,7 +2413,7 @@ ul.entry__points {
   border: var(--hairline) solid var(--v-300);
   border-radius: 0;
   background: transparent;
-  color: var(--v-100);
+  color: var(--on-deep);
   font-weight: var(--weight-medium);
   cursor: pointer;
   transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
