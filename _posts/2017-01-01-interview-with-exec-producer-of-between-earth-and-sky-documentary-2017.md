@@ -2,7 +2,9 @@
 layout: post
 publication_tag: Published in GOES
 title: "Interview With Exec Producer of Between Earth and Sky documentary (2017)"
-date: 2019-03-01 21:19:17 +0000
+# January 1 anchors archive ordering; only the confirmed year/range is displayed.
+date: 2017-01-01 00:00:00 +0000
+date_label: "2017"
 slug: interview-with-exec-producer-of-between-earth-and-sky-documentary-2017
 description: "David Weindorf discusses making Between Earth and Sky, documenting changes to Arctic soils and bringing the effects of climate change to a wider audience."
 image: /assets/blog/interview-with-exec-producer-of-between-earth-and-sky-documentary-2017/00-hero-812149_47a0ed8e9eb341889e867dd5a9b8207e-mv2.png

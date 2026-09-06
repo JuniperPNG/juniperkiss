@@ -2,7 +2,9 @@
 layout: post
 publication_tag: Published in GOES
 title: "Agricultural Extension Internship in Nepal (2017)"
-date: 2019-03-02 21:49:14 +0000
+# January 1 anchors archive ordering; only the confirmed year/range is displayed.
+date: 2017-01-01 00:00:00 +0000
+date_label: "2017"
 slug: agricultural-extension-internship-in-nepal-2017
 description: "Working with farming families and visiting Plantwise clinics in Nepal showed me how plant science reaches growers. I share that experience and a conversation about the challenges of plant protection."
 image: /assets/blog/agricultural-extension-internship-in-nepal-2017/00-hero-812149_1d362dd8c7174d089ffa9772c94f8b65-mv2.jpg

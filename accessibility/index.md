@@ -39,7 +39,7 @@ regulations. It is built to the same bar anyway.
 **Perceivable**
 
 - Every meaningful image carries alternative text; decorative images, including
-  the bramble motif, the flags and the topic icons, are marked `aria-hidden` and
+  the flags and the topic icons, are marked `aria-hidden` and
   given empty `alt` text. Every flag and icon sits beside a text label.
 - Colour is never the only means of conveying information. Assignment marks show
   a number, navigation shows the current page with weight and an underline as
@@ -59,9 +59,8 @@ regulations. It is built to the same bar anyway.
 - A "Skip to main content" link is the first thing in the tab order.
 - Interactive targets are at least 24 by 24 CSS pixels, and primary controls are
   44 pixels.
-- There is no motion that starts automatically. The bramble only draws itself in
-  response to your own scrolling, and stops doing even that if your device
-  requests reduced motion.
+- Page entrances and scroll fades respect reduced-motion preferences. The Home
+  photo carousel pauses on hover or keyboard focus.
 - The CV photographs open in a dialog. Escape closes it, focus is trapped inside
   it while open and returned to the thumbnail on close. With JavaScript off, the
   thumbnails are ordinary links that open the full image.

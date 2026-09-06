@@ -10,7 +10,7 @@
   {%- include breadcrumbs.html -%}
   {%- include section-nav.html -%}
 
-  <main id="main" class="has-bramble" tabindex="-1">
+  <main id="main"{% if site.botanical_motif_enabled %} class="has-bramble"{% endif %} tabindex="-1">
     {%- include bramble.html -%}
     {{ content }}
   </main>

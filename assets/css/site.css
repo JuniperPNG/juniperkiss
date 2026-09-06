@@ -798,6 +798,10 @@ body.page-cv .entry {
   align-items: stretch;
 }
 
+.about__layout--text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .about__text {
   max-width: var(--measure);
 }
@@ -1016,7 +1020,8 @@ body.page-cv .entry {
 /* ============================ 10. Blog =================================== */
 .post-list {
   display: grid;
-  gap: var(--space-xl);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-l) var(--space-xl);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1024,21 +1029,48 @@ body.page-cv .entry {
 
 .post-card {
   display: grid;
-  grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
-  gap: var(--space-m) var(--space-l);
-  padding-bottom: var(--space-xl);
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: var(--space-m);
+  min-width: 0;
+  padding-bottom: var(--space-l);
   border-bottom: var(--hairline) solid var(--border);
+}
+
+.post-card--text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.post-card--text .post-card__thumb {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .post-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .post-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .post-card--text {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 700px) {
   .post-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .post-card__thumb {
+    max-width: none;
   }
 }
 
 .post-card__thumb img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: var(--radius-m);
   background: var(--surface-sunken);
@@ -1067,6 +1099,7 @@ body.page-cv .entry {
   color: var(--ink-muted);
   margin-bottom: var(--space-2xs);
 }
+
 
 .post-card__excerpt {
   margin-top: var(--space-2xs);

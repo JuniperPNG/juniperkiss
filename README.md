@@ -149,8 +149,9 @@ Do not edit `_site/index.html`: it is generated and gets replaced on each build.
 
 ## Design
 
-Viridis palette, Kew-derived spacing and typography, and a bramble cane drawn as
-a botanical illustration running down the left gutter of every page.
+Viridis palette with Kew-derived spacing and typography. The decorative botanical
+motif is disabled pending a [complete redesign](docs/BOTANICAL-MOTIF-REDESIGN.md);
+its source artwork is retained.
 
 Built to WCAG 2.2 level AA — see [/accessibility/](https://juniperkiss.com/accessibility/).
 

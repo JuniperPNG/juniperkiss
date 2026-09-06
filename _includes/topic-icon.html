@@ -5,6 +5,7 @@
   Usage: {% include topic-icon.html name="bramble" %}
 {%- endcomment -%}
 {%- assign n = include.name -%}
+{% if n != 'bramble' or site.botanical_motif_enabled %}
 <svg class="topic-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor"
      stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
      aria-hidden="true" focusable="false" role="presentation">
@@ -82,3 +83,4 @@
 
   {%- endcase -%}
 </svg>
+{% endif %}

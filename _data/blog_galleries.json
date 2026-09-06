@@ -1060,5 +1060,221 @@
         "height": 1200
       }
     ]
+  },
+  "choosing-the-dissertation-behind-the-scenes": {
+    "gallery-1": [
+      {
+        "src": "/assets/blog/goes-brambles/02.jpg",
+        "alt": "A prickly bramble stem with green leaves and unripe berries.",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "src": "/assets/blog/goes-brambles/03.jpg",
+        "alt": "A person examining pressed plant specimens at a desk, above a screenshot of a social-media post.",
+        "width": 1086,
+        "height": 851
+      }
+    ],
+    "gallery-2": [
+      {
+        "src": "/assets/blog/goes-brambles/04.jpg",
+        "alt": "Pressed plants, callipers, an open book and a laptop on a desk.",
+        "width": 960,
+        "height": 640
+      }
+    ],
+    "gallery-3": [
+      {
+        "src": "/assets/blog/goes-brambles/05.jpg",
+        "alt": "Plant-collecting equipment on a coastal path above the sea.",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/assets/blog/goes-brambles/06.jpg",
+        "alt": "A bramble specimen and collecting tools beside a sandy beach.",
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "gallery-4": [
+      {
+        "src": "/assets/blog/goes-brambles/07.jpg",
+        "alt": "A camera mounted over plant specimens beside a laptop in a laboratory.",
+        "width": 1440,
+        "height": 1080
+      },
+      {
+        "src": "/assets/blog/goes-brambles/08.jpg",
+        "alt": "Rows of dried leaves arranged on a white sheet beside a colour scale.",
+        "width": 1600,
+        "height": 1067
+      }
+    ]
+  },
+  "autumn-leaves-not-as-trivial-as-they-sound": {
+    "gallery-1": [
+      {
+        "src": "/assets/blog/goes-autumn/02.jpg",
+        "alt": "Green aphids clustered on a stem beneath reddish young leaves.",
+        "width": 1600,
+        "height": 1109
+      }
+    ],
+    "gallery-2": [
+      {
+        "src": "/assets/blog/goes-autumn/03.jpg",
+        "alt": "Yellow, orange and brown fallen leaves on the ground.",
+        "width": 1600,
+        "height": 1071
+      },
+      {
+        "src": "/assets/blog/goes-autumn/04.jpg",
+        "alt": "Red and yellow leaves fanning out against a pale background.",
+        "width": 640,
+        "height": 426
+      },
+      {
+        "src": "/assets/blog/goes-autumn/05.jpg",
+        "alt": "Pale orange and yellow leaves on branches above water.",
+        "width": 1600,
+        "height": 1066
+      }
+    ]
+  },
+  "winklestats": {
+    "gallery-1": [
+      {
+        "src": "/assets/blog/winkles/01.jpg",
+        "alt": "Line drawing of a shell with coloured measurements labelled AB, BE, CD, EF, FG and BG.",
+        "width": 494,
+        "height": 300
+      }
+    ],
+    "gallery-2": [
+      {
+        "src": "/assets/blog/winkles/02.png",
+        "alt": "Flow chart comparing analysis steps for log-transformed, ratio and geometric-mean data.",
+        "width": 2479,
+        "height": 1686
+      }
+    ],
+    "gallery-3": [
+      {
+        "src": "/assets/blog/winkles/03.jpeg",
+        "alt": "Three Bayesian PCA biplots with points, labels and variable arrows.",
+        "width": 1191,
+        "height": 492
+      }
+    ],
+    "gallery-4": [
+      {
+        "src": "/assets/blog/winkles/04.png",
+        "alt": "Matrix of shell-ratio scatterplots, distributions and correlation coefficients.",
+        "width": 586,
+        "height": 568
+      },
+      {
+        "src": "/assets/blog/winkles/05.png",
+        "alt": "Matrix of shell-measurement scatterplots, distributions and correlation coefficients.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/06.jpeg",
+        "alt": "Wide matrix of transformed measurements with scatterplots and correlation coefficients.",
+        "width": 1475,
+        "height": 714
+      }
+    ],
+    "gallery-5": [
+      {
+        "src": "/assets/blog/winkles/07.png",
+        "alt": "Annotated statistical output with tables, a scree plot and coloured explanatory boxes.",
+        "width": 2436,
+        "height": 3264
+      }
+    ],
+    "gallery-6": [
+      {
+        "src": "/assets/blog/winkles/08.png",
+        "alt": "Dendrogram of transformed shell measurements with red and green support values.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/09.png",
+        "alt": "Dendrogram of shell measurements with red and green support values.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/10.png",
+        "alt": "Dendrogram of shell ratios with red and green support values.",
+        "width": 607,
+        "height": 606
+      }
+    ],
+    "gallery-7": [
+      {
+        "src": "/assets/blog/winkles/11.png",
+        "alt": "Matrix of shell-measurement scatterplots with two groups shown in red and blue.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/12.png",
+        "alt": "Matrix of shell-ratio scatterplots with two groups shown in red and blue.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/13.png",
+        "alt": "Matrix of transformed shell-measurement scatterplots with two groups shown in red and blue.",
+        "width": 607,
+        "height": 606
+      }
+    ],
+    "gallery-8": [
+      {
+        "src": "/assets/blog/winkles/14.png",
+        "alt": "Matrix of shell-measurement scatterplots coloured by modelled cluster.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/15.png",
+        "alt": "Matrix of transformed shell-measurement scatterplots coloured by modelled cluster.",
+        "width": 607,
+        "height": 606
+      },
+      {
+        "src": "/assets/blog/winkles/16.png",
+        "alt": "Matrix of shell-ratio scatterplots coloured by modelled cluster.",
+        "width": 607,
+        "height": 606
+      }
+    ],
+    "gallery-9": [
+      {
+        "src": "/assets/blog/winkles/17.png",
+        "alt": "Panelled histograms showing posterior loadings for shell ratios across three components.",
+        "width": 703,
+        "height": 537
+      },
+      {
+        "src": "/assets/blog/winkles/18.png",
+        "alt": "Panelled histograms showing posterior loadings for transformed shell measurements across three components.",
+        "width": 944,
+        "height": 559
+      },
+      {
+        "src": "/assets/blog/winkles/19.png",
+        "alt": "Panelled histograms showing posterior loadings for shell measurements across three components.",
+        "width": 1191,
+        "height": 695
+      }
+    ]
   }
 }

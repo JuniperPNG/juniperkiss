@@ -1,0 +1,5 @@
+{%- if include.post.date_label -%}
+<span>{{ include.post.date_label | escape }}</span>
+{%- else -%}
+<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%-d %B %Y" }}</time>
+{%- endif -%}

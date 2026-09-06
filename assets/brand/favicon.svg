@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#440154" />
-  <path d="M16 27 C 16 18, 7 16, 9 9 C 10 5, 15 4, 17 8.5
-           c 1.8 4.5, -3.6 7.2, -6.3 4.5
-           M16 20 C 19.6 16.4, 26.6 16.4, 25.7 10.1"
-        fill="none" stroke="#fde725" stroke-width="2"
-        stroke-linecap="round" />
+  <title>Banana</title>
+  <path d="M26 4c1 8-4 15-11 18-4 2-8 2-12 0 3 6 9 8 15 5 8-4 13-13 11-22z"
+        fill="#fde725" stroke="#715317" stroke-width="1.3" stroke-linejoin="round" />
+  <path d="M7 25c8 2 17-5 20-14" fill="none" stroke="#d6ad20" stroke-width="1.4" stroke-linecap="round" />
+  <path d="m26 5-1-3 3-1 1 4" fill="#715317" />
+  <path d="m3 22 3 1-1 3-3-2z" fill="#715317" />
 </svg>

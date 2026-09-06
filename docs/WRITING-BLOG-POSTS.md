@@ -76,6 +76,22 @@ if the `image` is already in the article: it will still appear on blog cards
 without repeating above the text. An optional `image_caption` credits a
 separate cover image.
 
+Set `publication_tag: Published in GOES` or `publication_tag: Published on Plantae`
+to show that wording on the Blog listing. It links to `original_url` when one
+is supplied. Botany One imports already receive their publication tag.
+
+For an undated archive, use the migration date for the Jekyll filename and
+`date`, and set `date_label: Original publication date unknown` plus
+`migrated_on: YYYY-MM-DD`. The visible date label avoids presenting the import
+date as the original publication date; the feed uses the migration date.
+
+When only a publication year or range is confirmed, show it with `date_label`
+(for example, `"2017"` or `"2016–2017"`). Use 1 January of the first year as
+the filename/date ordering anchor, and note that approximation beside `date`.
+
+For chart galleries, use `{% include blog-gallery.html gallery="gallery-1" unit="figures" %}`.
+Keep detailed charts at their original resolution so readers can enlarge them.
+
 1. Move the finished draft into `_posts/` and name it
    `YYYY-MM-DD-your-post-slug.md` with the intended publication date.
 2. Set `slug: your-post-slug`, add its `date` if you want a specific time,

@@ -25,7 +25,7 @@
       next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
       if (visible.length) {
         var first = visible[0], last = visible[visible.length - 1];
-        count.textContent = (first === last ? first : first + '–' + last) + ' of ' + items.length + ' photos';
+        count.textContent = (first === last ? first : first + '–' + last) + ' of ' + items.length + ' ' + (gallery.dataset.galleryUnit || 'photos');
       }
     }
 

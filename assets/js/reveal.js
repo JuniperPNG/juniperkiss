@@ -39,6 +39,10 @@
     if (element.matches('.card, .post-card, .assignment, .repo-feature__copy, .repo-feature__logo-panel')) {
       var siblings = Array.prototype.slice.call(element.parentElement.children);
       delay = Math.min(siblings.indexOf(element) * 70, 210);
+      if (element.matches('.post-card')) {
+        var columns = getComputedStyle(element.parentElement).gridTemplateColumns.split(' ').length;
+        delay = (siblings.indexOf(element) % columns) * 70;
+      }
     }
     element.style.setProperty('--reveal-delay', delay + 'ms');
 
@@ -47,7 +51,7 @@
        reversal that caused groups to flash and move twice. */
     var rect = element.getBoundingClientRect();
     var staggerVisibleGroup = element.matches(
-      '.card-grid--skills .card, .repo-feature__copy, .repo-feature__logo-panel'
+      '.post-card, .card-grid--skills .card, .repo-feature__copy, .repo-feature__logo-panel'
     ) && rect.top >= 0;
     if (rect.top < window.innerHeight && !staggerVisibleGroup) element.classList.add('is-revealed');
     else pending.add(element);

@@ -1,5 +1,7 @@
 title: Juniper Kiss
-tagline: PlantSciCV | Troublesome Tendril
+# Previous tagline retained for the design archive: PlantSciCV | Troublesome Tendril
+tagline: PlantSciCV
+botanical_motif_enabled: false
 description: >-
   Plant scientist, data specialist and science communicator. The stories behind
   the CV — plus a blog and university assignments with their marks.

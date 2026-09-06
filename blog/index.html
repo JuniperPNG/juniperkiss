@@ -6,7 +6,7 @@ description: >-
   bananas and the science community.
 ---
 
-<div class="shell shell--reading">
+<div class="shell blog-index">
   <header class="post-header">
     <p class="section__eyebrow">Blog</p>
     <h1>Stories behind the CV</h1>
@@ -19,15 +19,17 @@ description: >-
 
   <ul class="post-list">
     {%- for post in site.posts %}
-    <li class="post-card">
+    <li class="post-card{% unless post.image %} post-card--text{% endunless %}">
       <div class="post-card__thumb">
         {%- if post.image %}
-        <img src="{{ post.image | relative_url }}" alt="" width="480" height="360" loading="lazy" decoding="async" />
+        <a href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
+          <img src="{{ post.image | relative_url }}" alt="" width="800" height="450" loading="lazy" decoding="async" />
+        </a>
         {%- endif %}
       </div>
       <div>
         <p class="post-card__meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          {% include post-date.html post=post %}
           {%- if post.publication_tag %}
             {%- if post.original_url %}
           <a class="tag" href="{{ post.original_url | escape }}">{{ post.publication_tag | escape }}</a>

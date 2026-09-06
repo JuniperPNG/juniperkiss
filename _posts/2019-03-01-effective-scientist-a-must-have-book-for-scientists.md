@@ -7,6 +7,11 @@ title: "'Effective Scientist' - a must-have book for scientists"
 date: 2019-03-01 22:01:58 +0000
 slug: effective-scientist-a-must-have-book-for-scientists
 description: "An interview with ecologist Corey Bradshaw about writing, publishing, managing research and making science useful beyond academia, with candid advice for scientists at the start of their careers."
+image: /assets/blog/effective-scientist/illustrations.png
+image_alt: "Collage of three illustrations: a person carrying a globe, a colourful face made of scientific symbols, and a figure on a mountain."
+image_width: 550
+image_height: 214
+show_hero: false
 migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-book-for-scientists
 ---
 <h2><strong>A Plantae interview with Prof Corey Bradshaw about his new book</strong></h2>
@@ -27,7 +32,10 @@ migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-
 
 <blockquote>“<em>It’s a quick-and-dirty guide about what academics need to know, to maximise the chance of their scientific work being effective</em>," <a href="https://www.scimex.org/newsfeed/tips-to-navigate-a-successful-career-in-science" rel="noopener">says Professor Bradshaw</a>.</blockquote>
 
-<p>📷<a href="https://twitter.com/ReneCampbellArt" rel="noopener"><em>Effective Scientist book illustrated by René Campbell</em></a></p>
+<figure class="post-figure">
+<a class="photo" href="{{ '/assets/blog/effective-scientist/illustrations.png' | relative_url }}" data-caption="Collage of three illustrations: a person carrying a globe, a colourful face made of scientific symbols, and a figure on a mountain."><img src="{{ '/assets/blog/effective-scientist/illustrations.png' | relative_url }}" alt="Collage of three illustrations: a person carrying a globe, a colourful face made of scientific symbols, and a figure on a mountain." width="550" height="214" loading="lazy" decoding="async" /></a>
+<figcaption>Illustrations from <em>The Effective Scientist</em> by René Campbell. <a href="https://plantae.org/effective-scientist-a-must-have-book-for-scientists-2/">Source: Plantae</a>.</figcaption>
+</figure>
 
 <p>The book consists of five parts 1) Writing and Publishing, 2) The Numbers, 3) Good Lab Practice, 4) The Fun Stuff and 5) What It All Means. The book features eye-catching illustrations by a marine ecologist and self-taught artist, <a href="https://twitter.com/ReneCampbellArt" rel="noopener">René Campbell</a>, based in Adelaide. <br/></p>
 
@@ -39,7 +47,10 @@ migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-
 
 <p>In part two and three, it is all about efficient <strong>management</strong> of data, money, proposals and people. Using ‘humility tea', respecting the finance staff and organising great lab meetings are all tricks that make an enormous difference at work.</p>
 
-<p>📷<a href="https://www.amazon.com/Effective-Scientist-Successful-Academic-Career/dp/1316620859" rel="noopener"><em>A snippet of the grant proposal writing a chapter - illustrated by René Campbell</em></a></p>
+<figure class="post-figure">
+<a class="photo" href="{{ '/assets/blog/effective-scientist/money-and-grants.png' | relative_url }}" data-caption="Black-and-white illustration of a scientist juggling a proposal, scientific equipment and charts above a hat asking for grant donations."><img src="{{ '/assets/blog/effective-scientist/money-and-grants.png' | relative_url }}" alt="Black-and-white illustration of a scientist juggling a proposal, scientific equipment and charts above a hat asking for grant donations." width="1566" height="1600" loading="lazy" decoding="async" /></a>
+<figcaption><em>Money and Grants</em>, a book illustration by <a href="https://www.renecampbellart.com/professional">René Campbell</a>.</figcaption>
+</figure>
 
 <p>Prof Bradshaw also ventures into the more sensitive topics about the <strong>diversity and the gender balance in the lab.</strong> He writes about the first time he investigated the number of female co-authors in his publications and realised the skewed proportion. In the interview, he talks about positive discrimination via advertising female-only postdoc positions in his lab. <br/></p>
 
@@ -51,7 +62,10 @@ migrated_from: https://www.juniperkiss.com/post/effective-scientist-a-must-have-
 
 <p>Throughout the book, Prof Bradshaw writes transparently about his own shortcomings – which is not always ‘natural' for academic high-flyers – and the recommendations are made in a way that from an undergraduate student to a postdoc can use them for his/her development. </p>
 
-<p>📷<a href="https://australiascience.tv/how-to-get-ahead-in-science/" rel="noopener"><em>A snippet of final chapter - picture by Australia's Science Channel</em></a><br/></p>
+<figure class="post-figure">
+<a class="photo" href="{{ '/assets/blog/effective-scientist/evidence-based-advocacy.png' | relative_url }}" data-caption="Black-and-white illustration of a scientist wielding a sword of numbers against a many-headed creature labelled with obstacles to advocacy."><img src="{{ '/assets/blog/effective-scientist/evidence-based-advocacy.png' | relative_url }}" alt="Black-and-white illustration of a scientist wielding a sword of numbers against a many-headed creature labelled with obstacles to advocacy." width="1600" height="1247" loading="lazy" decoding="async" /></a>
+<figcaption><em>Evidence-Based Advocacy</em>, a book illustration by <a href="https://www.renecampbellart.com/professional">René Campbell</a>.</figcaption>
+</figure>
 
 <h3><strong>Books are now available online in paperback, hardcover copies or kinder editions:</strong></h3>
 

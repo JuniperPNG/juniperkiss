@@ -1,9 +1,11 @@
 <header class="masthead">
   <div class="shell masthead__inner">
     <a class="brand" href="{{ '/' | relative_url }}">
+      {% if site.botanical_motif_enabled %}
       <img class="brand__mark" src="{{ '/assets/brand/logo-mark.png' | relative_url }}"
            srcset="{{ '/assets/brand/logo-mark.png' | relative_url }} 1x, {{ '/assets/brand/logo-mark@2x.png' | relative_url }} 2x"
            width="53" height="80" alt="" />
+      {% endif %}
       <span class="brand__name">
         {{ site.author.short_name }}
         <span class="brand__sub">{{ site.tagline }}</span>

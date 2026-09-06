@@ -1,6 +1,7 @@
 {%- comment -%}
   Small vine-stem divider with a leaf at the end. Decorative.
 {%- endcomment -%}
+{% if site.botanical_motif_enabled %}
 <svg class="cane-rule" viewBox="0 0 240 24" preserveAspectRatio="xMinYMid meet"
      aria-hidden="true" focusable="false" role="presentation">
   <path d="M2 14 C 40 4, 70 22, 108 13 C 146 4, 176 20, 214 12"
@@ -9,3 +10,4 @@
         fill="none" stroke="currentColor" stroke-width="1.2" />
   <path d="M214 12 l 22 -2" fill="none" stroke="currentColor" stroke-width="0.9" />
 </svg>
+{% endif %}

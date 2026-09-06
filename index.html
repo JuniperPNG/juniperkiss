@@ -46,7 +46,7 @@ description: >-
 
 <section class="section section--alt">
   <div class="shell">
-    <div class="about__layout">
+    <div class="about__layout{% unless site.botanical_motif_enabled %} about__layout--text{% endunless %}">
       <div class="about__text">
         <h2>About this website and Juniper (troublesome me!)</h2>
         <div class="prose" style="margin-top: var(--space-l)">
@@ -69,10 +69,12 @@ description: >-
           <p>Thank you for reading!</p>
         </div>
       </div>
+      {% if site.botanical_motif_enabled %}
       <div class="about__art">
         <img src="{{ '/assets/brand/logo-full-light.png' | relative_url }}"
              alt="A colourful botanical illustration of curling stems, fruit, flowers and flags growing above a globe." />
       </div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -112,7 +114,7 @@ description: >-
           Happy to chat with students, or anyone curious, and to write
           articles. I also give talks on loving data, expeditions, and plants
           — with a bias towards brambles, bananas, sweet potatoes and coffee —
-          plus malaria and seedbanking. A Troublesome Tendril at heart, always
+          plus malaria and seedbanking. Always
           fond of a crazy idea.
         </p>
       </li>
@@ -139,7 +141,7 @@ description: >-
       {%- for post in recent %}
       <li class="card">
         <p class="card__meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          {% include post-date.html post=post %}
         </p>
         <h3 class="card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p class="card__body">{{ post.description | truncate: 160 }}</p>

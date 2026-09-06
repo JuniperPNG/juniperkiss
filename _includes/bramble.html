@@ -8,6 +8,7 @@
   and it is hidden below the width where a full-width text column would sit
   under it (see the `.bramble` media query in site.css).
 {%- endcomment -%}
+{% if site.botanical_motif_enabled %}
 <svg class="bramble" viewBox="0 0 200 1400" preserveAspectRatio="xMidYMin meet"
      aria-hidden="true" focusable="false" role="presentation">
   <defs>
@@ -56,4 +57,5 @@
     <use href="#bramble-leaf" x="127" y="1335" />
   </g>
 </svg>
+{% endif %}
 
