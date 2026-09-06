@@ -3,15 +3,14 @@
 <head>
   {%- include head.html -%}
 </head>
-<body class="{{ page.body_class }}">
+<body class="{{ page.body_class }}{% if page.layout == 'post' %} page-post{% endif %}">
   <a class="skip-link" href="#main">Skip to main content</a>
 
   {%- include masthead.html -%}
   {%- include breadcrumbs.html -%}
   {%- include section-nav.html -%}
 
-  <main id="main"{% if site.botanical_motif_enabled %} class="has-bramble"{% endif %} tabindex="-1">
-    {%- include bramble.html -%}
+  <main id="main" tabindex="-1">
     {{ content }}
   </main>
 

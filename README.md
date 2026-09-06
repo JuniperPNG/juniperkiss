@@ -35,7 +35,7 @@ The gentle reveal behaviour has two deliberately separate paths:
   or replace this path with a keyframe added after page load: either change
   makes already-rendered content flash and move again.
 - Page-load reveals apply automatically to the shared `.post-header` used by
-  Blog, Ancient Assessments, Repos, ordinary pages and individual posts.
+  Blog, Ancient Assignments, Repos, ordinary pages and individual posts.
   Custom Home and CV hero groups use `data-load-reveal`. These selectors are
   present before first paint, so their one-time keyframe is safe. The separate
   `--dur-load` token keeps the initial entrance slower than scroll reveals;

@@ -1,14 +1,14 @@
 {%- if page.url != "/" -%}
 <div class="breadcrumbs">
-  <div class="shell{% if page.layout == 'page' or page.layout == 'post' %} shell--reading{% endif %}">
+  <div class="shell{% if page.layout == 'page' or page.layout == 'post' or page.body_class == 'page-blog' or page.body_class == 'page-assignments' %} shell--reading{% endif %}">
   <nav class="breadcrumbs__inner" aria-label="Breadcrumb">
     <ol class="breadcrumbs__list">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       {%- if page.layout == "post" -%}
       <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-      <li><span aria-current="page">{{ page.title }}</span></li>
+      <li class="breadcrumbs__current"><span aria-current="page" title="{{ page.title }}">{{ page.title }}</span></li>
       {%- else -%}
-      <li><span aria-current="page">{{ page.title }}</span></li>
+      <li class="breadcrumbs__current"><span aria-current="page" title="{{ page.title }}">{{ page.title }}</span></li>
       {%- endif -%}
     </ol>
   </nav>
